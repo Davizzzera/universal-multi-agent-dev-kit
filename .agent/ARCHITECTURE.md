@@ -29,12 +29,12 @@ The architecture validation pipeline is now confirmed working in a Python enviro
 
 ---
 
-## CI Validation Layer
+## CI Validation Layer (v0.2.1)
 
-CI runs the repository validation pipeline in GitHub Actions.
-It uses the same npm scripts as local validation to ensure complete parity between the developer's local environment and the remote repository.
-CI does not replace local validation; it merely acts as a final gatekeeper.
-This layer supports ongoing repository hardening and protects the integrity of future releases.
+GitHub Actions now runs the same validation pipeline as local validation on every push and pull request to `main`.
+The CI workflow (`.github/workflows/verify.yml`) uses Python 3.11 and Node.js 20 on Ubuntu Latest.
+CI does not replace local validation; it acts as a final gatekeeper ensuring repository integrity.
+This layer was confirmed working and is officially part of the v0.2.1 CI Validation Release.
 
 ---
 
