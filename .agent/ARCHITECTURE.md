@@ -347,7 +347,21 @@ QA and Security agents act as cross-cutting validators. After any specialist com
 
 ---
 
-## Current Status
+## v0.1.0 Architecture Status
 
-> **v0.1.0 (Unreleased):** Core orchestration agents, specialist agents, core skills library, operational workflows, validation scripts/indexes, the Antigravity adapter, and 9 reusable project packs have been implemented.
+**Implemented in v0.1.0:**
+- **Rules layer:** Global rules, file ownership, handoff, output contracts.
+- **Templates layer:** Standardized agent, skill, workflow, and markdown templates.
+- **Agents layer:** 6 Orchestration agents and 54 Specialist agents.
+- **Skills layer:** 104 reusable skills across 18 categories.
+- **Workflows layer:** 18 operational workflows with strict validation requirements.
+- **Scripts layer:** Python validation and index generation scripts.
+- **Adapters:** Antigravity adapter completed.
+- **Project Packs:** 9 curated domain-specific packs completed.
+
+**Planned for Future Releases:**
+- Additional adapters (Claude Code, Cursor, Codex, Generic).
+- CLI installer (`npx universal-agent-kit init`).
+- More examples and packs expansion.
+- Hardening improvements and cross-platform validation script enhancements.
 

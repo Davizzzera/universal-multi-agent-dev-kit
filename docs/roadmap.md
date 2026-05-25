@@ -1,107 +1,75 @@
 # Roadmap
 
 > Development roadmap for the Universal Multi-Agent Development Kit.
+> **Note:** This roadmap is a living document and is subject to change as AI coding tools evolve.
 
 ---
 
-## v0.1.0 — Repository Foundation
+## v0.1.0 — Foundation Release
 
-**Status:** 🟡 In Progress
+**Status:** ✅ Completed
 
-- [x] Create repository structure.
-- [x] Create core directories (`.agent/`, `adapters/`, `packs/`, `docs/`).
-- [x] Create root files (`README.md`, `LICENSE`, `CHANGELOG.md`, `CONTRIBUTING.md`, `package.json`, `.gitignore`).
-- [x] Create `.agent/AGENTS.md` — Global agent entrypoint.
-- [x] Create `.agent/ARCHITECTURE.md` — Architecture document.
-- [x] Create `.agent/INDEX.md` — Human-readable index.
-- [x] Create initial documentation in `docs/`.
-- [x] Create `.gitkeep` files in empty directories.
+- [x] Create repository structure and core directories (`.agent/`, `adapters/`, `packs/`, `docs/`).
+- [x] Implement global rules and templates.
+- [x] Implement Universal Orchestrator and core orchestration agents.
+- [x] Implement 54 Specialist Agents across key domains.
+- [x] Implement Core Skills Library (104 skills).
+- [x] Implement Operational Workflows (18 workflows).
+- [x] Implement Antigravity Adapter.
+- [x] Implement 9 Project Packs.
+- [x] Implement validation scripts and structural verification.
+- [x] Finalize `README.md`, `CHANGELOG.md`, and `RELEASE_NOTES.md`.
 
 ---
 
-## v0.2.0 — Core Agents
+## v0.2.0 — Quality Hardening & Validation
 
 **Status:** ⬜ Planned
 
-- [ ] Implement Universal Orchestrator agent.
-- [ ] Implement Context Reader agent.
-- [ ] Implement Task Router agent.
-- [ ] Implement Code Writer agent.
-- [ ] Implement Code Reviewer agent.
-- [ ] Implement Documentation Agent.
-- [ ] Implement QA Agent.
-- [ ] Implement Security Agent.
-- [ ] Implement Final Reviewer agent.
-- [ ] Define global rules in `.agent/rules/`.
-- [ ] Create agent templates in `.agent/templates/`.
+- [ ] Improve Python validation scripts for greater resilience.
+- [ ] Add cross-platform execution support for scripts.
+- [ ] Implement deeper dependency checks.
+- [ ] Add stricter output validation rules.
 
 ---
 
-## v0.3.0 — Core Skills
+## v0.3.0 — Additional Adapters
 
 **Status:** ⬜ Planned
 
-- [ ] Implement file reading skills.
-- [ ] Implement file writing skills.
-- [ ] Implement analysis skills.
-- [ ] Implement validation skills.
-- [ ] Implement documentation skills.
-- [ ] Implement refactoring skills.
-- [ ] Create skill templates in `.agent/templates/`.
-- [ ] Update agent definitions with skill assignments.
+- [ ] Implement adapter for Claude Code.
+- [ ] Implement adapter for Cursor.
+- [ ] Implement adapter for OpenAI Codex.
+- [ ] Implement Generic Adapter template for any LLM CLI tool.
 
 ---
 
-## v0.4.0 — Workflows and Validation Scripts
+## v0.4.0 — CLI Installer
 
 **Status:** ⬜ Planned
 
-- [ ] Implement Feature Implementation workflow.
-- [ ] Implement Bug Fix workflow.
-- [ ] Implement Code Review workflow.
-- [ ] Implement Full Validation workflow.
-- [ ] Implement `verify_all.py` validation script.
-- [ ] Implement `generate_index.py` index generation script.
-- [ ] Create workflow templates in `.agent/templates/`.
-- [ ] Generate initial indexes in `.agent/indexes/`.
+- [ ] Create an optional `npx universal-agent-kit init` CLI installer.
+- [ ] Automate copying `.agent/`, `adapters/`, and `packs/` to target repositories.
+- [ ] Provide interactive setup prompts for choosing adapters and packs.
 
 ---
 
-## v0.5.0 — Antigravity Adapter
+## v0.5.0 — Pack Expansion & Examples
 
 **Status:** ⬜ Planned
 
-- [ ] Implement Antigravity adapter configuration.
-- [ ] Create Antigravity entry point.
-- [ ] Map kit concepts to Antigravity capabilities.
-- [ ] Write Antigravity setup documentation.
-- [ ] Test integration with Antigravity.
-- [ ] Begin work on generic adapter template.
+- [ ] Add more comprehensive examples to each pack.
+- [ ] Add new domain-specific packs (e.g., Mobile App Pack, Data Science Pack).
+- [ ] Expand the skills library for specific frameworks (Next.js, FastAPI).
 
 ---
 
-## v1.0.0 — Stable Release
+## v1.0.0 — Stable Public Release
 
 **Status:** ⬜ Planned
 
-- [ ] Complete all core agents, skills, and workflows.
-- [ ] Complete all validation scripts.
-- [ ] Complete Antigravity adapter.
-- [ ] Complete generic adapter template.
-- [ ] Full documentation review and update.
-- [ ] Implement at least one project pack.
-- [ ] Comprehensive testing and validation.
-- [ ] Performance optimization.
-- [ ] Community contribution guidelines finalized.
-- [ ] Public release.
-
----
-
-## Future Considerations
-
-- Additional adapters (Claude Code, Cursor, Codex).
-- Additional project packs.
-- CLI tool for kit installation and configuration.
-- Plugin system for community extensions.
-- Metrics and reporting dashboard.
-- CI/CD integration support.
+- [ ] Full documentation review.
+- [ ] Real-world case studies and benchmarks.
+- [ ] Comprehensive automated testing suite.
+- [ ] Stable API for validation scripts.
+- [ ] Public v1.0.0 release.

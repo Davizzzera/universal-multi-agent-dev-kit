@@ -4,7 +4,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Version](https://img.shields.io/badge/version-0.1.0-brightgreen.svg)](CHANGELOG.md)
-[![Status](https://img.shields.io/badge/status-early%20foundation-orange.svg)](#repository-status)
+[![Status](https://img.shields.io/badge/status-foundation_release-orange.svg)](#repository-status)
 
 ---
 
@@ -12,9 +12,13 @@
 
 The **Universal Multi-Agent Development Kit** is a structured framework that provides reusable agents, skills, workflows, rules, and validation tools for AI-assisted software engineering.
 
-It is designed to work with AI coding tools such as **Antigravity**, Claude Code, Cursor, Codex, and others — providing a universal layer of orchestration, quality control, and best practices that any AI assistant can follow.
+It is designed to work with AI coding tools such as **Antigravity** (with planned support for Claude Code, Cursor, Codex, and others) — providing a universal layer of orchestration, quality control, and best practices that any AI assistant can follow.
 
 This kit is **not a library or an npm package to install**. It is a **repository of structured instructions, agents, skills, and workflows** that AI coding tools can read, follow, and execute.
+
+## Why it Exists
+
+As AI coding agents become more capable, they need structure to operate safely on large codebases. Without governance, AI agents often overwrite files concurrently, ignore architectural boundaries, or fail to validate their output. This kit solves those problems by enforcing strict file ownership, validation-first delivery, and clear multi-agent coordination.
 
 ---
 
@@ -32,77 +36,62 @@ This kit is **not a library or an npm package to install**. It is a **repository
 
 ---
 
-## Architecture Overview
-
-The kit follows a **multi-agent orchestration model**:
-
-1. A **Universal Orchestrator** understands the user request.
-2. A **Context Reader** analyzes the project structure and state.
-3. A **Task Router** identifies the type of work required.
-4. **Specialist Agents** are selected based on the task type.
-5. **Skills** are loaded and applied based on the task requirements.
-6. **Reading, analysis, and research** happen in **parallel**.
-7. **Writing and file modifications** are **controlled and sequential** when conflict risk exists.
-8. **QA, security, and validation agents** review the result.
-9. A **Final Reviewer** consolidates the delivery.
-
-### Parallel and Sequential Execution
-
-| Phase            | Mode       | Reason                                    |
-|------------------|------------|-------------------------------------------|
-| Research         | Parallel   | No conflict risk, faster execution.       |
-| Analysis         | Parallel   | Independent reads, safe to parallelize.   |
-| Implementation   | Sequential | File writes must be conflict-free.        |
-| Validation       | Parallel   | Independent checks, safe to parallelize.  |
-
----
-
 ## Repository Status
 
-> **Phase 7 — v0.7.0**
+> **v0.1.0 Foundation Release**
 >
-> This repository is in its structural foundation phase. Orchestration agents, specialist agents, skills library, workflows, and validation scripts are implemented.
+> This repository provides the complete structural foundation. It is a strong foundation release, not a fully automated CLI product yet.
+
+### What is Included
+
+- **6 Orchestration Agents:** Managing the multi-agent lifecycle (`universal-orchestrator`, `task-router`, etc.).
+- **54 Specialist Agents:** Covering Frontend, Backend, Database, AI, Security, QA, and more.
+- **104 Skills:** Reusable procedures across 18 categories.
+- **18 Workflows:** Step-by-step processes for common tasks (e.g., `create-feature`, `bug-fix`).
+- **9 Project Packs:** Domain-specific presets (e.g., `web-app-pack`, `enterprise-pack`).
+- **1 Adapter:** Official integration rules for **Antigravity AI**.
+- **Validation Scripts:** Built-in Python scripts for structural checking.
 
 ---
 
-## Planned Phases
+## Quick Start for Antigravity
 
-| Phase   | Description                          | Status         |
-|---------|--------------------------------------|----------------|
-| v0.1.0  | Repository foundation                | 🟡 In Progress |
-| v0.2.0  | Core agents                          | ⬜ Planned     |
-| v0.3.0  | Core skills                          | ⬜ Planned     |
-| v0.4.0  | Workflows and validation scripts     | ⬜ Planned     |
-| v0.5.0  | Antigravity adapter                  | ⬜ Planned     |
-| v1.0.0  | Stable release                       | ⬜ Planned     |
+This kit is ready to be used with Antigravity AI today:
+
+1. Clone this repository locally.
+2. Ask Antigravity to review `adapters/antigravity/README.md`.
+3. Use the prompts in `adapters/antigravity/examples/` to instruct Antigravity using the kit's workflows and packs.
+4. Or, copy the `.agent/`, `packs/`, and `adapters/` directories into your own target project to enable the orchestration model there.
+
+*Note: A CLI installer (`npx universal-agent-kit init`) is planned for a future release to automate this process.*
 
 ---
 
-## Usage with Antigravity
+## Safety Principles
 
-This kit is designed to be read and followed by AI coding assistants. When using **Antigravity** (or another supported AI tool):
+This kit enforces a **"Validation-First"** approach:
+- **No untested delivery:** Agents are instructed not to deliver code without passing validation.
+- **Scope restriction:** Agents cannot modify files outside their designated scope (`scope-guardian`).
+- **Conflict prevention:** Write operations are strictly sequential to prevent file corruption (`conflict-controller`).
 
-1. Clone or reference this repository in your project.
-2. The AI assistant reads the `.agent/` directory to understand the orchestration model.
-3. Agents, skills, and workflows guide the AI's behavior.
-4. Adapters provide tool-specific configuration and integration.
+---
 
-## Antigravity Adapter
+## Validation
 
-This kit includes an official adapter for Antigravity AI. 
-See [adapters/antigravity/README.md](adapters/antigravity/README.md) for full documentation.
+The repository is self-checking. You can run the validation scripts using `npm` shortcuts:
 
-Antigravity is the first supported adapter. Other adapters (Claude Code, Cursor, Codex) will be added in later phases.
+```bash
+npm run verify
+npm run generate:index
+```
 
-Detailed setup instructions can also be found in [docs/antigravity-setup.md](docs/antigravity-setup.md).
+**Note:** Python 3.10+ is required for the validation scripts. No external Python dependencies are required (uses standard library only). If your local environment does not have Python configured in the PATH, these automated scripts will not run, but the kit's Markdown instructions remain fully functional for the AI.
 
 ---
 
 ## Project Packs
 
-Project Packs are **advisory presets** that help the Universal Orchestrator quickly select the right combination of agents, skills, and workflows for a given project domain. They do **not** override global rules.
-
-See [packs/README.md](packs/README.md) for full documentation.
+Project Packs are advisory presets that help the Orchestrator select the right agents and workflows. See [packs/README.md](packs/README.md).
 
 | Pack | Purpose |
 |------|---------|
@@ -118,38 +107,33 @@ See [packs/README.md](packs/README.md) for full documentation.
 
 ---
 
-## Validation
+## Roadmap Summary
 
-The repository is self-checking and validation-first. You can run the validation scripts using `npm` shortcuts:
+- **v0.2.0:** Quality hardening and Python validation improvements.
+- **v0.3.0:** Additional adapters (Claude Code, Cursor, Codex, Generic).
+- **v0.4.0:** Optional CLI installer.
+- **v0.5.0:** Pack expansion and examples.
+- **v1.0.0:** Stable public release.
 
-```bash
-npm run verify
-npm run generate:index
-```
-
-**Note:** Python 3.10+ is required for the validation scripts. No external Python dependencies are required (uses standard library only).
+See [docs/roadmap.md](docs/roadmap.md) for full details.
 
 ---
 
-## Documentation
+## Key Links
 
-- [Getting Started](docs/getting-started.md)
-- [Agent Design](docs/agent-design.md)
-- [Skill Design](docs/skill-design.md)
-- [Workflow Design](docs/workflow-design.md)
-- [Orchestration Model](docs/orchestration-model.md)
-- [Validation Model](docs/validation-model.md)
-- [Antigravity Setup](docs/antigravity-setup.md)
-- [Examples](docs/examples.md)
-- [Roadmap](docs/roadmap.md)
+- [Agents List](.agent/AGENTS.md)
+- [Architecture Details](.agent/ARCHITECTURE.md)
+- [Antigravity Adapter](adapters/antigravity/README.md)
+- [Project Packs](packs/README.md)
+- [Release Notes](RELEASE_NOTES.md)
+- [Getting Started Guide](docs/getting-started.md)
+- [Full Roadmap](docs/roadmap.md)
 
 ---
 
 ## Contributing
 
 Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting proposals.
-
----
 
 ## License
 

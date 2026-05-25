@@ -5,7 +5,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased] — v0.1.0 — Repository Foundation
+## [Unreleased]
+
+## [0.1.0] - 2026-05-25
 
 ### Added
 
@@ -57,14 +59,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added Antigravity troubleshooting guide.
 - Added adapter manifest.
 - Added 9 project packs for domain-specific agent configuration.
-- Added web-app-pack.
-- Added landing-page-pack.
-- Added api-pack.
-- Added data-bi-pack.
-- Added automation-pack.
-- Added ai-agent-pack.
-- Added n8n-pack.
-- Added ecommerce-pack.
-- Added enterprise-pack.
+- Added web-app-pack, landing-page-pack, api-pack, data-bi-pack, automation-pack, ai-agent-pack, n8n-pack, ecommerce-pack, enterprise-pack.
 - Updated INDEX.md, ARCHITECTURE.md, and AGENTS.md to include packs.
 - Updated examples.md with pack usage scenarios.

@@ -338,6 +338,7 @@
 | File               | Purpose                                              | Status              |
 |--------------------|------------------------------------------------------|---------------------|
 | `README.md`        | Project overview and documentation entry point.      | ✅ Created          |
+| `RELEASE_NOTES.md` | Release notes for the current version.               | ✅ Created          |
 | `LICENSE`          | MIT License.                                         | ✅ Created          |
 | `CHANGELOG.md`     | Version history and changes.                         | ✅ Created          |
 | `CONTRIBUTING.md`  | Contribution guidelines.                             | ✅ Created          |
@@ -346,7 +347,7 @@
 
 ---
 
-## Current Phase
+## Current Status
 
-> **v0.1.0 (Unreleased):** Core orchestration agents, specialist agents, core skills library, operational workflows, validation scripts/indexes, the Antigravity adapter, and 9 reusable project packs have been implemented.
+> **v0.1.0 Foundation Release:** Core orchestration agents, specialist agents, core skills library, operational workflows, validation scripts/indexes, the Antigravity adapter, and 9 reusable project packs have been implemented.
 

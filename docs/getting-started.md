@@ -15,42 +15,52 @@ This kit is **not installed as a dependency**. It is a repository of structured 
 ## Prerequisites
 
 - Git installed on your system.
-- An AI coding tool that supports reading structured agent files (e.g., Antigravity, Claude Code, Cursor, Codex).
+- An AI coding tool that supports reading structured agent files. Currently, the **Antigravity** adapter is officially supported.
 - A project repository where you want to apply the kit.
 
 ---
 
-## Quick Start
+## Quick Start (v0.1.0)
 
-### Step 1: Clone the Kit
+### 1. Clone the Kit
+
+Clone the kit into your local environment:
 
 ```bash
 git clone https://github.com/Davizzzera/universal-multi-agent-dev-kit.git
 ```
 
-### Step 2: Understand the Structure
+### 2. Review `.agent/AGENTS.md`
 
-The kit is organized into four main areas:
+This is the main entry point for the AI. Open this file to understand the orchestration model, the available specialist agents, and how the kit enforces a validation-first workflow.
 
-- **`.agent/`** — The core agent system. Start with `.agent/AGENTS.md`.
-- **`adapters/`** — Tool-specific integrations. Choose the adapter for your AI tool.
-- **`packs/`** — Optional project-type packs. Select packs relevant to your project.
-- **`docs/`** — Documentation for understanding and contributing.
+### 3. Use the Antigravity Adapter
 
-### Step 3: Configure Your AI Tool
+If you are using Antigravity, open `adapters/antigravity/README.md`. You will find specific prompt examples in `adapters/antigravity/examples/` that instruct Antigravity to act as the Universal Orchestrator.
 
-Each AI coding tool has its own adapter in `adapters/`. The adapter provides the specific configuration needed for your tool to read and follow the kit.
+### 4. Apply to a Target Project
 
-> **Note:** Adapter implementations will be available starting from v0.5.0. See [antigravity-setup.md](antigravity-setup.md) for the Antigravity adapter status.
+To use this kit on an existing project, simply copy the `.agent/`, `packs/`, and `adapters/` directories into the root of your target project repository. 
 
-### Step 4: Start Working
+*Note: A CLI tool to automate this setup is planned for a future release.*
 
-Once configured, your AI coding tool will:
+### 5. Use Workflows and Packs
 
-1. Read the agent system from `.agent/AGENTS.md`.
-2. Follow the orchestration model for task execution.
-3. Use the appropriate skills for each task.
-4. Validate results before completing work.
+When prompting your AI tool, specify a **Pack** and a **Workflow** to accelerate the process. For example:
+
+> "Goal: Create a new user login page. Pack: `web-app-pack`. Workflow: `create-feature`."
+
+The AI will look up the recommended agents and skills for that pack and execute the requested workflow.
+
+### 6. Run Validation Scripts
+
+The kit includes Python scripts to validate its internal structure. You can run:
+
+```bash
+npm run verify
+```
+
+**Python Limitation:** You must have **Python 3.10+** installed and available in your system's `PATH`. If Python is not configured, the validation scripts will fail to run, but the Markdown instructions will remain fully functional for the AI. **No external Python dependencies** (e.g., pip packages) are required.
 
 ---
 
@@ -75,11 +85,11 @@ Once configured, your AI coding tool will:
 | [Workflow Design](workflow-design.md)            | How workflows are designed.              |
 | [Orchestration Model](orchestration-model.md)    | How the multi-agent system works.        |
 | [Validation Model](validation-model.md)          | How validation is handled.               |
-| [Examples](examples.md)                          | Conceptual usage examples.               |
+| [Examples](examples.md)                          | Practical usage examples.                |
 | [Roadmap](roadmap.md)                            | Project development roadmap.             |
 
 ---
 
 ## Current Status
 
-> **Foundation Phase (v0.1.0):** The kit structure is established. Core agents, skills, workflows, and adapters will be implemented in subsequent phases. You can explore the structure and documentation now to understand how the kit will work.
+> **v0.1.0 Foundation Release:** The complete foundational structure, orchestration model, 54 agents, 104 skills, 18 workflows, 9 project packs, and the Antigravity adapter are implemented and ready to use. Future releases will add a CLI and additional adapters.
