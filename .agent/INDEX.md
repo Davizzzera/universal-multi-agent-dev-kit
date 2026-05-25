@@ -11,7 +11,7 @@
 | `.agent/`             | Core agent system root.                                        | ✅ Created          |
 | `.agent/agents/`      | Agent definitions and configurations.                          | ✅ Populated        |
 | `.agent/skills/`      | Reusable skill definitions.                                    | ✅ Populated        |
-| `.agent/workflows/`   | Workflow definitions and execution orders.                     | 📦 Empty (v0.4.0)  |
+| `.agent/workflows/`   | Workflow definitions and execution orders.                     | ✅ Populated        |
 | `.agent/rules/`       | Global rules and constraints.                                  | ✅ Populated        |
 | `.agent/memory/`      | Shared context and state between agents.                       | 📦 Empty (v0.2.0)  |
 | `.agent/templates/`   | Reusable templates for common patterns.                        | ✅ Populated        |
@@ -134,6 +134,31 @@
 | `marketing/`                                            | Marketing skills (e.g. landing-page-copy).                   | ✅ Created (6)      |
 | `maintenance/`                                          | Maintenance skills (e.g. technical-debt-detection).          | ✅ Created (6)      |
 
+## Workflows
+
+| Directory / File                                        | Purpose                                                      | Status              |
+|---------------------------------------------------------|--------------------------------------------------------------|---------------------|
+| **Workflows Root** (`.agent/workflows/`)                |                                                              |                     |
+| `README.md`                                             | Workflows directory overview.                                | ✅ Created          |
+| `plan.workflow.md`                                      | Analyze request and create safe plan.                        | ✅ Created          |
+| `coordinate.workflow.md`                                | Coordinate multiple agents for complex tasks.                | ✅ Created          |
+| `create-feature.workflow.md`                            | Create a new feature safely.                                 | ✅ Created          |
+| `enhance-feature.workflow.md`                           | Improve an existing feature.                                 | ✅ Created          |
+| `debug.workflow.md`                                     | Investigate and resolve bugs.                                | ✅ Created          |
+| `refactor.workflow.md`                                  | Improve code structure without changing behavior.            | ✅ Created          |
+| `test.workflow.md`                                      | Create, improve or run tests.                                | ✅ Created          |
+| `verify.workflow.md`                                    | Verify implementation.                                       | ✅ Created          |
+| `security-review.workflow.md`                           | Perform defensive security review.                           | ✅ Created          |
+| `database-change.workflow.md`                           | Plan and implement database changes.                         | ✅ Created          |
+| `api-development.workflow.md`                           | Design and implement API endpoints.                          | ✅ Created          |
+| `frontend-ui.workflow.md`                               | Create or improve frontend UI.                               | ✅ Created          |
+| `automation.workflow.md`                                | Design and validate automations.                             | ✅ Created          |
+| `ai-feature.workflow.md`                                | Design and validate AI-powered features.                     | ✅ Created          |
+| `document.workflow.md`                                  | Create or update documentation.                              | ✅ Created          |
+| `deploy.workflow.md`                                    | Prepare deployment configuration.                            | ✅ Created          |
+| `release.workflow.md`                                   | Prepare repository release.                                  | ✅ Created          |
+| `emergency-fix.workflow.md`                             | Handle urgent fixes safely.                                  | ✅ Created          |
+
 ## Rules and Templates
 
 | Directory / File                                        | Purpose                                                      | Status              |
@@ -214,5 +239,5 @@
 
 ## Current Phase
 
-> **Phase 5 (v0.5.0):** Core orchestration agents, specialist agents, and core skills library have been implemented.
+> **Phase 6 (v0.6.0):** Core orchestration agents, specialist agents, core skills library, and operational workflows have been implemented.
 

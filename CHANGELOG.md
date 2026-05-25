@@ -38,3 +38,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added 104 reusable skills.
 - Added skill category documentation.
 - Added agent-to-skill execution model.
+- Added operational workflows layer.
+- Added 18 reusable workflows.
+- Added workflow documentation.
+- Added workflow-to-agent and workflow-to-skill execution model.
+- Added validation-first workflow standards.

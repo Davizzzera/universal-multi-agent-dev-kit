@@ -189,7 +189,36 @@ For a complete list of all 18 skill categories and 104 core skills, see `.agent/
 
 ---
 
+## Operational Workflows
+
+Workflows (`.agent/workflows/`) define *when* and *in which order* work happens. They are selected by the Universal Orchestrator to coordinate the execution of agents and skills.
+
+Workflows must enforce global rules, file ownership, handoffs, and output contracts.
+
+| Workflow | Purpose |
+|----------|---------|
+| `plan` | Analyze a request and create a safe implementation plan. |
+| `coordinate` | Coordinate multiple agents for complex tasks. |
+| `create-feature` | Create a new feature safely using specialist agents. |
+| `enhance-feature` | Improve an existing feature without changing its intended behavior. |
+| `debug` | Investigate, reproduce and resolve bugs with minimal changes. |
+| `refactor` | Improve code structure without changing behavior. |
+| `test` | Create, improve or run tests. |
+| `verify` | Verify that the implementation actually works. |
+| `security-review` | Perform a defensive security review. |
+| `database-change` | Plan, implement and validate database changes safely. |
+| `api-development` | Design, implement and validate API endpoints. |
+| `frontend-ui` | Create or improve frontend UI safely. |
+| `automation` | Design and validate automation scripts and flows. |
+| `ai-feature` | Design and validate AI-powered features. |
+| `document` | Create, update or validate documentation. |
+| `deploy` | Prepare deployment configuration and production readiness. |
+| `release` | Prepare versioning, changelog, and release notes. |
+| `emergency-fix` | Handle urgent fixes safely. |
+
+---
+
 ## Current Status
 
-> **Phase 5 (v0.5.0):** Core orchestration agents, specialist agents, and the core skills library have been implemented. Workflows and adapters will follow in subsequent phases.
+> **Phase 6 (v0.6.0):** Core orchestration agents, specialist agents, core skills library, and operational workflows have been implemented. Adapters will follow in subsequent phases.
 

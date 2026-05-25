@@ -310,6 +310,14 @@ Agents utilize **Skills** (`.agent/skills/`) to define step-by-step procedures f
 - **Validation Support:** Each skill defines specific validation criteria, ensuring agents can self-correct and QA agents know exactly what to check.
 - **Adapter & Pack Readiness:** The separation of Skills from Agents makes the system easily extensible via Adapters (different IDEs) and Packs (different domains).
 
+### Workflows Layer
+
+Workflows (`.agent/workflows/`) define the operational execution sequences of the system.
+- Workflows use YAML frontmatter to define triggers, primary agents, required agents, required skills, validation rules, and risk levels.
+- **Execution Over Identity:** While Agents define responsibility and Skills define specific actions, Workflows orchestrate *when* and *in which order* they are applied.
+- **Validation-First Delivery:** All workflows explicitly require validation steps (QA, Security, build checks) before claiming completion.
+- **Parallel / Sequential Rules:** Workflows enforce parallel execution for discovery/analysis and sequential execution for file writing/conflict resolution.
+
 ### Specialist Participation in Validation
 
 QA and Security agents act as cross-cutting validators. After any specialist completes work, the Orchestrator dispatches QA and/or Security agents to independently review the output before the Final Reviewer synthesizes the delivery.
@@ -318,5 +326,5 @@ QA and Security agents act as cross-cutting validators. After any specialist com
 
 ## Current Status
 
-> **Phase 5 (v0.5.0):** Core orchestration agents, specialist agents, and the core skills library have been implemented. Workflows and adapters will follow in subsequent phases.
+> **Phase 6 (v0.6.0):** Core orchestration agents, specialist agents, core skills library, and operational workflows have been implemented. Adapters will follow in subsequent phases.
 
