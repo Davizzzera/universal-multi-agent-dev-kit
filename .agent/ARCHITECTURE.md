@@ -318,6 +318,14 @@ Workflows (`.agent/workflows/`) define the operational execution sequences of th
 - **Validation-First Delivery:** All workflows explicitly require validation steps (QA, Security, build checks) before claiming completion.
 - **Parallel / Sequential Rules:** Workflows enforce parallel execution for discovery/analysis and sequential execution for file writing/conflict resolution.
 
+### Scripts Layer
+
+Validation scripts (`.agent/scripts/`) ensure the integrity of the kit.
+- **Self-Checking:** Scripts validate repository structure, agent files, skill files, and workflows to ensure they follow their respective templates and rules.
+- **Indexes:** The validation pipeline generates JSON indexes (`.agent/indexes/`) which map the entire repository for fast discovery by adapters and other tooling.
+- **Defensive Checking:** Basic defensive scans ensure no obvious secrets are committed and no unexpected modifications break the system architecture.
+- **Validation Pipeline:** Scripts are executed via `python .agent/scripts/verify_all.py` or npm shortcuts to enforce strict compliance before delivery.
+
 ### Specialist Participation in Validation
 
 QA and Security agents act as cross-cutting validators. After any specialist completes work, the Orchestrator dispatches QA and/or Security agents to independently review the output before the Final Reviewer synthesizes the delivery.
@@ -326,5 +334,5 @@ QA and Security agents act as cross-cutting validators. After any specialist com
 
 ## Current Status
 
-> **Phase 6 (v0.6.0):** Core orchestration agents, specialist agents, core skills library, and operational workflows have been implemented. Adapters will follow in subsequent phases.
+> **Phase 7 (v0.7.0):** Core orchestration agents, specialist agents, core skills library, operational workflows, and validation scripts/indexes have been implemented. Adapters will follow in subsequent phases.
 

@@ -1,0 +1,593 @@
+[
+  {
+    "name": "ai-feature",
+    "type": "workflow",
+    "description": "Design, implement and validate AI-powered features, prompts, agents, RAG systems or LLM workflows.",
+    "risk_level": "high",
+    "validation_required": "manual-and-automated",
+    "primary_agent": "universal-orchestrator",
+    "path": ".agent/workflows/ai-feature.workflow.md",
+    "required_agents": [
+      "ai-engineer",
+      "prompt-engineer",
+      "qa-tester",
+      "final-reviewer"
+    ],
+    "required_skills": [
+      "prompt-architecture",
+      "agent-definition",
+      "subagent-definition",
+      "multi-agent-orchestration",
+      "rag-pipeline-design",
+      "llm-output-evaluation",
+      "hallucination-check style review if applicable",
+      "privacy-data-exposure-review if applicable"
+    ],
+    "trigger": [
+      "AI feature",
+      "LLM",
+      "prompt",
+      "agent",
+      "RAG",
+      "chatbot",
+      "embeddings",
+      "multi-agent"
+    ]
+  },
+  {
+    "name": "api-development",
+    "type": "workflow",
+    "description": "Design, implement and validate API endpoints, contracts and integration behavior.",
+    "risk_level": "high",
+    "validation_required": "manual-and-automated",
+    "primary_agent": "universal-orchestrator",
+    "path": ".agent/workflows/api-development.workflow.md",
+    "required_agents": [
+      "backend-specialist",
+      "api-designer",
+      "qa-tester",
+      "final-reviewer",
+      "security-reviewer"
+    ],
+    "required_skills": [
+      "api-contract-design",
+      "rest-api-implementation",
+      "request-validation",
+      "error-handling-standard",
+      "pagination-filtering-sorting",
+      "input-sanitization",
+      "authz-review",
+      "openapi-style documentation if applicable"
+    ],
+    "trigger": [
+      "create API",
+      "API endpoint",
+      "backend route",
+      "REST API",
+      "API integration"
+    ]
+  },
+  {
+    "name": "automation",
+    "type": "workflow",
+    "description": "Design, implement and validate automation scripts, file processors, n8n flows or browser automations.",
+    "risk_level": "high",
+    "validation_required": "manual-and-automated",
+    "primary_agent": "universal-orchestrator",
+    "path": ".agent/workflows/automation.workflow.md",
+    "required_agents": [
+      "python-automation-specialist",
+      "qa-tester",
+      "final-reviewer"
+    ],
+    "required_skills": [
+      "python-script-automation",
+      "n8n-workflow-design",
+      "n8n-webhook-flow",
+      "browser-automation-playwright",
+      "browser-automation-selenium",
+      "error-retry-strategy",
+      "reporting-automation",
+      "secure-logging-review"
+    ],
+    "trigger": [
+      "automation",
+      "automate",
+      "script",
+      "n8n",
+      "webhook automation",
+      "file watcher",
+      "browser automation"
+    ]
+  },
+  {
+    "name": "coordinate",
+    "type": "workflow",
+    "description": "Coordinate multiple agents for complex tasks that require multi-agent analysis, execution and validation.",
+    "risk_level": "high",
+    "validation_required": "manual-and-automated",
+    "primary_agent": "universal-orchestrator",
+    "path": ".agent/workflows/coordinate.workflow.md",
+    "required_agents": [
+      "project-context-reader",
+      "task-router",
+      "scope-guardian",
+      "conflict-controller",
+      "final-reviewer"
+    ],
+    "required_skills": [
+      "coordinator-mode",
+      "agent-routing",
+      "parallel-work-planning",
+      "file-ownership-locking",
+      "handoff-protocol",
+      "task-breakdown",
+      "implementation-plan",
+      "change-impact-summary"
+    ],
+    "trigger": [
+      "coordinate",
+      "orchestrate",
+      "multi-agent",
+      "use multiple agents",
+      "complex task"
+    ]
+  },
+  {
+    "name": "create-feature",
+    "type": "workflow",
+    "description": "Create a new feature safely using the appropriate specialist agents and validation path.",
+    "risk_level": "high",
+    "validation_required": "manual-and-automated",
+    "primary_agent": "universal-orchestrator",
+    "path": ".agent/workflows/create-feature.workflow.md",
+    "required_agents": [
+      "project-context-reader",
+      "task-router",
+      "scope-guardian",
+      "conflict-controller",
+      "final-reviewer",
+      "qa-tester"
+    ],
+    "required_skills": [
+      "project-intake",
+      "task-breakdown",
+      "implementation-plan",
+      "acceptance-criteria-writing",
+      "definition-of-done",
+      "file-ownership-locking",
+      "build-validation",
+      "regression-test-checklist",
+      "change-impact-summary"
+    ],
+    "trigger": [
+      "create feature",
+      "add feature",
+      "implement feature",
+      "build feature",
+      "new functionality"
+    ]
+  },
+  {
+    "name": "database-change",
+    "type": "workflow",
+    "description": "Plan, implement and validate database schema, migration or data integrity changes safely.",
+    "risk_level": "critical",
+    "validation_required": "manual-and-automated",
+    "primary_agent": "universal-orchestrator",
+    "path": ".agent/workflows/database-change.workflow.md",
+    "required_agents": [
+      "database-specialist",
+      "migration-specialist",
+      "scope-guardian",
+      "conflict-controller",
+      "final-reviewer"
+    ],
+    "required_skills": [
+      "database-schema-design",
+      "migration-create",
+      "migration-review",
+      "data-integrity-check",
+      "backup-restore-plan",
+      "query-optimization",
+      "rollback-plan",
+      "security-review"
+    ],
+    "trigger": [
+      "database change",
+      "migration",
+      "schema update",
+      "add table",
+      "change table",
+      "optimize query"
+    ]
+  },
+  {
+    "name": "debug",
+    "type": "workflow",
+    "description": "Investigate, reproduce and resolve bugs with minimal, evidence-based changes.",
+    "risk_level": "medium",
+    "validation_required": "manual-and-automated",
+    "primary_agent": "universal-orchestrator",
+    "path": ".agent/workflows/debug.workflow.md",
+    "required_agents": [
+      "project-context-reader",
+      "task-router",
+      "scope-guardian",
+      "bug-hunter",
+      "final-reviewer",
+      "qa-tester"
+    ],
+    "required_skills": [
+      "codebase-map",
+      "existing-patterns-detection",
+      "task-breakdown",
+      "test-plan-create",
+      "regression-test-checklist",
+      "error-message-review",
+      "build-validation",
+      "change-impact-summary"
+    ],
+    "trigger": [
+      "debug",
+      "fix bug",
+      "error",
+      "broken",
+      "not working",
+      "investigate issue"
+    ]
+  },
+  {
+    "name": "deploy",
+    "type": "workflow",
+    "description": "Prepare deployment configuration, environment handling, CI/CD and production readiness.",
+    "risk_level": "critical",
+    "validation_required": "manual-and-automated",
+    "primary_agent": "universal-orchestrator",
+    "path": ".agent/workflows/deploy.workflow.md",
+    "required_agents": [
+      "devops-specialist",
+      "security-reviewer",
+      "final-reviewer"
+    ],
+    "required_skills": [
+      "dockerfile-create",
+      "docker-compose-create",
+      "github-actions-ci",
+      "environment-variable-management",
+      "production-readiness-check",
+      "healthcheck-endpoint",
+      "security-release-checklist",
+      "build-validation"
+    ],
+    "trigger": [
+      "deploy",
+      "deployment",
+      "publish",
+      "production",
+      "CI/CD",
+      "Docker",
+      "Vercel",
+      "Render",
+      "cloud"
+    ]
+  },
+  {
+    "name": "document",
+    "type": "workflow",
+    "description": "Create, update or validate documentation so it matches actual repository behavior.",
+    "risk_level": "low",
+    "validation_required": "manual",
+    "primary_agent": "documentation-writer",
+    "path": ".agent/workflows/document.workflow.md",
+    "required_agents": [
+      "technical-writer",
+      "final-reviewer"
+    ],
+    "required_skills": [
+      "readme-create",
+      "installation-guide",
+      "usage-guide",
+      "architecture-docs-create",
+      "troubleshooting-guide",
+      "folder-structure-docs",
+      "changelog-update",
+      "documentation-review"
+    ],
+    "trigger": [
+      "document",
+      "update docs",
+      "README",
+      "write guide",
+      "explain architecture",
+      "create documentation"
+    ]
+  },
+  {
+    "name": "emergency-fix",
+    "type": "workflow",
+    "description": "Handle urgent fixes safely while preserving scope, validation and rollback discipline.",
+    "risk_level": "critical",
+    "validation_required": "manual-and-automated",
+    "primary_agent": "universal-orchestrator",
+    "path": ".agent/workflows/emergency-fix.workflow.md",
+    "required_agents": [
+      "scope-guardian",
+      "conflict-controller",
+      "bug-hunter",
+      "qa-tester",
+      "final-reviewer"
+    ],
+    "required_skills": [
+      "task-breakdown",
+      "implementation-plan",
+      "rollback-plan",
+      "test-plan-create",
+      "regression-test-checklist",
+      "build-validation",
+      "change-impact-summary",
+      "security-release-checklist if applicable"
+    ],
+    "trigger": [
+      "emergency fix",
+      "hotfix",
+      "urgent bug",
+      "production issue",
+      "critical issue"
+    ]
+  },
+  {
+    "name": "enhance-feature",
+    "type": "workflow",
+    "description": "Improve an existing feature without changing its intended behavior or breaking existing functionality.",
+    "risk_level": "medium",
+    "validation_required": "manual-and-automated",
+    "primary_agent": "universal-orchestrator",
+    "path": ".agent/workflows/enhance-feature.workflow.md",
+    "required_agents": [
+      "project-context-reader",
+      "task-router",
+      "scope-guardian",
+      "conflict-controller",
+      "final-reviewer",
+      "qa-tester"
+    ],
+    "required_skills": [
+      "existing-patterns-detection",
+      "codebase-map",
+      "implementation-plan",
+      "responsive-layout-audit",
+      "visual-consistency-review",
+      "code-review-checklist",
+      "regression-test-checklist",
+      "build-validation"
+    ],
+    "trigger": [
+      "improve",
+      "enhance",
+      "polish",
+      "optimize existing feature",
+      "make this better"
+    ]
+  },
+  {
+    "name": "frontend-ui",
+    "type": "workflow",
+    "description": "Create, improve or validate frontend UI safely with design, responsiveness and accessibility considerations.",
+    "risk_level": "medium",
+    "validation_required": "manual-and-automated",
+    "primary_agent": "universal-orchestrator",
+    "path": ".agent/workflows/frontend-ui.workflow.md",
+    "required_agents": [
+      "frontend-specialist",
+      "ui-ux-designer",
+      "qa-tester",
+      "final-reviewer"
+    ],
+    "required_skills": [
+      "react-component-create",
+      "react-component-refactor",
+      "responsive-layout-audit",
+      "loading-empty-error-states",
+      "ux-flow-audit",
+      "visual-consistency-review",
+      "accessibility-contrast-check",
+      "build-validation"
+    ],
+    "trigger": [
+      "frontend",
+      "UI",
+      "screen",
+      "component",
+      "layout",
+      "responsive",
+      "design improvement"
+    ]
+  },
+  {
+    "name": "plan",
+    "type": "workflow",
+    "description": "Analyze a request and create a safe implementation plan without modifying project files.",
+    "risk_level": "low",
+    "validation_required": "manual",
+    "primary_agent": "universal-orchestrator",
+    "path": ".agent/workflows/plan.workflow.md",
+    "required_agents": [
+      "project-context-reader",
+      "task-router",
+      "scope-guardian",
+      "final-reviewer"
+    ],
+    "required_skills": [
+      "project-intake",
+      "codebase-map",
+      "task-breakdown",
+      "implementation-plan",
+      "acceptance-criteria-writing",
+      "definition-of-done",
+      "change-impact-summary"
+    ],
+    "trigger": [
+      "plan",
+      "analyze",
+      "assess",
+      "create a plan",
+      "before implementation"
+    ]
+  },
+  {
+    "name": "refactor",
+    "type": "workflow",
+    "description": "Improve code structure, readability and maintainability without changing behavior.",
+    "risk_level": "medium",
+    "validation_required": "manual-and-automated",
+    "primary_agent": "universal-orchestrator",
+    "path": ".agent/workflows/refactor.workflow.md",
+    "required_agents": [
+      "project-context-reader",
+      "scope-guardian",
+      "conflict-controller",
+      "refactor-specialist",
+      "qa-tester",
+      "final-reviewer"
+    ],
+    "required_skills": [
+      "existing-patterns-detection",
+      "codebase-map",
+      "implementation-plan",
+      "code-review-checklist",
+      "duplicate-code-detection",
+      "technical-debt-detection",
+      "regression-test-checklist",
+      "build-validation"
+    ],
+    "trigger": [
+      "refactor",
+      "clean up",
+      "simplify",
+      "improve code structure",
+      "remove duplication"
+    ]
+  },
+  {
+    "name": "release",
+    "type": "workflow",
+    "description": "Prepare versioning, changelog, release notes and final readiness for a repository release.",
+    "risk_level": "high",
+    "validation_required": "manual-and-automated",
+    "primary_agent": "release-manager",
+    "path": ".agent/workflows/release.workflow.md",
+    "required_agents": [
+      "changelog-maintainer",
+      "final-reviewer",
+      "qa-tester",
+      "security-reviewer"
+    ],
+    "required_skills": [
+      "semantic-versioning",
+      "changelog-update",
+      "conventional-commits",
+      "release notes template usage",
+      "security-release-checklist",
+      "production-readiness-check",
+      "validation-report creation"
+    ],
+    "trigger": [
+      "release",
+      "version",
+      "changelog",
+      "tag",
+      "publish version",
+      "prepare release"
+    ]
+  },
+  {
+    "name": "security-review",
+    "type": "workflow",
+    "description": "Perform a defensive security review of code, configuration, dependencies, data handling and release readiness.",
+    "risk_level": "high",
+    "validation_required": "manual-and-automated",
+    "primary_agent": "security-reviewer",
+    "path": ".agent/workflows/security-review.workflow.md",
+    "required_agents": [
+      "secrets-scanner",
+      "dependency-security-auditor",
+      "final-reviewer"
+    ],
+    "required_skills": [
+      "secrets-detection",
+      "dependency-vulnerability-check",
+      "input-sanitization",
+      "authz-review",
+      "secure-logging-review",
+      "security-release-checklist",
+      "environment-variable-management"
+    ],
+    "trigger": [
+      "security review",
+      "audit security",
+      "check vulnerabilities",
+      "review secrets",
+      "harden project"
+    ]
+  },
+  {
+    "name": "test",
+    "type": "workflow",
+    "description": "Create, improve or run tests for existing behavior, new features or critical flows.",
+    "risk_level": "medium",
+    "validation_required": "manual-and-automated",
+    "primary_agent": "universal-orchestrator",
+    "path": ".agent/workflows/test.workflow.md",
+    "required_agents": [
+      "task-router",
+      "qa-tester",
+      "final-reviewer"
+    ],
+    "required_skills": [
+      "test-plan-create",
+      "unit-test-create",
+      "integration-test-create",
+      "e2e-test-create",
+      "build-validation",
+      "regression-test-checklist",
+      "acceptance-validation"
+    ],
+    "trigger": [
+      "test",
+      "create tests",
+      "improve tests",
+      "validate flow",
+      "test coverage"
+    ]
+  },
+  {
+    "name": "verify",
+    "type": "workflow",
+    "description": "Verify that the repository, feature or implementation actually works before claiming completion.",
+    "risk_level": "medium",
+    "validation_required": "manual-and-automated",
+    "primary_agent": "final-reviewer",
+    "path": ".agent/workflows/verify.workflow.md",
+    "required_agents": [
+      "qa-tester",
+      "project-context-reader"
+    ],
+    "required_skills": [
+      "build-validation",
+      "regression-test-checklist",
+      "manual-test-checklist",
+      "acceptance-validation",
+      "security-release-checklist",
+      "documentation-review",
+      "change-impact-summary"
+    ],
+    "trigger": [
+      "verify",
+      "validate",
+      "check if it works",
+      "confirm implementation",
+      "run validation"
+    ]
+  }
+]

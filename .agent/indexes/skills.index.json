@@ -1,0 +1,1369 @@
+[
+  {
+    "name": "acceptance-criteria-writing",
+    "type": "skill",
+    "category": "planning",
+    "description": "Define measurable acceptance criteria for a task or feature.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/planning/acceptance-criteria-writing/SKILL.md",
+    "owner_agents": [
+      "requirements-engineer",
+      "product-manager",
+      "qa-tester"
+    ]
+  },
+  {
+    "name": "accessibility-contrast-check",
+    "type": "skill",
+    "category": "ui-ux",
+    "description": "Validate contrast, readability and basic accessibility requirements.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/ui-ux/accessibility-contrast-check/SKILL.md",
+    "owner_agents": [
+      "accessibility-specialist",
+      "ui-ux-designer"
+    ]
+  },
+  {
+    "name": "agent-definition",
+    "type": "skill",
+    "category": "ai-agents",
+    "description": "Define an agent role, scope, boundaries and output contract.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/ai-agents/agent-definition/SKILL.md",
+    "owner_agents": [
+      "agent-engineer",
+      "universal-orchestrator"
+    ]
+  },
+  {
+    "name": "agent-routing",
+    "type": "skill",
+    "category": "orchestration",
+    "description": "Decide which agents should be selected for a task.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/orchestration/agent-routing/SKILL.md",
+    "owner_agents": [
+      "task-router",
+      "universal-orchestrator"
+    ]
+  },
+  {
+    "name": "api-contract-design",
+    "type": "skill",
+    "category": "backend",
+    "description": "Design consistent request, response, error and endpoint contracts.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/backend/api-contract-design/SKILL.md",
+    "owner_agents": [
+      "api-designer",
+      "backend-specialist"
+    ]
+  },
+  {
+    "name": "architecture-docs-create",
+    "type": "skill",
+    "category": "documentation",
+    "description": "Document architecture, components and design decisions.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/documentation/architecture-docs-create/SKILL.md",
+    "owner_agents": [
+      "technical-writer",
+      "software-architect"
+    ]
+  },
+  {
+    "name": "auth-flow-design",
+    "type": "skill",
+    "category": "auth",
+    "description": "Design authentication and session flows safely.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/auth/auth-flow-design/SKILL.md",
+    "owner_agents": [
+      "auth-specialist",
+      "auth-security-reviewer"
+    ]
+  },
+  {
+    "name": "auth-security-audit",
+    "type": "skill",
+    "category": "auth",
+    "description": "Audit authentication and authorization flows defensively.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/auth/auth-security-audit/SKILL.md",
+    "owner_agents": [
+      "auth-security-reviewer",
+      "security-reviewer"
+    ]
+  },
+  {
+    "name": "authz-review",
+    "type": "skill",
+    "category": "security",
+    "description": "Review authorization boundaries and permission checks.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/security/authz-review/SKILL.md",
+    "owner_agents": [
+      "auth-security-reviewer",
+      "security-reviewer"
+    ]
+  },
+  {
+    "name": "backup-restore-plan",
+    "type": "skill",
+    "category": "database",
+    "description": "Plan backup, restore and recovery procedures before risky data changes.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/database/backup-restore-plan/SKILL.md",
+    "owner_agents": [
+      "database-specialist",
+      "devops-specialist"
+    ]
+  },
+  {
+    "name": "browser-automation-playwright",
+    "type": "skill",
+    "category": "automation",
+    "description": "Create safe browser automations using Playwright patterns.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/automation/browser-automation-playwright/SKILL.md",
+    "owner_agents": [
+      "python-automation-specialist",
+      "qa-tester"
+    ]
+  },
+  {
+    "name": "browser-automation-selenium",
+    "type": "skill",
+    "category": "automation",
+    "description": "Create safe browser automations using Selenium patterns.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/automation/browser-automation-selenium/SKILL.md",
+    "owner_agents": [
+      "python-automation-specialist"
+    ]
+  },
+  {
+    "name": "build-validation",
+    "type": "skill",
+    "category": "qa",
+    "description": "Validate that the project builds successfully after changes.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/qa/build-validation/SKILL.md",
+    "owner_agents": [
+      "qa-tester",
+      "devops-specialist"
+    ]
+  },
+  {
+    "name": "business-context-extraction",
+    "type": "skill",
+    "category": "context",
+    "description": "Extract business rules, product behavior and operational logic from docs or code.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/context/business-context-extraction/SKILL.md",
+    "owner_agents": [
+      "business-analyst",
+      "requirements-engineer",
+      "product-manager"
+    ]
+  },
+  {
+    "name": "change-impact-summary",
+    "type": "skill",
+    "category": "orchestration",
+    "description": "Summarize the impact of proposed or completed changes.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/orchestration/change-impact-summary/SKILL.md",
+    "owner_agents": [
+      "final-reviewer",
+      "technical-lead",
+      "documentation-writer"
+    ]
+  },
+  {
+    "name": "changelog-update",
+    "type": "skill",
+    "category": "github",
+    "description": "Update changelog entries accurately and consistently.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/github/changelog-update/SKILL.md",
+    "owner_agents": [
+      "changelog-maintainer",
+      "release-manager"
+    ]
+  },
+  {
+    "name": "code-review-checklist",
+    "type": "skill",
+    "category": "maintenance",
+    "description": "Create a structured code review checklist.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/maintenance/code-review-checklist/SKILL.md",
+    "owner_agents": [
+      "technical-lead",
+      "qa-tester"
+    ]
+  },
+  {
+    "name": "codebase-map",
+    "type": "skill",
+    "category": "context",
+    "description": "Map folder structure, key files, modules and ownership areas.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/context/codebase-map/SKILL.md",
+    "owner_agents": [
+      "project-context-reader",
+      "codebase-analyst",
+      "technical-lead"
+    ]
+  },
+  {
+    "name": "conventional-commits",
+    "type": "skill",
+    "category": "github",
+    "description": "Use clear Conventional Commit messages.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/github/conventional-commits/SKILL.md",
+    "owner_agents": [
+      "release-manager",
+      "github-repository-manager"
+    ]
+  },
+  {
+    "name": "conversion-audit",
+    "type": "skill",
+    "category": "marketing",
+    "description": "Audit pages or flows for conversion friction and improvement opportunities.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/marketing/conversion-audit/SKILL.md",
+    "owner_agents": [
+      "growth-specialist",
+      "landing-page-strategist"
+    ]
+  },
+  {
+    "name": "coordinator-mode",
+    "type": "skill",
+    "category": "orchestration",
+    "description": "Coordinate multi-agent execution from request interpretation to final synthesis.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/orchestration/coordinator-mode/SKILL.md",
+    "owner_agents": [
+      "universal-orchestrator",
+      "task-router",
+      "conflict-controller"
+    ]
+  },
+  {
+    "name": "csv-excel-ingestion",
+    "type": "skill",
+    "category": "data-bi",
+    "description": "Ingest CSV and Excel files safely with validation and type handling.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/data-bi/csv-excel-ingestion/SKILL.md",
+    "owner_agents": [
+      "data-quality-specialist",
+      "python-automation-specialist"
+    ]
+  },
+  {
+    "name": "cta-copywriting",
+    "type": "skill",
+    "category": "marketing",
+    "description": "Create clear, specific and conversion-focused calls to action.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/marketing/cta-copywriting/SKILL.md",
+    "owner_agents": [
+      "copywriter",
+      "growth-specialist"
+    ]
+  },
+  {
+    "name": "cta-optimization",
+    "type": "skill",
+    "category": "ui-ux",
+    "description": "Improve clarity, placement and conversion strength of calls to action.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/ui-ux/cta-optimization/SKILL.md",
+    "owner_agents": [
+      "landing-page-strategist",
+      "copywriter",
+      "ui-ux-designer"
+    ]
+  },
+  {
+    "name": "dashboard-requirements",
+    "type": "skill",
+    "category": "data-bi",
+    "description": "Define dashboard objectives, visuals, filters and data expectations.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/data-bi/dashboard-requirements/SKILL.md",
+    "owner_agents": [
+      "business-analyst",
+      "documentation-writer"
+    ]
+  },
+  {
+    "name": "data-cleaning",
+    "type": "skill",
+    "category": "data-bi",
+    "description": "Clean inconsistent, duplicated or invalid data.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/data-bi/data-cleaning/SKILL.md",
+    "owner_agents": [
+      "data-quality-specialist",
+      "data-engineer style agents"
+    ]
+  },
+  {
+    "name": "data-integrity-check",
+    "type": "skill",
+    "category": "database",
+    "description": "Validate data consistency, constraints and referential integrity.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/database/data-integrity-check/SKILL.md",
+    "owner_agents": [
+      "database-specialist",
+      "data-quality-specialist"
+    ]
+  },
+  {
+    "name": "database-schema-design",
+    "type": "skill",
+    "category": "database",
+    "description": "Design tables, relationships, constraints and data models.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/database/database-schema-design/SKILL.md",
+    "owner_agents": [
+      "database-specialist",
+      "software-architect"
+    ]
+  },
+  {
+    "name": "deduplication-rules",
+    "type": "skill",
+    "category": "data-bi",
+    "description": "Define reliable duplicate detection and removal rules.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/data-bi/deduplication-rules/SKILL.md",
+    "owner_agents": [
+      "data-quality-specialist",
+      "business-analyst"
+    ]
+  },
+  {
+    "name": "definition-of-done",
+    "type": "skill",
+    "category": "planning",
+    "description": "Define what must be true before a task can be considered complete.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/planning/definition-of-done/SKILL.md",
+    "owner_agents": [
+      "final-reviewer",
+      "qa-tester",
+      "product-manager"
+    ]
+  },
+  {
+    "name": "dependency-cleanup",
+    "type": "skill",
+    "category": "maintenance",
+    "description": "Identify unused or risky dependencies for cleanup.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/maintenance/dependency-cleanup/SKILL.md",
+    "owner_agents": [
+      "dependency-security-auditor",
+      "technical-lead"
+    ]
+  },
+  {
+    "name": "dependency-scan",
+    "type": "skill",
+    "category": "context",
+    "description": "Identify package managers, dependencies, frameworks and runtime constraints.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/context/dependency-scan/SKILL.md",
+    "owner_agents": [
+      "project-context-reader",
+      "dependency-security-auditor",
+      "devops-specialist"
+    ]
+  },
+  {
+    "name": "dependency-vulnerability-check",
+    "type": "skill",
+    "category": "security",
+    "description": "Review dependencies for known risks and unsafe usage patterns.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/security/dependency-vulnerability-check/SKILL.md",
+    "owner_agents": [
+      "dependency-security-auditor"
+    ]
+  },
+  {
+    "name": "design-system-definition",
+    "type": "skill",
+    "category": "ui-ux",
+    "description": "Define reusable visual standards, tokens and component rules.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/ui-ux/design-system-definition/SKILL.md",
+    "owner_agents": [
+      "design-system-specialist",
+      "ui-ux-designer"
+    ]
+  },
+  {
+    "name": "docker-compose-create",
+    "type": "skill",
+    "category": "devops",
+    "description": "Create docker-compose configurations for local or multi-service environments.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/devops/docker-compose-create/SKILL.md",
+    "owner_agents": [
+      "docker-specialist",
+      "devops-specialist"
+    ]
+  },
+  {
+    "name": "dockerfile-create",
+    "type": "skill",
+    "category": "devops",
+    "description": "Create safe and maintainable Dockerfiles.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/devops/dockerfile-create/SKILL.md",
+    "owner_agents": [
+      "docker-specialist"
+    ]
+  },
+  {
+    "name": "duplicate-code-detection",
+    "type": "skill",
+    "category": "maintenance",
+    "description": "Detect duplicated logic and recommend safe consolidation.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/maintenance/duplicate-code-detection/SKILL.md",
+    "owner_agents": [
+      "refactor-specialist",
+      "codebase-analyst"
+    ]
+  },
+  {
+    "name": "e2e-test-create",
+    "type": "skill",
+    "category": "qa",
+    "description": "Create end-to-end tests for critical user flows.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/qa/e2e-test-create/SKILL.md",
+    "owner_agents": [
+      "e2e-test-specialist"
+    ]
+  },
+  {
+    "name": "environment-variable-management",
+    "type": "skill",
+    "category": "devops",
+    "description": "Define safe environment variable practices and .env.example usage.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/devops/environment-variable-management/SKILL.md",
+    "owner_agents": [
+      "environment-manager style agents",
+      "security-reviewer",
+      "devops-specialist"
+    ]
+  },
+  {
+    "name": "error-handling-standard",
+    "type": "skill",
+    "category": "backend",
+    "description": "Create consistent and safe error handling patterns.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/backend/error-handling-standard/SKILL.md",
+    "owner_agents": [
+      "backend-specialist",
+      "api-designer",
+      "security-reviewer"
+    ]
+  },
+  {
+    "name": "error-message-review",
+    "type": "skill",
+    "category": "maintenance",
+    "description": "Improve user-facing and developer-facing error messages.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/maintenance/error-message-review/SKILL.md",
+    "owner_agents": [
+      "qa-tester",
+      "backend-specialist",
+      "documentation-writer"
+    ]
+  },
+  {
+    "name": "error-retry-strategy",
+    "type": "skill",
+    "category": "automation",
+    "description": "Define retry, backoff, idempotency and error recovery behavior.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/automation/error-retry-strategy/SKILL.md",
+    "owner_agents": [
+      "integration-specialist",
+      "backend-specialist",
+      "n8n-automation-specialist"
+    ]
+  },
+  {
+    "name": "existing-patterns-detection",
+    "type": "skill",
+    "category": "context",
+    "description": "Detect existing coding, architecture, naming and documentation patterns.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/context/existing-patterns-detection/SKILL.md",
+    "owner_agents": [
+      "codebase-analyst",
+      "frontend-specialist",
+      "backend-specialist"
+    ]
+  },
+  {
+    "name": "file-ownership-locking",
+    "type": "skill",
+    "category": "orchestration",
+    "description": "Assign file ownership and prevent simultaneous conflicting edits.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/orchestration/file-ownership-locking/SKILL.md",
+    "owner_agents": [
+      "conflict-controller",
+      "scope-guardian",
+      "technical-lead"
+    ]
+  },
+  {
+    "name": "folder-structure-docs",
+    "type": "skill",
+    "category": "documentation",
+    "description": "Document folder structure and file responsibilities.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/documentation/folder-structure-docs/SKILL.md",
+    "owner_agents": [
+      "documentation-writer",
+      "github-repository-manager"
+    ]
+  },
+  {
+    "name": "frontend-api-integration",
+    "type": "skill",
+    "category": "frontend",
+    "description": "Connect frontend components to APIs safely and consistently.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/frontend/frontend-api-integration/SKILL.md",
+    "owner_agents": [
+      "frontend-specialist",
+      "react-specialist",
+      "api-designer"
+    ]
+  },
+  {
+    "name": "github-actions-ci",
+    "type": "skill",
+    "category": "devops",
+    "description": "Create GitHub Actions pipelines for validation and CI.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/devops/github-actions-ci/SKILL.md",
+    "owner_agents": [
+      "ci-cd-specialist"
+    ]
+  },
+  {
+    "name": "handoff-protocol",
+    "type": "skill",
+    "category": "orchestration",
+    "description": "Transfer work safely between agents with complete context.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/orchestration/handoff-protocol/SKILL.md",
+    "owner_agents": [
+      "universal-orchestrator",
+      "final-reviewer",
+      "all specialist agents"
+    ]
+  },
+  {
+    "name": "healthcheck-endpoint",
+    "type": "skill",
+    "category": "devops",
+    "description": "Define healthcheck behavior for services and deployments.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/devops/healthcheck-endpoint/SKILL.md",
+    "owner_agents": [
+      "backend-specialist",
+      "devops-specialist"
+    ]
+  },
+  {
+    "name": "hero-copywriting",
+    "type": "skill",
+    "category": "marketing",
+    "description": "Create strong first-fold messaging for landing pages or product pages.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/marketing/hero-copywriting/SKILL.md",
+    "owner_agents": [
+      "copywriter",
+      "landing-page-strategist"
+    ]
+  },
+  {
+    "name": "implementation-plan",
+    "type": "skill",
+    "category": "planning",
+    "description": "Create a safe, scoped and ordered implementation plan.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/planning/implementation-plan/SKILL.md",
+    "owner_agents": [
+      "universal-orchestrator",
+      "technical-lead",
+      "software-architect"
+    ]
+  },
+  {
+    "name": "input-sanitization",
+    "type": "skill",
+    "category": "security",
+    "description": "Review and improve input validation and sanitization.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/security/input-sanitization/SKILL.md",
+    "owner_agents": [
+      "security-reviewer",
+      "backend-specialist"
+    ]
+  },
+  {
+    "name": "installation-guide",
+    "type": "skill",
+    "category": "documentation",
+    "description": "Document installation and setup steps clearly.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/documentation/installation-guide/SKILL.md",
+    "owner_agents": [
+      "documentation-writer",
+      "technical-writer"
+    ]
+  },
+  {
+    "name": "integration-test-create",
+    "type": "skill",
+    "category": "qa",
+    "description": "Create tests that validate interactions between modules or services.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/qa/integration-test-create/SKILL.md",
+    "owner_agents": [
+      "qa-tester",
+      "backend-specialist"
+    ]
+  },
+  {
+    "name": "kpi-definition",
+    "type": "skill",
+    "category": "data-bi",
+    "description": "Define clear metrics, formulas, ownership and interpretation rules.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/data-bi/kpi-definition/SKILL.md",
+    "owner_agents": [
+      "business-analyst",
+      "product-manager"
+    ]
+  },
+  {
+    "name": "landing-page-copy",
+    "type": "skill",
+    "category": "marketing",
+    "description": "Create landing page copy aligned with offer, audience and conversion.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/marketing/landing-page-copy/SKILL.md",
+    "owner_agents": [
+      "copywriter",
+      "landing-page-strategist"
+    ]
+  },
+  {
+    "name": "landing-page-structure",
+    "type": "skill",
+    "category": "ui-ux",
+    "description": "Plan high-conversion landing page sections and message hierarchy.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/ui-ux/landing-page-structure/SKILL.md",
+    "owner_agents": [
+      "landing-page-strategist",
+      "copywriter",
+      "ui-ux-designer"
+    ]
+  },
+  {
+    "name": "llm-output-evaluation",
+    "type": "skill",
+    "category": "ai-agents",
+    "description": "Evaluate AI output quality, safety, completeness and grounding.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/ai-agents/llm-output-evaluation/SKILL.md",
+    "owner_agents": [
+      "ai-engineer",
+      "qa-tester",
+      "prompt-engineer"
+    ]
+  },
+  {
+    "name": "loading-empty-error-states",
+    "type": "skill",
+    "category": "frontend",
+    "description": "Implement user-friendly loading, empty and error states.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/frontend/loading-empty-error-states/SKILL.md",
+    "owner_agents": [
+      "frontend-specialist",
+      "ui-ux-designer"
+    ]
+  },
+  {
+    "name": "migration-create",
+    "type": "skill",
+    "category": "database",
+    "description": "Create safe, versioned and reversible database migrations.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/database/migration-create/SKILL.md",
+    "owner_agents": [
+      "migration-specialist",
+      "database-specialist"
+    ]
+  },
+  {
+    "name": "migration-review",
+    "type": "skill",
+    "category": "database",
+    "description": "Review migrations for safety, compatibility and rollback readiness.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/database/migration-review/SKILL.md",
+    "owner_agents": [
+      "migration-specialist",
+      "technical-lead"
+    ]
+  },
+  {
+    "name": "multi-agent-orchestration",
+    "type": "skill",
+    "category": "ai-agents",
+    "description": "Design multi-agent coordination patterns and dispatch logic.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/ai-agents/multi-agent-orchestration/SKILL.md",
+    "owner_agents": [
+      "agent-engineer",
+      "universal-orchestrator"
+    ]
+  },
+  {
+    "name": "n8n-webhook-flow",
+    "type": "skill",
+    "category": "automation",
+    "description": "Design n8n webhook-based automations with validation and error handling.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/automation/n8n-webhook-flow/SKILL.md",
+    "owner_agents": [
+      "n8n-automation-specialist",
+      "webhook-specialist"
+    ]
+  },
+  {
+    "name": "n8n-workflow-design",
+    "type": "skill",
+    "category": "automation",
+    "description": "Design n8n workflows, triggers, nodes and data paths.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/automation/n8n-workflow-design/SKILL.md",
+    "owner_agents": [
+      "n8n-automation-specialist"
+    ]
+  },
+  {
+    "name": "pagination-filtering-sorting",
+    "type": "skill",
+    "category": "backend",
+    "description": "Implement list endpoints with pagination, filtering and sorting.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/backend/pagination-filtering-sorting/SKILL.md",
+    "owner_agents": [
+      "backend-specialist",
+      "api-designer"
+    ]
+  },
+  {
+    "name": "parallel-work-planning",
+    "type": "skill",
+    "category": "orchestration",
+    "description": "Separate tasks that can run in parallel from tasks that must run sequentially.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/orchestration/parallel-work-planning/SKILL.md",
+    "owner_agents": [
+      "conflict-controller",
+      "universal-orchestrator",
+      "technical-lead"
+    ]
+  },
+  {
+    "name": "performance-audit",
+    "type": "skill",
+    "category": "maintenance",
+    "description": "Audit performance across UI, API, database or build flow.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/maintenance/performance-audit/SKILL.md",
+    "owner_agents": [
+      "performance-engineer"
+    ]
+  },
+  {
+    "name": "permission-matrix-design",
+    "type": "skill",
+    "category": "auth",
+    "description": "Create a clear permissions matrix for roles, features and actions.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/auth/permission-matrix-design/SKILL.md",
+    "owner_agents": [
+      "auth-specialist",
+      "business-analyst",
+      "security-reviewer"
+    ]
+  },
+  {
+    "name": "production-readiness-check",
+    "type": "skill",
+    "category": "devops",
+    "description": "Validate whether a project is ready for production usage.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/devops/production-readiness-check/SKILL.md",
+    "owner_agents": [
+      "devops-specialist",
+      "security-reviewer",
+      "release-manager"
+    ]
+  },
+  {
+    "name": "project-intake",
+    "type": "skill",
+    "category": "context",
+    "description": "Understand project goals, stack, current state, constraints and expected outcome.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/context/project-intake/SKILL.md",
+    "owner_agents": [
+      "project-context-reader",
+      "universal-orchestrator",
+      "product-manager"
+    ]
+  },
+  {
+    "name": "prompt-architecture",
+    "type": "skill",
+    "category": "ai-agents",
+    "description": "Design structured prompts with context, rules, output format and self-review.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/ai-agents/prompt-architecture/SKILL.md",
+    "owner_agents": [
+      "prompt-engineer",
+      "ai-engineer"
+    ]
+  },
+  {
+    "name": "pull-request-template",
+    "type": "skill",
+    "category": "github",
+    "description": "Create useful pull request templates and review checklists.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/github/pull-request-template/SKILL.md",
+    "owner_agents": [
+      "pull-request-writer",
+      "github-repository-manager"
+    ]
+  },
+  {
+    "name": "python-script-automation",
+    "type": "skill",
+    "category": "automation",
+    "description": "Create robust Python automation scripts with logging and error handling.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/automation/python-script-automation/SKILL.md",
+    "owner_agents": [
+      "python-automation-specialist"
+    ]
+  },
+  {
+    "name": "query-optimization",
+    "type": "skill",
+    "category": "database",
+    "description": "Improve slow or complex queries without changing intended results.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/database/query-optimization/SKILL.md",
+    "owner_agents": [
+      "sql-specialist",
+      "performance-engineer"
+    ]
+  },
+  {
+    "name": "rag-pipeline-design",
+    "type": "skill",
+    "category": "ai-agents",
+    "description": "Design retrieval-augmented generation flows with source grounding.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/ai-agents/rag-pipeline-design/SKILL.md",
+    "owner_agents": [
+      "rag-specialist",
+      "ai-engineer"
+    ]
+  },
+  {
+    "name": "react-component-create",
+    "type": "skill",
+    "category": "frontend",
+    "description": "Create reusable React components aligned with project patterns.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/frontend/react-component-create/SKILL.md",
+    "owner_agents": [
+      "react-specialist",
+      "frontend-specialist"
+    ]
+  },
+  {
+    "name": "react-component-refactor",
+    "type": "skill",
+    "category": "frontend",
+    "description": "Improve React components without changing external behavior.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/frontend/react-component-refactor/SKILL.md",
+    "owner_agents": [
+      "react-specialist",
+      "refactor-specialist"
+    ]
+  },
+  {
+    "name": "readme-create",
+    "type": "skill",
+    "category": "documentation",
+    "description": "Create or improve README documentation.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/documentation/readme-create/SKILL.md",
+    "owner_agents": [
+      "documentation-writer"
+    ]
+  },
+  {
+    "name": "regression-test-checklist",
+    "type": "skill",
+    "category": "qa",
+    "description": "Create a checklist to verify existing behavior was not broken.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/qa/regression-test-checklist/SKILL.md",
+    "owner_agents": [
+      "qa-tester",
+      "final-reviewer"
+    ]
+  },
+  {
+    "name": "reporting-automation",
+    "type": "skill",
+    "category": "data-bi",
+    "description": "Automate recurring reports with clear validation and delivery rules.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/data-bi/reporting-automation/SKILL.md",
+    "owner_agents": [
+      "python-automation-specialist",
+      "documentation-writer"
+    ]
+  },
+  {
+    "name": "repository-structure-create",
+    "type": "skill",
+    "category": "github",
+    "description": "Create or improve repository structure and organization.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/github/repository-structure-create/SKILL.md",
+    "owner_agents": [
+      "github-repository-manager",
+      "technical-lead"
+    ]
+  },
+  {
+    "name": "request-validation",
+    "type": "skill",
+    "category": "backend",
+    "description": "Validate incoming data before processing it.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/backend/request-validation/SKILL.md",
+    "owner_agents": [
+      "backend-specialist",
+      "security-reviewer"
+    ]
+  },
+  {
+    "name": "responsive-layout-audit",
+    "type": "skill",
+    "category": "frontend",
+    "description": "Validate and improve layouts across desktop, tablet and mobile.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/frontend/responsive-layout-audit/SKILL.md",
+    "owner_agents": [
+      "responsive-layout-specialist",
+      "frontend-specialist"
+    ]
+  },
+  {
+    "name": "rest-api-implementation",
+    "type": "skill",
+    "category": "backend",
+    "description": "Implement REST API endpoints following project conventions.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/backend/rest-api-implementation/SKILL.md",
+    "owner_agents": [
+      "backend-specialist",
+      "api-designer"
+    ]
+  },
+  {
+    "name": "role-based-access-control",
+    "type": "skill",
+    "category": "auth",
+    "description": "Define and review role-based permission systems.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/auth/role-based-access-control/SKILL.md",
+    "owner_agents": [
+      "auth-specialist",
+      "auth-security-reviewer"
+    ]
+  },
+  {
+    "name": "rollback-plan",
+    "type": "skill",
+    "category": "planning",
+    "description": "Plan how to revert or safely recover from a change.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/planning/rollback-plan/SKILL.md",
+    "owner_agents": [
+      "technical-lead",
+      "devops-specialist",
+      "database-specialist"
+    ]
+  },
+  {
+    "name": "secrets-detection",
+    "type": "skill",
+    "category": "security",
+    "description": "Detect accidental secrets, tokens, credentials or private keys.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/security/secrets-detection/SKILL.md",
+    "owner_agents": [
+      "secrets-scanner",
+      "security-reviewer"
+    ]
+  },
+  {
+    "name": "secure-logging-review",
+    "type": "skill",
+    "category": "security",
+    "description": "Ensure logs do not expose sensitive data and remain useful.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/security/secure-logging-review/SKILL.md",
+    "owner_agents": [
+      "security-reviewer",
+      "observability style agents"
+    ]
+  },
+  {
+    "name": "security-release-checklist",
+    "type": "skill",
+    "category": "security",
+    "description": "Review security readiness before release or deployment.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/security/security-release-checklist/SKILL.md",
+    "owner_agents": [
+      "security-reviewer",
+      "release-manager"
+    ]
+  },
+  {
+    "name": "semantic-versioning",
+    "type": "skill",
+    "category": "github",
+    "description": "Apply semantic versioning rules to releases.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/github/semantic-versioning/SKILL.md",
+    "owner_agents": [
+      "release-manager",
+      "changelog-maintainer"
+    ]
+  },
+  {
+    "name": "seo-title-description",
+    "type": "skill",
+    "category": "marketing",
+    "description": "Create SEO titles, meta descriptions and search-oriented snippets.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/marketing/seo-title-description/SKILL.md",
+    "owner_agents": [
+      "seo-specialist",
+      "copywriter"
+    ]
+  },
+  {
+    "name": "state-management-review",
+    "type": "skill",
+    "category": "frontend",
+    "description": "Review local and shared frontend state for simplicity and correctness.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/frontend/state-management-review/SKILL.md",
+    "owner_agents": [
+      "react-specialist",
+      "frontend-specialist",
+      "technical-lead"
+    ]
+  },
+  {
+    "name": "subagent-definition",
+    "type": "skill",
+    "category": "ai-agents",
+    "description": "Define focused subagents with isolated context and clear responsibilities.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/ai-agents/subagent-definition/SKILL.md",
+    "owner_agents": [
+      "agent-engineer",
+      "task-router"
+    ]
+  },
+  {
+    "name": "task-breakdown",
+    "type": "skill",
+    "category": "planning",
+    "description": "Break a broad request into clear, actionable subtasks.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/planning/task-breakdown/SKILL.md",
+    "owner_agents": [
+      "universal-orchestrator",
+      "task-router",
+      "technical-lead"
+    ]
+  },
+  {
+    "name": "technical-debt-detection",
+    "type": "skill",
+    "category": "maintenance",
+    "description": "Identify debt, fragility and maintainability risks.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/maintenance/technical-debt-detection/SKILL.md",
+    "owner_agents": [
+      "technical-lead",
+      "refactor-specialist"
+    ]
+  },
+  {
+    "name": "technical-decision-record",
+    "type": "skill",
+    "category": "planning",
+    "description": "Document important technical decisions and tradeoffs.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/planning/technical-decision-record/SKILL.md",
+    "owner_agents": [
+      "software-architect",
+      "technical-writer",
+      "technical-lead"
+    ]
+  },
+  {
+    "name": "test-plan-create",
+    "type": "skill",
+    "category": "qa",
+    "description": "Create a validation plan based on requirements and risk.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/qa/test-plan-create/SKILL.md",
+    "owner_agents": [
+      "qa-tester"
+    ]
+  },
+  {
+    "name": "tone-of-voice-definition",
+    "type": "skill",
+    "category": "marketing",
+    "description": "Define consistent brand voice and communication style.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/marketing/tone-of-voice-definition/SKILL.md",
+    "owner_agents": [
+      "copywriter",
+      "marketing strategist style agents"
+    ]
+  },
+  {
+    "name": "troubleshooting-guide",
+    "type": "skill",
+    "category": "documentation",
+    "description": "Document common problems, causes and fixes.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/documentation/troubleshooting-guide/SKILL.md",
+    "owner_agents": [
+      "technical-writer",
+      "qa-tester"
+    ]
+  },
+  {
+    "name": "unit-test-create",
+    "type": "skill",
+    "category": "qa",
+    "description": "Create or improve unit tests for isolated logic.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/qa/unit-test-create/SKILL.md",
+    "owner_agents": [
+      "unit-test-specialist"
+    ]
+  },
+  {
+    "name": "usage-guide",
+    "type": "skill",
+    "category": "documentation",
+    "description": "Document how to use a tool, feature or repository.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/documentation/usage-guide/SKILL.md",
+    "owner_agents": [
+      "documentation-writer"
+    ]
+  },
+  {
+    "name": "ux-flow-audit",
+    "type": "skill",
+    "category": "ui-ux",
+    "description": "Review user journeys, friction points and interaction flow.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/ui-ux/ux-flow-audit/SKILL.md",
+    "owner_agents": [
+      "ui-ux-designer",
+      "product-manager"
+    ]
+  },
+  {
+    "name": "visual-consistency-review",
+    "type": "skill",
+    "category": "ui-ux",
+    "description": "Check visual alignment, spacing, typography, color usage and component consistency.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/ui-ux/visual-consistency-review/SKILL.md",
+    "owner_agents": [
+      "design-system-specialist",
+      "visual-regression-specialist"
+    ]
+  },
+  {
+    "name": "webhook-receiver",
+    "type": "skill",
+    "category": "backend",
+    "description": "Create safe and reliable webhook receiving flows.",
+    "risk_level": "medium",
+    "validation_level": "manual-and-automated",
+    "path": ".agent/skills/backend/webhook-receiver/SKILL.md",
+    "owner_agents": [
+      "webhook-specialist",
+      "integration-specialist"
+    ]
+  }
+]

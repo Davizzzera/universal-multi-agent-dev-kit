@@ -1,0 +1,955 @@
+[
+  {
+    "name": "accessibility-specialist",
+    "type": "specialist-agent",
+    "category": "frontend",
+    "description": "Improve accessibility, semantic structure, keyboard navigation and readability.",
+    "risk_level": "low",
+    "path": ".agent/agents/frontend/accessibility-specialist.agent.md",
+    "required_skills": [
+      "react-component-create",
+      "responsive-layout-audit"
+    ],
+    "optional_skills": [
+      "frontend-api-integration",
+      "ux-flow-audit",
+      "design-system-definition",
+      "accessibility-contrast-check"
+    ]
+  },
+  {
+    "name": "agent-engineer",
+    "type": "specialist-agent",
+    "category": "ai-automation",
+    "description": "Design agents, subagents, skills, routing logic and multi-agent coordination patterns.",
+    "risk_level": "high",
+    "path": ".agent/agents/ai-automation/agent-engineer.agent.md",
+    "required_skills": [
+      "prompt-architecture",
+      "agent-definition"
+    ],
+    "optional_skills": [
+      "multi-agent-orchestration",
+      "rag-pipeline-design",
+      "n8n-workflow-design",
+      "python-script-automation"
+    ]
+  },
+  {
+    "name": "ai-engineer",
+    "type": "specialist-agent",
+    "category": "ai-automation",
+    "description": "Design and implement AI-powered features safely and reliably.",
+    "risk_level": "high",
+    "path": ".agent/agents/ai-automation/ai-engineer.agent.md",
+    "required_skills": [
+      "prompt-architecture",
+      "agent-definition"
+    ],
+    "optional_skills": [
+      "multi-agent-orchestration",
+      "rag-pipeline-design",
+      "n8n-workflow-design",
+      "python-script-automation"
+    ]
+  },
+  {
+    "name": "api-designer",
+    "type": "specialist-agent",
+    "category": "backend",
+    "description": "Design clear, consistent and maintainable API contracts.",
+    "risk_level": "medium",
+    "path": ".agent/agents/backend/api-designer.agent.md",
+    "required_skills": [
+      "rest-api-implementation",
+      "request-validation",
+      "error-handling-standard"
+    ],
+    "optional_skills": [
+      "api-contract-design"
+    ]
+  },
+  {
+    "name": "auth-security-reviewer",
+    "type": "specialist-agent",
+    "category": "security",
+    "description": "Review authentication and authorization flows for defensive security.",
+    "risk_level": "high",
+    "path": ".agent/agents/security/auth-security-reviewer.agent.md",
+    "required_skills": [
+      "security-review",
+      "secrets-detection",
+      "dependency-vulnerability-check"
+    ],
+    "optional_skills": [
+      "input-sanitization",
+      "authz-review",
+      "secure-logging-review"
+    ]
+  },
+  {
+    "name": "auth-specialist",
+    "type": "specialist-agent",
+    "category": "backend",
+    "description": "Design and review authentication, authorization, sessions, tokens and permissions.",
+    "risk_level": "critical",
+    "path": ".agent/agents/backend/auth-specialist.agent.md",
+    "required_skills": [
+      "rest-api-implementation",
+      "request-validation",
+      "error-handling-standard"
+    ],
+    "optional_skills": [
+      "api-contract-design"
+    ]
+  },
+  {
+    "name": "backend-specialist",
+    "type": "specialist-agent",
+    "category": "backend",
+    "description": "Implement server-side logic, services, APIs and backend behavior.",
+    "risk_level": "high",
+    "path": ".agent/agents/backend/backend-specialist.agent.md",
+    "required_skills": [
+      "rest-api-implementation",
+      "request-validation",
+      "error-handling-standard"
+    ],
+    "optional_skills": [
+      "api-contract-design"
+    ]
+  },
+  {
+    "name": "bug-hunter",
+    "type": "specialist-agent",
+    "category": "qa",
+    "description": "Investigate difficult bugs, reproduce failures and isolate root causes.",
+    "risk_level": "medium",
+    "path": ".agent/agents/qa/bug-hunter.agent.md",
+    "required_skills": [
+      "build-validation",
+      "regression-test-checklist"
+    ],
+    "optional_skills": []
+  },
+  {
+    "name": "business-analyst",
+    "type": "specialist-agent",
+    "category": "product",
+    "description": "Understand business processes, operational rules, data flows and stakeholder requirements.",
+    "risk_level": "low",
+    "path": ".agent/agents/product/business-analyst.agent.md",
+    "required_skills": [
+      "project-intake",
+      "acceptance-criteria-writing"
+    ],
+    "optional_skills": [
+      "definition-of-done"
+    ]
+  },
+  {
+    "name": "changelog-maintainer",
+    "type": "specialist-agent",
+    "category": "documentation",
+    "description": "Maintain changelog entries and release history.",
+    "risk_level": "low",
+    "path": ".agent/agents/documentation/changelog-maintainer.agent.md",
+    "required_skills": [
+      "readme-create",
+      "architecture-docs-create"
+    ],
+    "optional_skills": [
+      "usage-guide",
+      "troubleshooting-guide"
+    ]
+  },
+  {
+    "name": "ci-cd-specialist",
+    "type": "specialist-agent",
+    "category": "devops",
+    "description": "Create and review CI/CD pipelines, GitHub Actions and validation automation.",
+    "risk_level": "high",
+    "path": ".agent/agents/devops/ci-cd-specialist.agent.md",
+    "required_skills": [
+      "dockerfile-create",
+      "github-actions-ci"
+    ],
+    "optional_skills": [
+      "docker-compose-create",
+      "production-readiness-check"
+    ]
+  },
+  {
+    "name": "cloud-specialist",
+    "type": "specialist-agent",
+    "category": "devops",
+    "description": "Plan cloud deployment and infrastructure usage across common platforms.",
+    "risk_level": "high",
+    "path": ".agent/agents/devops/cloud-specialist.agent.md",
+    "required_skills": [
+      "dockerfile-create",
+      "github-actions-ci"
+    ],
+    "optional_skills": [
+      "docker-compose-create",
+      "production-readiness-check"
+    ]
+  },
+  {
+    "name": "codebase-analyst",
+    "type": "specialist-agent",
+    "category": "architecture",
+    "description": "Analyze existing codebase structure, patterns, conventions and dependencies before changes.",
+    "risk_level": "low",
+    "path": ".agent/agents/architecture/codebase-analyst.agent.md",
+    "required_skills": [
+      "codebase-map",
+      "implementation-plan"
+    ],
+    "optional_skills": [
+      "existing-patterns-detection"
+    ]
+  },
+  {
+    "name": "conflict-controller",
+    "type": "orchestration-agent",
+    "category": "orchestration",
+    "description": "Prevents collisions between agents, files, and implementation tasks.",
+    "risk_level": "high",
+    "path": ".agent/agents/orchestration/conflict-controller.agent.md",
+    "required_skills": [
+      "parallel-work-planning",
+      "file-ownership-locking"
+    ],
+    "optional_skills": []
+  },
+  {
+    "name": "copywriter",
+    "type": "specialist-agent",
+    "category": "marketing",
+    "description": "Create clear, persuasive and conversion-oriented copy for product pages, campaigns and interfaces.",
+    "risk_level": "low",
+    "path": ".agent/agents/marketing/copywriter.agent.md",
+    "required_skills": [
+      "landing-page-copy",
+      "seo-title-description"
+    ],
+    "optional_skills": [
+      "cta-copywriting",
+      "conversion-audit"
+    ]
+  },
+  {
+    "name": "data-quality-specialist",
+    "type": "specialist-agent",
+    "category": "database",
+    "description": "Validate, clean and improve data quality across files, databases and pipelines.",
+    "risk_level": "medium",
+    "path": ".agent/agents/database/data-quality-specialist.agent.md",
+    "required_skills": [
+      "database-schema-design",
+      "migration-create"
+    ],
+    "optional_skills": [
+      "query-optimization"
+    ]
+  },
+  {
+    "name": "database-specialist",
+    "type": "specialist-agent",
+    "category": "database",
+    "description": "Design and maintain database schemas, relationships, constraints and data integrity.",
+    "risk_level": "high",
+    "path": ".agent/agents/database/database-specialist.agent.md",
+    "required_skills": [
+      "database-schema-design",
+      "migration-create"
+    ],
+    "optional_skills": [
+      "query-optimization"
+    ]
+  },
+  {
+    "name": "dependency-security-auditor",
+    "type": "specialist-agent",
+    "category": "security",
+    "description": "Review dependencies for known vulnerability risk and unsafe usage patterns.",
+    "risk_level": "medium",
+    "path": ".agent/agents/security/dependency-security-auditor.agent.md",
+    "required_skills": [
+      "security-review",
+      "secrets-detection",
+      "dependency-vulnerability-check"
+    ],
+    "optional_skills": [
+      "input-sanitization",
+      "authz-review",
+      "secure-logging-review"
+    ]
+  },
+  {
+    "name": "design-system-specialist",
+    "type": "specialist-agent",
+    "category": "frontend",
+    "description": "Maintain visual consistency through tokens, reusable patterns and component standards.",
+    "risk_level": "low",
+    "path": ".agent/agents/frontend/design-system-specialist.agent.md",
+    "required_skills": [
+      "react-component-create",
+      "responsive-layout-audit"
+    ],
+    "optional_skills": [
+      "frontend-api-integration",
+      "ux-flow-audit",
+      "design-system-definition",
+      "accessibility-contrast-check"
+    ]
+  },
+  {
+    "name": "devops-specialist",
+    "type": "specialist-agent",
+    "category": "devops",
+    "description": "Prepare deployment, infrastructure, environments and operational readiness.",
+    "risk_level": "high",
+    "path": ".agent/agents/devops/devops-specialist.agent.md",
+    "required_skills": [
+      "dockerfile-create",
+      "github-actions-ci"
+    ],
+    "optional_skills": [
+      "docker-compose-create",
+      "production-readiness-check"
+    ]
+  },
+  {
+    "name": "docker-specialist",
+    "type": "specialist-agent",
+    "category": "devops",
+    "description": "Create and review Dockerfiles, docker-compose files and container workflows.",
+    "risk_level": "medium",
+    "path": ".agent/agents/devops/docker-specialist.agent.md",
+    "required_skills": [
+      "dockerfile-create",
+      "github-actions-ci"
+    ],
+    "optional_skills": [
+      "docker-compose-create",
+      "production-readiness-check"
+    ]
+  },
+  {
+    "name": "documentation-writer",
+    "type": "specialist-agent",
+    "category": "documentation",
+    "description": "Create and maintain user-facing and developer-facing documentation.",
+    "risk_level": "low",
+    "path": ".agent/agents/documentation/documentation-writer.agent.md",
+    "required_skills": [
+      "readme-create",
+      "architecture-docs-create"
+    ],
+    "optional_skills": [
+      "usage-guide",
+      "troubleshooting-guide"
+    ]
+  },
+  {
+    "name": "e2e-test-specialist",
+    "type": "specialist-agent",
+    "category": "qa",
+    "description": "Create and review end-to-end tests for critical user flows.",
+    "risk_level": "low",
+    "path": ".agent/agents/qa/e2e-test-specialist.agent.md",
+    "required_skills": [
+      "build-validation",
+      "regression-test-checklist"
+    ],
+    "optional_skills": []
+  },
+  {
+    "name": "final-reviewer",
+    "type": "orchestration-agent",
+    "category": "orchestration",
+    "description": "Validates, consolidates, and prepares the final delivery after agents complete their work.",
+    "risk_level": "low",
+    "path": ".agent/agents/orchestration/final-reviewer.agent.md",
+    "required_skills": [
+      "change-impact-summary",
+      "documentation-review"
+    ],
+    "optional_skills": []
+  },
+  {
+    "name": "frontend-specialist",
+    "type": "specialist-agent",
+    "category": "frontend",
+    "description": "Implement and improve user interfaces using existing project patterns.",
+    "risk_level": "medium",
+    "path": ".agent/agents/frontend/frontend-specialist.agent.md",
+    "required_skills": [
+      "react-component-create",
+      "responsive-layout-audit"
+    ],
+    "optional_skills": [
+      "frontend-api-integration",
+      "ux-flow-audit",
+      "design-system-definition",
+      "accessibility-contrast-check"
+    ]
+  },
+  {
+    "name": "github-repository-manager",
+    "type": "specialist-agent",
+    "category": "documentation",
+    "description": "Manage repository structure, GitHub conventions, issues, pull requests and contribution standards.",
+    "risk_level": "low",
+    "path": ".agent/agents/documentation/github-repository-manager.agent.md",
+    "required_skills": [
+      "readme-create",
+      "architecture-docs-create"
+    ],
+    "optional_skills": [
+      "usage-guide",
+      "troubleshooting-guide"
+    ]
+  },
+  {
+    "name": "growth-specialist",
+    "type": "specialist-agent",
+    "category": "marketing",
+    "description": "Analyze acquisition, activation, conversion and retention opportunities.",
+    "risk_level": "low",
+    "path": ".agent/agents/marketing/growth-specialist.agent.md",
+    "required_skills": [
+      "landing-page-copy",
+      "seo-title-description"
+    ],
+    "optional_skills": [
+      "cta-copywriting",
+      "conversion-audit"
+    ]
+  },
+  {
+    "name": "integration-specialist",
+    "type": "specialist-agent",
+    "category": "backend",
+    "description": "Integrate external APIs, services, CRMs, ERPs, webhooks and third-party tools.",
+    "risk_level": "high",
+    "path": ".agent/agents/backend/integration-specialist.agent.md",
+    "required_skills": [
+      "rest-api-implementation",
+      "request-validation",
+      "error-handling-standard"
+    ],
+    "optional_skills": [
+      "api-contract-design"
+    ]
+  },
+  {
+    "name": "landing-page-strategist",
+    "type": "specialist-agent",
+    "category": "marketing",
+    "description": "Plan landing pages focused on clarity, conversion and user journey.",
+    "risk_level": "low",
+    "path": ".agent/agents/marketing/landing-page-strategist.agent.md",
+    "required_skills": [
+      "landing-page-copy",
+      "seo-title-description"
+    ],
+    "optional_skills": [
+      "cta-copywriting",
+      "conversion-audit"
+    ]
+  },
+  {
+    "name": "migration-specialist",
+    "type": "specialist-agent",
+    "category": "database",
+    "description": "Create and review safe, reversible and versioned database migrations.",
+    "risk_level": "critical",
+    "path": ".agent/agents/database/migration-specialist.agent.md",
+    "required_skills": [
+      "database-schema-design",
+      "migration-create"
+    ],
+    "optional_skills": [
+      "query-optimization"
+    ]
+  },
+  {
+    "name": "n8n-automation-specialist",
+    "type": "specialist-agent",
+    "category": "ai-automation",
+    "description": "Design and document n8n workflows, triggers, webhooks and integrations.",
+    "risk_level": "medium",
+    "path": ".agent/agents/ai-automation/n8n-automation-specialist.agent.md",
+    "required_skills": [
+      "prompt-architecture",
+      "agent-definition"
+    ],
+    "optional_skills": [
+      "multi-agent-orchestration",
+      "rag-pipeline-design",
+      "n8n-workflow-design",
+      "python-script-automation"
+    ]
+  },
+  {
+    "name": "performance-engineer",
+    "type": "specialist-agent",
+    "category": "architecture",
+    "description": "Analyze and improve performance across frontend, backend, database and build systems.",
+    "risk_level": "medium",
+    "path": ".agent/agents/architecture/performance-engineer.agent.md",
+    "required_skills": [
+      "codebase-map",
+      "implementation-plan"
+    ],
+    "optional_skills": [
+      "existing-patterns-detection"
+    ]
+  },
+  {
+    "name": "privacy-compliance-reviewer",
+    "type": "specialist-agent",
+    "category": "security",
+    "description": "Review personal data exposure, privacy risks and safe data handling practices.",
+    "risk_level": "high",
+    "path": ".agent/agents/security/privacy-compliance-reviewer.agent.md",
+    "required_skills": [
+      "security-review",
+      "secrets-detection",
+      "dependency-vulnerability-check"
+    ],
+    "optional_skills": [
+      "input-sanitization",
+      "authz-review",
+      "secure-logging-review"
+    ]
+  },
+  {
+    "name": "product-manager",
+    "type": "specialist-agent",
+    "category": "product",
+    "description": "Translate ideas, goals and user needs into product direction, feature scope and delivery priorities.",
+    "risk_level": "low",
+    "path": ".agent/agents/product/product-manager.agent.md",
+    "required_skills": [
+      "project-intake",
+      "acceptance-criteria-writing"
+    ],
+    "optional_skills": [
+      "definition-of-done"
+    ]
+  },
+  {
+    "name": "project-context-reader",
+    "type": "orchestration-agent",
+    "category": "orchestration",
+    "description": "Analyzes the existing repository or target project before any implementation happens.",
+    "risk_level": "low",
+    "path": ".agent/agents/orchestration/project-context-reader.agent.md",
+    "required_skills": [
+      "codebase-map",
+      "dependency-scan",
+      "existing-patterns-detection"
+    ],
+    "optional_skills": []
+  },
+  {
+    "name": "prompt-engineer",
+    "type": "specialist-agent",
+    "category": "ai-automation",
+    "description": "Design robust prompts, system instructions, evaluation prompts and reusable prompt patterns.",
+    "risk_level": "medium",
+    "path": ".agent/agents/ai-automation/prompt-engineer.agent.md",
+    "required_skills": [
+      "prompt-architecture",
+      "agent-definition"
+    ],
+    "optional_skills": [
+      "multi-agent-orchestration",
+      "rag-pipeline-design",
+      "n8n-workflow-design",
+      "python-script-automation"
+    ]
+  },
+  {
+    "name": "pull-request-writer",
+    "type": "specialist-agent",
+    "category": "documentation",
+    "description": "Create clear pull request summaries, checklists and reviewer notes.",
+    "risk_level": "low",
+    "path": ".agent/agents/documentation/pull-request-writer.agent.md",
+    "required_skills": [
+      "readme-create",
+      "architecture-docs-create"
+    ],
+    "optional_skills": [
+      "usage-guide",
+      "troubleshooting-guide"
+    ]
+  },
+  {
+    "name": "python-automation-specialist",
+    "type": "specialist-agent",
+    "category": "ai-automation",
+    "description": "Create Python automations, scripts, file processors, API integrations and ETL utilities.",
+    "risk_level": "medium",
+    "path": ".agent/agents/ai-automation/python-automation-specialist.agent.md",
+    "required_skills": [
+      "prompt-architecture",
+      "agent-definition"
+    ],
+    "optional_skills": [
+      "multi-agent-orchestration",
+      "rag-pipeline-design",
+      "n8n-workflow-design",
+      "python-script-automation"
+    ]
+  },
+  {
+    "name": "qa-tester",
+    "type": "specialist-agent",
+    "category": "qa",
+    "description": "Validate that implemented work satisfies requirements and does not break existing behavior.",
+    "risk_level": "low",
+    "path": ".agent/agents/qa/qa-tester.agent.md",
+    "required_skills": [
+      "build-validation",
+      "regression-test-checklist"
+    ],
+    "optional_skills": []
+  },
+  {
+    "name": "rag-specialist",
+    "type": "specialist-agent",
+    "category": "ai-automation",
+    "description": "Design retrieval-augmented generation systems, knowledge bases, embeddings and document ingestion.",
+    "risk_level": "medium",
+    "path": ".agent/agents/ai-automation/rag-specialist.agent.md",
+    "required_skills": [
+      "prompt-architecture",
+      "agent-definition"
+    ],
+    "optional_skills": [
+      "multi-agent-orchestration",
+      "rag-pipeline-design",
+      "n8n-workflow-design",
+      "python-script-automation"
+    ]
+  },
+  {
+    "name": "react-specialist",
+    "type": "specialist-agent",
+    "category": "frontend",
+    "description": "Handle React-specific implementation, components, hooks, state and Vite/Next patterns.",
+    "risk_level": "medium",
+    "path": ".agent/agents/frontend/react-specialist.agent.md",
+    "required_skills": [
+      "react-component-create",
+      "responsive-layout-audit"
+    ],
+    "optional_skills": [
+      "frontend-api-integration",
+      "ux-flow-audit",
+      "design-system-definition",
+      "accessibility-contrast-check"
+    ]
+  },
+  {
+    "name": "refactor-specialist",
+    "type": "specialist-agent",
+    "category": "architecture",
+    "description": "Improve code structure without changing external behavior.",
+    "risk_level": "medium",
+    "path": ".agent/agents/architecture/refactor-specialist.agent.md",
+    "required_skills": [
+      "codebase-map",
+      "implementation-plan"
+    ],
+    "optional_skills": [
+      "existing-patterns-detection"
+    ]
+  },
+  {
+    "name": "release-manager",
+    "type": "specialist-agent",
+    "category": "devops",
+    "description": "Prepare releases, versioning, changelogs and release readiness checks.",
+    "risk_level": "high",
+    "path": ".agent/agents/devops/release-manager.agent.md",
+    "required_skills": [
+      "dockerfile-create",
+      "github-actions-ci"
+    ],
+    "optional_skills": [
+      "docker-compose-create",
+      "production-readiness-check"
+    ]
+  },
+  {
+    "name": "requirements-engineer",
+    "type": "specialist-agent",
+    "category": "product",
+    "description": "Transform requests into structured requirements, acceptance criteria and delivery-ready specifications.",
+    "risk_level": "low",
+    "path": ".agent/agents/product/requirements-engineer.agent.md",
+    "required_skills": [
+      "project-intake",
+      "acceptance-criteria-writing"
+    ],
+    "optional_skills": [
+      "definition-of-done"
+    ]
+  },
+  {
+    "name": "responsive-layout-specialist",
+    "type": "specialist-agent",
+    "category": "frontend",
+    "description": "Ensure layouts work across desktop, tablet and mobile.",
+    "risk_level": "low",
+    "path": ".agent/agents/frontend/responsive-layout-specialist.agent.md",
+    "required_skills": [
+      "react-component-create",
+      "responsive-layout-audit"
+    ],
+    "optional_skills": [
+      "frontend-api-integration",
+      "ux-flow-audit",
+      "design-system-definition",
+      "accessibility-contrast-check"
+    ]
+  },
+  {
+    "name": "risk-analyst",
+    "type": "specialist-agent",
+    "category": "product",
+    "description": "Identify technical, operational, security, delivery and maintenance risks before execution.",
+    "risk_level": "medium",
+    "path": ".agent/agents/product/risk-analyst.agent.md",
+    "required_skills": [
+      "project-intake",
+      "acceptance-criteria-writing"
+    ],
+    "optional_skills": [
+      "definition-of-done"
+    ]
+  },
+  {
+    "name": "scope-guardian",
+    "type": "orchestration-agent",
+    "category": "orchestration",
+    "description": "Protects the project from unnecessary, risky, or unauthorized changes.",
+    "risk_level": "high",
+    "path": ".agent/agents/orchestration/scope-guardian.agent.md",
+    "required_skills": [
+      "acceptance-criteria-writing",
+      "definition-of-done"
+    ],
+    "optional_skills": []
+  },
+  {
+    "name": "secrets-scanner",
+    "type": "specialist-agent",
+    "category": "security",
+    "description": "Detect accidental secrets, tokens, credentials and private keys in repository content.",
+    "risk_level": "high",
+    "path": ".agent/agents/security/secrets-scanner.agent.md",
+    "required_skills": [
+      "security-review",
+      "secrets-detection",
+      "dependency-vulnerability-check"
+    ],
+    "optional_skills": [
+      "input-sanitization",
+      "authz-review",
+      "secure-logging-review"
+    ]
+  },
+  {
+    "name": "security-reviewer",
+    "type": "specialist-agent",
+    "category": "security",
+    "description": "Perform defensive security review across code, configuration, dependencies and data handling.",
+    "risk_level": "high",
+    "path": ".agent/agents/security/security-reviewer.agent.md",
+    "required_skills": [
+      "security-review",
+      "secrets-detection",
+      "dependency-vulnerability-check"
+    ],
+    "optional_skills": [
+      "input-sanitization",
+      "authz-review",
+      "secure-logging-review"
+    ]
+  },
+  {
+    "name": "seo-specialist",
+    "type": "specialist-agent",
+    "category": "marketing",
+    "description": "Improve SEO structure, metadata, semantic content and discoverability.",
+    "risk_level": "low",
+    "path": ".agent/agents/marketing/seo-specialist.agent.md",
+    "required_skills": [
+      "landing-page-copy",
+      "seo-title-description"
+    ],
+    "optional_skills": [
+      "cta-copywriting",
+      "conversion-audit"
+    ]
+  },
+  {
+    "name": "software-architect",
+    "type": "specialist-agent",
+    "category": "architecture",
+    "description": "Design software structure, module boundaries, system patterns and scalable technical direction.",
+    "risk_level": "high",
+    "path": ".agent/agents/architecture/software-architect.agent.md",
+    "required_skills": [
+      "codebase-map",
+      "implementation-plan"
+    ],
+    "optional_skills": [
+      "existing-patterns-detection"
+    ]
+  },
+  {
+    "name": "sql-specialist",
+    "type": "specialist-agent",
+    "category": "database",
+    "description": "Create, review and optimize SQL queries.",
+    "risk_level": "high",
+    "path": ".agent/agents/database/sql-specialist.agent.md",
+    "required_skills": [
+      "database-schema-design",
+      "migration-create"
+    ],
+    "optional_skills": [
+      "query-optimization"
+    ]
+  },
+  {
+    "name": "task-router",
+    "type": "orchestration-agent",
+    "category": "orchestration",
+    "description": "Classifies the user request and determines which agents, skills, and workflows are required.",
+    "risk_level": "medium",
+    "path": ".agent/agents/orchestration/task-router.agent.md",
+    "required_skills": [
+      "task-breakdown",
+      "agent-routing"
+    ],
+    "optional_skills": []
+  },
+  {
+    "name": "technical-lead",
+    "type": "specialist-agent",
+    "category": "architecture",
+    "description": "Provide technical direction, implementation standards and engineering judgment across agents.",
+    "risk_level": "high",
+    "path": ".agent/agents/architecture/technical-lead.agent.md",
+    "required_skills": [
+      "codebase-map",
+      "implementation-plan"
+    ],
+    "optional_skills": [
+      "existing-patterns-detection"
+    ]
+  },
+  {
+    "name": "technical-writer",
+    "type": "specialist-agent",
+    "category": "documentation",
+    "description": "Write deeper technical documentation, architecture explanations and implementation guides.",
+    "risk_level": "low",
+    "path": ".agent/agents/documentation/technical-writer.agent.md",
+    "required_skills": [
+      "readme-create",
+      "architecture-docs-create"
+    ],
+    "optional_skills": [
+      "usage-guide",
+      "troubleshooting-guide"
+    ]
+  },
+  {
+    "name": "ui-ux-designer",
+    "type": "specialist-agent",
+    "category": "frontend",
+    "description": "Improve usability, hierarchy, interaction flow and user experience.",
+    "risk_level": "low",
+    "path": ".agent/agents/frontend/ui-ux-designer.agent.md",
+    "required_skills": [
+      "react-component-create",
+      "responsive-layout-audit"
+    ],
+    "optional_skills": [
+      "frontend-api-integration",
+      "ux-flow-audit",
+      "design-system-definition",
+      "accessibility-contrast-check"
+    ]
+  },
+  {
+    "name": "unit-test-specialist",
+    "type": "specialist-agent",
+    "category": "qa",
+    "description": "Create and review unit tests for isolated logic.",
+    "risk_level": "low",
+    "path": ".agent/agents/qa/unit-test-specialist.agent.md",
+    "required_skills": [
+      "build-validation",
+      "regression-test-checklist"
+    ],
+    "optional_skills": []
+  },
+  {
+    "name": "universal-orchestrator",
+    "type": "orchestration-agent",
+    "category": "orchestration",
+    "description": "The primary coordinator of the multi-agent system, responsible for end-to-end task lifecycle management.",
+    "risk_level": "critical",
+    "path": ".agent/agents/orchestration/universal-orchestrator.agent.md",
+    "required_skills": [
+      "project-intake",
+      "agent-routing",
+      "parallel-work-planning",
+      "handoff-protocol"
+    ],
+    "optional_skills": [
+      "rollback-plan"
+    ]
+  },
+  {
+    "name": "visual-regression-specialist",
+    "type": "specialist-agent",
+    "category": "qa",
+    "description": "Validate visual consistency, layout changes and UI regressions.",
+    "risk_level": "low",
+    "path": ".agent/agents/qa/visual-regression-specialist.agent.md",
+    "required_skills": [
+      "build-validation",
+      "regression-test-checklist"
+    ],
+    "optional_skills": []
+  },
+  {
+    "name": "webhook-specialist",
+    "type": "specialist-agent",
+    "category": "backend",
+    "description": "Design, implement and validate webhook receivers and senders.",
+    "risk_level": "high",
+    "path": ".agent/agents/backend/webhook-specialist.agent.md",
+    "required_skills": [
+      "rest-api-implementation",
+      "request-validation",
+      "error-handling-standard"
+    ],
+    "optional_skills": [
+      "api-contract-design"
+    ]
+  }
+]

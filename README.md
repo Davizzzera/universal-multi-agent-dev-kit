@@ -59,9 +59,9 @@ The kit follows a **multi-agent orchestration model**:
 
 ## Repository Status
 
-> **Early Foundation — v0.1.0**
+> **Phase 7 — v0.7.0**
 >
-> This repository is in its initial foundation phase. The directory structure, core documentation, and architectural principles are being established. Agents, skills, workflows, and adapters will be implemented in subsequent phases.
+> This repository is in its structural foundation phase. Orchestration agents, specialist agents, skills library, workflows, and validation scripts are implemented.
 
 ---
 
@@ -88,6 +88,19 @@ This kit is designed to be read and followed by AI coding assistants. When using
 4. Adapters provide tool-specific configuration and integration.
 
 Detailed setup instructions for Antigravity will be provided in a future phase. See [docs/antigravity-setup.md](docs/antigravity-setup.md) for current status.
+
+---
+
+## Validation
+
+The repository is self-checking and validation-first. You can run the validation scripts using `npm` shortcuts:
+
+```bash
+npm run verify
+npm run generate:index
+```
+
+**Note:** Python 3.10+ is required for the validation scripts. No external Python dependencies are required (uses standard library only).
 
 ---
 

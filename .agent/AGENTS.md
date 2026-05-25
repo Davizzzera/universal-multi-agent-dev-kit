@@ -218,7 +218,15 @@ Workflows must enforce global rules, file ownership, handoffs, and output contra
 
 ---
 
+## Validation Scripts
+
+Validation scripts (`.agent/scripts/`) enforce repository structure, agent contracts, skill contracts, workflow contracts, and defensive safety checks. They generate the indexes located in `.agent/indexes/`.
+
+Agents should use validation before claiming completion of their tasks, following the Validation-First Delivery approach.
+
+---
+
 ## Current Status
 
-> **Phase 6 (v0.6.0):** Core orchestration agents, specialist agents, core skills library, and operational workflows have been implemented. Adapters will follow in subsequent phases.
+> **Phase 7 (v0.7.0):** Core orchestration agents, specialist agents, core skills library, operational workflows, and validation scripts/indexes have been implemented. Adapters will follow in subsequent phases.
 

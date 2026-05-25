@@ -43,3 +43,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added workflow documentation.
 - Added workflow-to-agent and workflow-to-skill execution model.
 - Added validation-first workflow standards.
+- Added validation scripts.
+- Added generated repository indexes.
+- Added structure validation.
+- Added agent, skill and workflow validation.
+- Added Markdown validation.
+- Added basic defensive security checks.
+- Added package scripts for validation.

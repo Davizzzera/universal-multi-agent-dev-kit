@@ -15,8 +15,8 @@
 | `.agent/rules/`       | Global rules and constraints.                                  | ✅ Populated        |
 | `.agent/memory/`      | Shared context and state between agents.                       | 📦 Empty (v0.2.0)  |
 | `.agent/templates/`   | Reusable templates for common patterns.                        | ✅ Populated        |
-| `.agent/scripts/`     | Validation and automation scripts.                             | 📦 Empty (v0.4.0)  |
-| `.agent/indexes/`     | Generated indexes for agent/skill/workflow discovery.          | 📦 Empty (v0.4.0)  |
+| `.agent/scripts/`     | Validation and automation scripts.                             | ✅ Populated        |
+| `.agent/indexes/`     | Generated indexes for agent/skill/workflow discovery.          | ✅ Populated        |
 
 ## Agents
 
@@ -186,6 +186,32 @@
 | `handoff-template.md`                                   | Handoff template.                                            | ✅ Created          |
 | `agent-output-contract-template.md`                     | Agent output contract template.                              | ✅ Created          |
 
+## Scripts
+
+| Directory / File                                        | Purpose                                                      | Status              |
+|---------------------------------------------------------|--------------------------------------------------------------|---------------------|
+| **Scripts Root** (`.agent/scripts/`)                    |                                                              |                     |
+| `README.md`                                             | Scripts directory overview.                                  | ✅ Created          |
+| `common.py`                                             | Shared helper functions.                                     | ✅ Created          |
+| `validate_structure.py`                                 | Validates expected repository structure.                     | ✅ Created          |
+| `validate_agents.py`                                    | Validates all agent files.                                   | ✅ Created          |
+| `validate_skills.py`                                    | Validates all skill files.                                   | ✅ Created          |
+| `validate_workflows.py`                                 | Validates all workflow files.                                | ✅ Created          |
+| `validate_markdown.py`                                  | Performs lightweight Markdown quality validation.            | ✅ Created          |
+| `security_check.py`                                     | Defensive repository content scan for secrets.               | ✅ Created          |
+| `generate_index.py`                                     | Generates JSON index files.                                  | ✅ Created          |
+| `verify_all.py`                                         | Runs all validation scripts and generates indexes.           | ✅ Created          |
+
+## Indexes
+
+| Directory / File                                        | Purpose                                                      | Status              |
+|---------------------------------------------------------|--------------------------------------------------------------|---------------------|
+| **Indexes Root** (`.agent/indexes/`)                    |                                                              |                     |
+| `repository.index.json`                                 | Overall repository statistics and index list.                | ✅ Generated        |
+| `agents.index.json`                                     | Generated index of all agents.                               | ✅ Generated        |
+| `skills.index.json`                                     | Generated index of all skills.                               | ✅ Generated        |
+| `workflows.index.json`                                  | Generated index of all workflows.                            | ✅ Generated        |
+
 ## Adapter Directories
 
 | Directory               | Purpose                                                      | Status              |
@@ -239,5 +265,5 @@
 
 ## Current Phase
 
-> **Phase 6 (v0.6.0):** Core orchestration agents, specialist agents, core skills library, and operational workflows have been implemented.
+> **Phase 7 (v0.7.0):** Core orchestration agents, specialist agents, core skills library, operational workflows, and validation scripts/indexes have been implemented.
 

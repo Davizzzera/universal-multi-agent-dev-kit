@@ -23,6 +23,12 @@
   ],
   "scripts": {
     "verify": "python .agent/scripts/verify_all.py",
-    "generate:index": "python .agent/scripts/generate_index.py"
+    "generate:index": "python .agent/scripts/generate_index.py",
+    "validate:structure": "python .agent/scripts/validate_structure.py",
+    "validate:agents": "python .agent/scripts/validate_agents.py",
+    "validate:skills": "python .agent/scripts/validate_skills.py",
+    "validate:workflows": "python .agent/scripts/validate_workflows.py",
+    "validate:markdown": "python .agent/scripts/validate_markdown.py",
+    "security:check": "python .agent/scripts/security_check.py"
   }
 }
