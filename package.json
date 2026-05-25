@@ -1,0 +1,28 @@
+{
+  "name": "universal-multi-agent-dev-kit",
+  "version": "0.1.0",
+  "description": "A reusable multi-agent development kit for AI-assisted software engineering.",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Davizzzera/universal-multi-agent-dev-kit.git"
+  },
+  "license": "MIT",
+  "author": "Davizzzera",
+  "keywords": [
+    "ai-agents",
+    "multi-agent",
+    "skills",
+    "workflows",
+    "orchestration",
+    "antigravity",
+    "coding-agents",
+    "ai-assisted-development",
+    "software-engineering",
+    "automation"
+  ],
+  "scripts": {
+    "verify": "python .agent/scripts/verify_all.py",
+    "generate:index": "python .agent/scripts/generate_index.py"
+  }
+}
