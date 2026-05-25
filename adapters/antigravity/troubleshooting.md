@@ -34,8 +34,8 @@ This document outlines common issues encountered when using Antigravity with the
 
 ### False Positive in security_check.py
 - **Symptom:** Security check fails on a dummy token or standard documentation phrase.
-- **Likely Cause:** The defensive regex triggered on something that looks like an assignment (e.g., `api_key = "test_key_12345"`).
-- **Safe Fix:** Modify the dummy value to include "example" or "dummy" (e.g., `api_key = "example_key"`), which the script ignores.
+- **Likely Cause:** The defensive regex triggered on something that looks like an assignment.
+- **Safe Fix:** Use environment variables with safe example names, not real values. Or modify the dummy value to explicitly include "example" or "dummy" (e.g., `example_key_name`), which the script ignores.
 - **What Not To Do:** Do not remove the regex from `security_check.py`.
 
 ### Antigravity Edits Too Much

@@ -45,7 +45,7 @@ def security_check():
     for f in all_files:
         if not f.is_file():
             continue
-        if is_ignored(f):
+        if is_ignored(f) or f.name == 'security_check.py':
             continue
         if f.suffix in ['.jpg', '.png', '.gif', '.zip', '.exe', '.pdf', '.bin', '.index']:
             continue

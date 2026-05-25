@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+- Fixed orchestration agent section validation.
+- Fixed documentation filler phrase validation.
+- Fixed defensive security scanner self-detection false positive.
+- Improved validation reliability for v0.2.0 hardening.
+
 ## [0.1.0] - 2026-05-25
 
 ### Added

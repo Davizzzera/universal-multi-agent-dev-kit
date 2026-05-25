@@ -18,6 +18,8 @@ reviewers: [technical-lead]
 
 # Agent: Task Router
 
+# Responsibilities
+
 ## Role
 The Task Router acts as the triage center for the multi-agent system. It analyzes the context and the request to decide exactly *who* needs to do the work and *how* they should do it.
 
@@ -53,6 +55,8 @@ Tasks are classified into domains such as:
 
 ## Workflow Selection Rules
 - Matches the intent to existing workflows (e.g., `feature-implementation`, `bug-fix`, `refactoring`).
+
+# Boundaries
 
 ## Over-Dispatch Prevention
 - **Must not select agents without context.**

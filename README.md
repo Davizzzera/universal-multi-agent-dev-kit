@@ -109,7 +109,7 @@ Project Packs are advisory presets that help the Orchestrator select the right a
 
 ## Roadmap Summary
 
-- **v0.2.0:** Quality hardening and Python validation improvements.
+- **v0.2.0:** Quality hardening and Python validation improvements *(In Progress)*.
 - **v0.3.0:** Additional adapters (Claude Code, Cursor, Codex, Generic).
 - **v0.4.0:** Optional CLI installer.
 - **v0.5.0:** Pack expansion and examples.

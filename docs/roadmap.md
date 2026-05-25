@@ -24,9 +24,9 @@
 
 ## v0.2.0 — Quality Hardening & Validation
 
-**Status:** ⬜ Planned
+**Status:** 🟡 In Progress (Validation hardening has started)
 
-- [ ] Improve Python validation scripts for greater resilience.
+- [x] Improve Python validation scripts for greater resilience.
 - [ ] Add cross-platform execution support for scripts.
 - [ ] Implement deeper dependency checks.
 - [ ] Add stricter output validation rules.

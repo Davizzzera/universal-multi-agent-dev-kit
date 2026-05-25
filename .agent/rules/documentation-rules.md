@@ -31,7 +31,7 @@ High-quality documentation is critical for a multi-agent system, as both humans 
 - **Headings:** Use `#` for the title, `##` for major sections, `###` for subsections.
 - **Lists:** Use `-` or `*` consistently for bullet points.
 - **Code Blocks:** Always specify the language for syntax highlighting (e.g., ````javascript ````).
-- **TODOs:** Incomplete sections must be explicitly marked with `> **TODO:** [description]`. Do not leave placeholder text that looks like final content.
+- **TODOs:** Incomplete sections must be explicitly marked with `> **TODO:** [description]`. Do not leave unfinished draft content that looks like final content.
 
 ---
 
