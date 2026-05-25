@@ -324,6 +324,7 @@
 | Directory / File                | Purpose                                                | Status              |
 |---------------------------------|--------------------------------------------------------|---------------------|
 | `docs/getting-started.md`       | How to use the kit.                                    | ✅ Created          |
+| `docs/ci-validation.md`         | How CI validation works on GitHub Actions.             | ✅ Created          |
 | `docs/agent-design.md`          | How to design agents.                                  | ✅ Created          |
 | `docs/skill-design.md`          | How to design skills.                                  | ✅ Created          |
 | `docs/workflow-design.md`       | How to design workflows.                               | ✅ Created          |
@@ -345,10 +346,11 @@
 | `CONTRIBUTING.md`  | Contribution guidelines.                             | ✅ Created          |
 | `package.json`     | Project metadata and scripts.                        | ✅ Created          |
 | `.gitignore`       | Git exclusion rules.                                 | ✅ Created          |
+| `.github/workflows/verify.yml` | GitHub Actions CI workflow.                          | ✅ Created          |
 
 ---
 
 ## Current Status
 
-> **v0.2.0 Quality Hardening Release:** Core architecture is fully implemented and validation scripts are confirmed reliable. The remaining Markdown warnings are non-blocking.
+> **v0.2.0 Quality Hardening Release:** Core architecture is fully implemented, validation scripts are confirmed reliable, and GitHub Actions CI validation is active. The remaining Markdown warnings are non-blocking.
 

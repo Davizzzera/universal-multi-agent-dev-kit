@@ -1,0 +1,49 @@
+name: Verify Universal Multi-Agent Dev Kit
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  verify:
+    name: Run repository validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Show runtime versions
+        run: |
+          python --version
+          node --version
+          npm --version
+
+      - name: Generate indexes
+        run: npm run generate:index
+
+      - name: Run full validation
+        run: npm run verify
+
+      - name: Upload generated indexes
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: generated-indexes
+          path: .agent/indexes/*.json
+          if-no-files-found: warn

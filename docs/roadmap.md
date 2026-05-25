@@ -33,6 +33,17 @@
 
 ---
 
+## v0.2.1 — CI Validation
+
+**Status:** 🟡 In Progress (Implemented in main, waiting for GitHub workflow confirmation before release tag)
+
+- [x] Add GitHub Actions verify workflow.
+- [x] Add CI documentation.
+- [ ] Confirm successful GitHub workflow execution on push.
+- [ ] Release v0.2.1 tag.
+
+---
+
 ## v0.3.0 — Additional Adapters
 
 **Status:** ⬜ Planned

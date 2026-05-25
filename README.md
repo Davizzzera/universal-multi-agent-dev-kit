@@ -97,6 +97,20 @@ but the kit's Markdown instructions remain fully functional for the AI.
 
 ---
 
+## CI Validation
+
+GitHub Actions automatically verifies the repository on every `push` and `pull_request` to `main`. 
+The CI pipeline uses **Python 3.11** and **Node.js 20**.
+
+Local validation still uses:
+```bash
+npm run verify
+```
+
+See [docs/ci-validation.md](docs/ci-validation.md) for full details.
+
+---
+
 ## Project Packs
 
 Project Packs are advisory presets that help the Orchestrator select the right agents and workflows. See [packs/README.md](packs/README.md).
@@ -136,6 +150,7 @@ See [docs/roadmap.md](docs/roadmap.md) for full details.
 - [Release Notes](RELEASE_NOTES.md)
 - [v0.2.0 Notes](RELEASE_NOTES_v0.2.0.md)
 - [Getting Started Guide](docs/getting-started.md)
+- [CI Validation Guide](docs/ci-validation.md)
 - [Full Roadmap](docs/roadmap.md)
 
 ---

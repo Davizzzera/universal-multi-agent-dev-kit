@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Added GitHub Actions workflow for repository validation (`.github/workflows/verify.yml`).
+- Added CI documentation (`docs/ci-validation.md`).
+- Added automated validation on push and pull requests to `main`.
+- Added generated indexes artifact upload for CI inspection.
+
 ## [0.2.0] - 2026-05-25
 
 ### Fixed

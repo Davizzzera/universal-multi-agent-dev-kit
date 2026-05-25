@@ -29,6 +29,15 @@ The architecture validation pipeline is now confirmed working in a Python enviro
 
 ---
 
+## CI Validation Layer
+
+CI runs the repository validation pipeline in GitHub Actions.
+It uses the same npm scripts as local validation to ensure complete parity between the developer's local environment and the remote repository.
+CI does not replace local validation; it merely acts as a final gatekeeper.
+This layer supports ongoing repository hardening and protects the integrity of future releases.
+
+---
+
 ## Core Concepts
 
 ### Agent
