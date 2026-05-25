@@ -265,6 +265,54 @@ The repository itself is validated:
 
 ---
 
+## Specialist Agent Layer
+
+Specialist agents are domain experts that perform implementation work under orchestration control.
+
+### Agent Category Model
+
+Agents are grouped into 11 functional categories:
+
+| Category | Focus Area |
+|----------|-----------|
+| Product | Strategy, analysis, requirements, risk. |
+| Architecture | Design, tech leadership, analysis, refactoring, performance. |
+| Frontend | UI, React, UX, design systems, responsive, accessibility. |
+| Backend | Server logic, APIs, auth, integrations, webhooks. |
+| Database | Schema, SQL, migrations, data quality. |
+| AI & Automation | AI features, prompts, agents, RAG, n8n, Python. |
+| QA | Testing, unit, E2E, visual regression, bug hunting. |
+| Security | Security review, secrets, dependencies, auth, privacy. |
+| DevOps | Deployment, Docker, CI/CD, cloud, releases. |
+| Documentation | Docs, technical writing, GitHub, PRs, changelog. |
+| Marketing | Copy, SEO, landing pages, growth. |
+
+### Orchestration-to-Specialist Relationship
+
+- The **Task Router** classifies requests and selects required specialist categories.
+- The **Scope Guardian** restricts which files and areas specialists can touch.
+- The **Conflict Controller** manages file ownership locks and parallel/sequential scheduling.
+- Specialists execute within their boundaries and return Output Contracts.
+- The **Final Reviewer** validates specialist outputs before delivery.
+
+### Specialist Agent Boundaries
+
+- Specialists do not make high-level routing decisions.
+- Specialists do not bypass the Orchestrator.
+- Specialists follow file ownership rules.
+- Specialists must validate their work before declaring completion.
+
+### Future: Skills Integration
+
+In future phases, agents will load reusable skills (`.agent/skills/`) that provide step-by-step procedures for common tasks. Agents currently reference planned skill names but skill files are not yet implemented.
+
+### Specialist Participation in Validation
+
+QA and Security agents act as cross-cutting validators. After any specialist completes work, the Orchestrator dispatches QA and/or Security agents to independently review the output before the Final Reviewer synthesizes the delivery.
+
+---
+
 ## Current Status
 
-> **Phase 2 (v0.2.0):** The architecture, global rules, and templates are established. Implementation of core agents, skills, and workflows will follow in subsequent phases.
+> **Phase 4 (v0.4.0):** Core orchestration and specialist agents have been implemented. Skills and workflows will follow in subsequent phases.
+

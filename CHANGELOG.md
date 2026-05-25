@@ -29,3 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added orchestration agent documentation.
 - Added orchestration lifecycle documentation.
 - Added agent coordination model.
+- Added core specialist agent categories.
+- Added product, architecture, frontend, backend, database, AI automation, QA, security, DevOps, documentation and marketing agents.
+- Added specialist agent documentation.
+- Added specialist agent category model.

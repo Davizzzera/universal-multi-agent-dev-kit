@@ -152,6 +152,32 @@ All agents must:
 
 ---
 
+## Core Specialist Agents
+
+Specialist agents are selected by the Task Router based on the domain of the user request. They must:
+- Follow all rules in `.agent/rules/`.
+- Adhere to `.agent/templates/agent-template.md`.
+- Respect file ownership (`.agent/rules/file-ownership.md`).
+- Fulfill their Output Contract (`.agent/rules/output-contract-rules.md`).
+- Defer all coordination to the Universal Orchestrator.
+
+| Category | Agents | Description |
+|----------|--------|-------------|
+| Product | 4 | Product Manager, Business Analyst, Requirements Engineer, Risk Analyst. |
+| Architecture | 5 | Software Architect, Technical Lead, Codebase Analyst, Refactor Specialist, Performance Engineer. |
+| Frontend | 6 | Frontend Specialist, React Specialist, UI/UX Designer, Design System Specialist, Responsive Layout Specialist, Accessibility Specialist. |
+| Backend | 5 | Backend Specialist, API Designer, Auth Specialist, Integration Specialist, Webhook Specialist. |
+| Database | 4 | Database Specialist, SQL Specialist, Migration Specialist, Data Quality Specialist. |
+| AI & Automation | 6 | AI Engineer, Prompt Engineer, Agent Engineer, RAG Specialist, n8n Automation Specialist, Python Automation Specialist. |
+| QA | 5 | QA Tester, Unit Test Specialist, E2E Test Specialist, Visual Regression Specialist, Bug Hunter. |
+| Security | 5 | Security Reviewer, Secrets Scanner, Dependency Security Auditor, Auth Security Reviewer, Privacy Compliance Reviewer. |
+| DevOps | 5 | DevOps Specialist, Docker Specialist, CI/CD Specialist, Cloud Specialist, Release Manager. |
+| Documentation | 5 | Documentation Writer, Technical Writer, GitHub Repository Manager, Pull Request Writer, Changelog Maintainer. |
+| Marketing | 4 | Copywriter, SEO Specialist, Landing Page Strategist, Growth Specialist. |
+
+---
+
 ## Current Status
 
-> **Phase 3 (v0.3.0):** Core orchestration agents have been implemented to control the system lifecycle. Specialist agents, skills, and workflows will follow.
+> **Phase 4 (v0.4.0):** Core orchestration and specialist agents have been implemented. Skills and workflows will follow in subsequent phases.
+

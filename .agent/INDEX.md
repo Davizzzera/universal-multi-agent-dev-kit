@@ -32,6 +32,82 @@
 | `scope-guardian.agent.md`                               | Protects boundaries and prevents scope creep.                | ✅ Created          |
 | `conflict-controller.agent.md`                          | Manages file locks and parallel execution.                   | ✅ Created          |
 | `final-reviewer.agent.md`                               | Validates and synthesizes final delivery.                    | ✅ Created          |
+| **Product** (`.agent/agents/product/`)                  |                                                              |                     |
+| `README.md`                                             | Product agents overview.                                     | ✅ Created          |
+| `product-manager.agent.md`                              | Product direction and priorities.                            | ✅ Created          |
+| `business-analyst.agent.md`                             | Business process and rules analysis.                         | ✅ Created          |
+| `requirements-engineer.agent.md`                        | Structured requirements and acceptance criteria.             | ✅ Created          |
+| `risk-analyst.agent.md`                                 | Risk identification and mitigation.                          | ✅ Created          |
+| **Architecture** (`.agent/agents/architecture/`)        |                                                              |                     |
+| `README.md`                                             | Architecture agents overview.                                | ✅ Created          |
+| `software-architect.agent.md`                           | System design and architecture.                              | ✅ Created          |
+| `technical-lead.agent.md`                               | Technical direction and standards.                           | ✅ Created          |
+| `codebase-analyst.agent.md`                             | Codebase structure analysis.                                 | ✅ Created          |
+| `refactor-specialist.agent.md`                          | Code refactoring without behavior change.                    | ✅ Created          |
+| `performance-engineer.agent.md`                         | Performance analysis and optimization.                       | ✅ Created          |
+| **Frontend** (`.agent/agents/frontend/`)                |                                                              |                     |
+| `README.md`                                             | Frontend agents overview.                                    | ✅ Created          |
+| `frontend-specialist.agent.md`                          | UI implementation.                                           | ✅ Created          |
+| `react-specialist.agent.md`                             | React-specific development.                                  | ✅ Created          |
+| `ui-ux-designer.agent.md`                               | Usability and UX improvements.                               | ✅ Created          |
+| `design-system-specialist.agent.md`                     | Visual consistency and design tokens.                        | ✅ Created          |
+| `responsive-layout-specialist.agent.md`                 | Responsive layout across devices.                            | ✅ Created          |
+| `accessibility-specialist.agent.md`                     | Accessibility and semantic structure.                        | ✅ Created          |
+| **Backend** (`.agent/agents/backend/`)                  |                                                              |                     |
+| `README.md`                                             | Backend agents overview.                                     | ✅ Created          |
+| `backend-specialist.agent.md`                           | Server-side logic and APIs.                                  | ✅ Created          |
+| `api-designer.agent.md`                                 | API contract design.                                         | ✅ Created          |
+| `auth-specialist.agent.md`                              | Authentication and authorization.                            | ✅ Created          |
+| `integration-specialist.agent.md`                       | External API integrations.                                   | ✅ Created          |
+| `webhook-specialist.agent.md`                           | Webhook design and validation.                               | ✅ Created          |
+| **Database** (`.agent/agents/database/`)                |                                                              |                     |
+| `README.md`                                             | Database agents overview.                                    | ✅ Created          |
+| `database-specialist.agent.md`                          | Schema design and data integrity.                            | ✅ Created          |
+| `sql-specialist.agent.md`                               | SQL query writing and optimization.                          | ✅ Created          |
+| `migration-specialist.agent.md`                         | Database migration management.                               | ✅ Created          |
+| `data-quality-specialist.agent.md`                      | Data quality validation and cleaning.                        | ✅ Created          |
+| **AI & Automation** (`.agent/agents/ai-automation/`)    |                                                              |                     |
+| `README.md`                                             | AI and automation agents overview.                           | ✅ Created          |
+| `ai-engineer.agent.md`                                  | AI feature design and implementation.                        | ✅ Created          |
+| `prompt-engineer.agent.md`                              | Prompt design and optimization.                              | ✅ Created          |
+| `agent-engineer.agent.md`                               | Agent and multi-agent design.                                | ✅ Created          |
+| `rag-specialist.agent.md`                               | RAG system design.                                           | ✅ Created          |
+| `n8n-automation-specialist.agent.md`                    | n8n workflow design.                                         | ✅ Created          |
+| `python-automation-specialist.agent.md`                 | Python automation scripts.                                   | ✅ Created          |
+| **QA** (`.agent/agents/qa/`)                            |                                                              |                     |
+| `README.md`                                             | QA agents overview.                                          | ✅ Created          |
+| `qa-tester.agent.md`                                    | Quality assurance testing.                                   | ✅ Created          |
+| `unit-test-specialist.agent.md`                         | Unit test creation and review.                               | ✅ Created          |
+| `e2e-test-specialist.agent.md`                          | End-to-end test creation.                                    | ✅ Created          |
+| `visual-regression-specialist.agent.md`                 | Visual regression validation.                                | ✅ Created          |
+| `bug-hunter.agent.md`                                   | Bug investigation and root cause analysis.                   | ✅ Created          |
+| **Security** (`.agent/agents/security/`)                |                                                              |                     |
+| `README.md`                                             | Security agents overview.                                    | ✅ Created          |
+| `security-reviewer.agent.md`                            | Defensive security review.                                   | ✅ Created          |
+| `secrets-scanner.agent.md`                              | Secrets and credentials detection.                           | ✅ Created          |
+| `dependency-security-auditor.agent.md`                  | Dependency vulnerability audit.                              | ✅ Created          |
+| `auth-security-reviewer.agent.md`                       | Auth flow security review.                                   | ✅ Created          |
+| `privacy-compliance-reviewer.agent.md`                  | Privacy and data handling review.                            | ✅ Created          |
+| **DevOps** (`.agent/agents/devops/`)                    |                                                              |                     |
+| `README.md`                                             | DevOps agents overview.                                      | ✅ Created          |
+| `devops-specialist.agent.md`                            | Deployment and infrastructure.                               | ✅ Created          |
+| `docker-specialist.agent.md`                            | Docker and container workflows.                              | ✅ Created          |
+| `ci-cd-specialist.agent.md`                             | CI/CD pipeline creation.                                     | ✅ Created          |
+| `cloud-specialist.agent.md`                             | Cloud deployment planning.                                   | ✅ Created          |
+| `release-manager.agent.md`                              | Release and versioning management.                           | ✅ Created          |
+| **Documentation** (`.agent/agents/documentation/`)      |                                                              |                     |
+| `README.md`                                             | Documentation agents overview.                               | ✅ Created          |
+| `documentation-writer.agent.md`                         | User and developer documentation.                            | ✅ Created          |
+| `technical-writer.agent.md`                             | Technical documentation and guides.                          | ✅ Created          |
+| `github-repository-manager.agent.md`                    | Repository structure and GitHub conventions.                 | ✅ Created          |
+| `pull-request-writer.agent.md`                          | PR summaries and checklists.                                 | ✅ Created          |
+| `changelog-maintainer.agent.md`                         | Changelog and release history.                               | ✅ Created          |
+| **Marketing** (`.agent/agents/marketing/`)              |                                                              |                     |
+| `README.md`                                             | Marketing agents overview.                                   | ✅ Created          |
+| `copywriter.agent.md`                                   | Product and conversion copy.                                 | ✅ Created          |
+| `seo-specialist.agent.md`                               | SEO structure and metadata.                                  | ✅ Created          |
+| `landing-page-strategist.agent.md`                      | Landing page strategy.                                       | ✅ Created          |
+| `growth-specialist.agent.md`                            | Growth and conversion analysis.                              | ✅ Created          |
 
 ## Rules and Templates
 
@@ -113,4 +189,5 @@
 
 ## Current Phase
 
-> **Phase 3 (v0.3.0):** Core orchestration agents have been implemented.
+> **Phase 4 (v0.4.0):** Core orchestration and specialist agents have been implemented.
+
