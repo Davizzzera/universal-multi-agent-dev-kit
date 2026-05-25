@@ -8,12 +8,14 @@
 
 This adapter connects the **Universal Multi-Agent Development Kit** to **Antigravity AI workflows**. 
 
-The core repository (`.agent/`) remains completely tool-agnostic. It defines the rules, agents, skills, and workflows. This adapter provides the **Antigravity-specific instructions** on *how* to load and use those agnostic definitions inside the Antigravity assistant.
+The core repository (`.agent/`) remains completely tool-agnostic. It defines the rules, agents, skills, and workflows. 
+This adapter provides the **Antigravity-specific instructions** on *how* to load and use those agnostic definitions inside the Antigravity assistant.
 
 ## Recommended Usage Model
 
 1. **Copy or reference** the `.agent/` directory in your project.
-2. **Use `adapters/antigravity/AGENTS.md`** as your Antigravity entrypoint instructions. You can paste it into Antigravity's system prompt or reference it directly.
+2. **Use `adapters/antigravity/AGENTS.md`** as your Antigravity entrypoint instructions. 
+   You can paste it into Antigravity's system prompt or reference it directly.
 3. **Ask Antigravity** to use workflows from `.agent/workflows/`.
 4. **Ask Antigravity** to select agents and skills using the Universal Orchestrator.
 5. **Validate before finishing**. Antigravity will automatically rely on validation scripts and independent checks before delivering final results.

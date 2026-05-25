@@ -10,15 +10,20 @@
 
 ## What Is This?
 
-The **Universal Multi-Agent Development Kit** is a structured framework that provides reusable agents, skills, workflows, rules, and validation tools for AI-assisted software engineering.
+The **Universal Multi-Agent Development Kit** is a structured framework that provides reusable agents,
+skills, workflows, rules, and validation tools for AI-assisted software engineering.
 
-It is designed to work with AI coding tools such as **Antigravity** (with planned support for Claude Code, Cursor, Codex, and others) — providing a universal layer of orchestration, quality control, and best practices that any AI assistant can follow.
+It is designed to work with AI coding tools such as **Antigravity** (with planned support for Claude Code, Cursor, Codex, and others)
+— providing a universal layer of orchestration, quality control, and best practices that any AI assistant can follow.
 
-This kit is **not a library or an npm package to install**. It is a **repository of structured instructions, agents, skills, and workflows** that AI coding tools can read, follow, and execute.
+This kit is **not a library or an npm package to install**. It is a **repository of structured instructions, 
+agents, skills, and workflows** that AI coding tools can read, follow, and execute.
 
 ## Why it Exists
 
-As AI coding agents become more capable, they need structure to operate safely on large codebases. Without governance, AI agents often overwrite files concurrently, ignore architectural boundaries, or fail to validate their output. This kit solves those problems by enforcing strict file ownership, validation-first delivery, and clear multi-agent coordination.
+As AI coding agents become more capable, they need structure to operate safely on large codebases. 
+Without governance, AI agents often overwrite files concurrently, ignore architectural boundaries, or fail to validate their output. 
+This kit solves those problems by enforcing strict file ownership, validation-first delivery, and clear multi-agent coordination.
 
 ---
 
@@ -85,7 +90,9 @@ npm run verify
 npm run generate:index
 ```
 
-**Note:** Python 3.10+ is required for the validation scripts. No external Python dependencies are required (uses standard library only). If your local environment does not have Python configured in the PATH, these automated scripts will not run, but the kit's Markdown instructions remain fully functional for the AI.
+**Note:** Python 3.10+ is required for the validation scripts. No external Python dependencies are required (uses standard library only). 
+If your local environment does not have Python configured in the PATH, these automated scripts will not run, 
+but the kit's Markdown instructions remain fully functional for the AI.
 
 ---
 

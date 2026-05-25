@@ -4,7 +4,8 @@ There are multiple ways to use the Universal Multi-Agent Development Kit with An
 
 ## Installation Options
 
-1. **Integrated:** Copy the full `.agent/` directory into your existing project. This brings the entire ruleset, templates, and scripts locally into your codebase.
+1. **Integrated:** Copy the full `.agent/` directory into your existing project. 
+   This brings the entire ruleset, templates, and scripts locally into your codebase.
 2. **Reference:** Keep this repository cloned nearby, and simply paste prompt examples into Antigravity referencing the central location.
 3. **Packs (Future):** Use specialized packs that install a subset of agents/skills tailored for specific domains (like web apps, APIs, etc.).
 
@@ -31,7 +32,8 @@ cp -r ./universal-multi-agent-dev-kit/.agent /path/to/your/project/
 ```
 
 ### Step 3: Establish the Entrypoint
-Copy `adapters/antigravity/AGENTS.md` into your project root (or inside your `.agent` folder). Use its contents as the primary system prompt or instruction file for Antigravity when starting a new session.
+Copy `adapters/antigravity/AGENTS.md` into your project root (or inside your `.agent` folder). 
+Use its contents as the primary system prompt or instruction file for Antigravity when starting a new session.
 
 ## Validation Requirement
 
@@ -54,4 +56,6 @@ python .agent/scripts/verify_all.py
 ```
 
 ### Fallback Note
-If Python is **not installed**, the kit can still be read and utilized by Antigravity, but automated validation scripts will not run until Python is configured on the host machine. You should rely on manual validation in this case.
+If Python is **not installed**, the kit can still be read and utilized by Antigravity, 
+but automated validation scripts will not run until Python is configured on the host machine. 
+You should rely on manual validation in this case.

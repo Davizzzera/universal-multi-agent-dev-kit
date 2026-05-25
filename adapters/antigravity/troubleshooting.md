@@ -5,13 +5,15 @@ This document outlines common issues encountered when using Antigravity with the
 ### Python Command Not Found
 - **Symptom:** `npm run verify` or `python verify_all.py` fails saying python is not recognized or opens the Windows Store.
 - **Likely Cause:** Python is not installed or not in the system PATH.
-- **Safe Fix:** Install Python 3.10+ from python.org and check the box "Add Python to PATH". Alternatively, Antigravity can fall back to manual checks or structural checks in Node/Shell until Python is available.
+- **Safe Fix:** Install Python 3.10+ from python.org and check the box "Add Python to PATH". 
+  Alternatively, Antigravity can fall back to manual checks or structural checks in Node/Shell until Python is available.
 - **What Not To Do:** Do not attempt to run arbitrary scripts downloaded from the internet to "fix" Python.
 
 ### Git Authentication Failure
 - **Symptom:** Antigravity attempts to commit and push, but the push is rejected with a 403 or authentication error.
 - **Likely Cause:** Git credentials are not cached or configured for the terminal session Antigravity is using.
-- **Safe Fix:** Open your local terminal, run `git pull` or `git push` manually, and complete the authentication flow (e.g., browser login for GitHub). Then instruct Antigravity to try again.
+- **Safe Fix:** Open your local terminal, run `git pull` or `git push` manually, and complete the authentication flow 
+  (e.g., browser login for GitHub). Then instruct Antigravity to try again.
 - **What Not To Do:** Do not paste Personal Access Tokens (PATs) or passwords into the chat for Antigravity to use.
 
 ### Repository Not Cloned
@@ -29,13 +31,15 @@ This document outlines common issues encountered when using Antigravity with the
 ### Validation Script Fails
 - **Symptom:** `verify_all.py` exits with code 1.
 - **Likely Cause:** A rule, frontmatter key, or structural requirement was violated during the last edit.
-- **Safe Fix:** Read the explicit failure message provided by the script (e.g., "Missing section # Role in Agent X"). Ask Antigravity to fix that specific issue.
+- **Safe Fix:** Read the explicit failure message provided by the script (e.g., "Missing section # Role in Agent X"). 
+  Ask Antigravity to fix that specific issue.
 - **What Not To Do:** Do not bypass or disable the validation script.
 
 ### False Positive in security_check.py
 - **Symptom:** Security check fails on a dummy token or standard documentation phrase.
 - **Likely Cause:** The defensive regex triggered on something that looks like an assignment.
-- **Safe Fix:** Use environment variables with safe example names, not real values. Or modify the dummy value to explicitly include "example" or "dummy" (e.g., `example_key_name`), which the script ignores.
+- **Safe Fix:** Use environment variables with safe example names, not real values. 
+  Or modify the dummy value to explicitly include "example" or "dummy" (e.g., `example_key_name`), which the script ignores.
 - **What Not To Do:** Do not remove the regex from `security_check.py`.
 
 ### Antigravity Edits Too Much

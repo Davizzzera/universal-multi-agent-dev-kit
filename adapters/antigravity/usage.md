@@ -4,7 +4,8 @@ This guide explains how to effectively control Antigravity AI using the componen
 
 ## Core Concepts in Action
 
-When speaking to Antigravity, you are speaking to the **Universal Orchestrator**. You must provide prompts that trigger the correct workflows, which will in turn select the appropriate agents and skills.
+When speaking to Antigravity, you are speaking to the **Universal Orchestrator**. 
+You must provide prompts that trigger the correct workflows, which will in turn select the appropriate agents and skills.
 
 ### How to ask for a Workflow
 Explicitly state the workflow name in your prompt. 
@@ -33,7 +34,8 @@ To get the most reliable results, structure your Antigravity prompts using this 
 ## Execution Strategies
 
 ### End-to-End Execution
-You can pass one complete prompt requesting Antigravity to execute from planning to validation. This is best for low-to-medium risk tasks (e.g., UI tweaks, new test cases).
+You can pass one complete prompt requesting Antigravity to execute from planning to validation. 
+This is best for low-to-medium risk tasks (e.g., UI tweaks, new test cases).
 
 ### Incremental Execution (Recommended)
 For complex tasks, keep Antigravity incremental:

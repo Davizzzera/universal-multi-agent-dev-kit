@@ -27,8 +27,10 @@ your-project-root/
 
 You can (and should) customize certain areas to fit your specific project:
 
-- **Project Context (`.agent/memory/`):** Add files here describing your project architecture, business logic, and current goals. Antigravity will read these to gain context.
-- **File Ownership (`.agent/rules/file-ownership.md`):** Update the ownership matrix to map specialist agents to your actual project folders (e.g., map the Frontend Specialist to `src/components/`).
+- **Project Context (`.agent/memory/`):** Add files here describing your project architecture, business logic, and current goals. 
+  Antigravity will read these to gain context.
+- **File Ownership (`.agent/rules/file-ownership.md`):** Update the ownership matrix to map specialist agents to your actual project folders 
+  (e.g., map the Frontend Specialist to `src/components/`).
 - **Allowed Agents:** You can restrict the Task Router to only use specific agents by modifying your prompts or adding project-level rules.
 - **Language Conventions:** Update global rules if your project uses a specific language (e.g., "All chat responses in Portuguese, all code in English").
 - **Validation Commands:** Update workflows or rules to point to your project's actual test commands (e.g., `pytest`, `npm test`, `cargo test`).

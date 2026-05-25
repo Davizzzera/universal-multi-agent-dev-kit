@@ -6,7 +6,8 @@
 
 ## What are Project Packs?
 
-Project Packs are **advisory presets**. They are designed to help you (or the Universal Orchestrator) quickly select the right combination of agents, skills, and workflows for a given project domain. 
+Project Packs are **advisory presets**. They are designed to help you (or the Universal Orchestrator) quickly 
+select the right combination of agents, skills, and workflows for a given project domain. 
 
 They **do not** duplicate agents or skills. They simply reference existing resources in `.agent/agents/` and `.agent/skills/`.
 
