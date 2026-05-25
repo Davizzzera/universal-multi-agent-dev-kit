@@ -177,7 +177,19 @@ Specialist agents are selected by the Task Router based on the domain of the use
 
 ---
 
+## Core Skills Library
+
+Skills (`.agent/skills/`) define *how* work is executed. They are procedural checklists and guidelines loaded progressively by agents.
+
+- **Progressive Loading:** Instead of overloading an agent's base prompt, the Universal Orchestrator and Task Router identify and provide specific skills relevant to the current task.
+- **Execution Over Identity:** Skills are not agents; they are the tools/manuals agents use.
+- **Specialist Adherence:** When assigned a task, specialist agents must follow the loaded skills step-by-step to ensure safe and correct execution.
+
+For a complete list of all 18 skill categories and 104 core skills, see `.agent/skills/README.md`.
+
+---
+
 ## Current Status
 
-> **Phase 4 (v0.4.0):** Core orchestration and specialist agents have been implemented. Skills and workflows will follow in subsequent phases.
+> **Phase 5 (v0.5.0):** Core orchestration agents, specialist agents, and the core skills library have been implemented. Workflows and adapters will follow in subsequent phases.
 

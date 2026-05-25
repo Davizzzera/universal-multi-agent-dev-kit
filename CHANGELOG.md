@@ -33,3 +33,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added product, architecture, frontend, backend, database, AI automation, QA, security, DevOps, documentation and marketing agents.
 - Added specialist agent documentation.
 - Added specialist agent category model.
+- Added core skills library.
+- Added 18 skill categories.
+- Added 104 reusable skills.
+- Added skill category documentation.
+- Added agent-to-skill execution model.

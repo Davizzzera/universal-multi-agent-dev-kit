@@ -10,7 +10,7 @@
 |-----------------------|----------------------------------------------------------------|---------------------|
 | `.agent/`             | Core agent system root.                                        | ✅ Created          |
 | `.agent/agents/`      | Agent definitions and configurations.                          | ✅ Populated        |
-| `.agent/skills/`      | Reusable skill definitions.                                    | 📦 Empty (v0.3.0)  |
+| `.agent/skills/`      | Reusable skill definitions.                                    | ✅ Populated        |
 | `.agent/workflows/`   | Workflow definitions and execution orders.                     | 📦 Empty (v0.4.0)  |
 | `.agent/rules/`       | Global rules and constraints.                                  | ✅ Populated        |
 | `.agent/memory/`      | Shared context and state between agents.                       | 📦 Empty (v0.2.0)  |
@@ -109,6 +109,31 @@
 | `landing-page-strategist.agent.md`                      | Landing page strategy.                                       | ✅ Created          |
 | `growth-specialist.agent.md`                            | Growth and conversion analysis.                              | ✅ Created          |
 
+## Skills
+
+| Directory / File                                        | Purpose                                                      | Status              |
+|---------------------------------------------------------|--------------------------------------------------------------|---------------------|
+| **Skills Root** (`.agent/skills/`)                      |                                                              |                     |
+| `README.md`                                             | Skills library overview.                                     | ✅ Created          |
+| `orchestration/`                                        | Orchestration skills (e.g. coordinator-mode).                | ✅ Created (6)      |
+| `context/`                                              | Context skills (e.g. codebase-map).                          | ✅ Created (5)      |
+| `planning/`                                             | Planning skills (e.g. task-breakdown).                       | ✅ Created (6)      |
+| `frontend/`                                             | Frontend skills (e.g. react-component-create).               | ✅ Created (6)      |
+| `ui-ux/`                                                | UI-UX skills (e.g. ux-flow-audit).                           | ✅ Created (6)      |
+| `backend/`                                              | Backend skills (e.g. api-contract-design).                   | ✅ Created (6)      |
+| `auth/`                                                 | Auth skills (e.g. auth-flow-design).                         | ✅ Created (4)      |
+| `database/`                                             | Database skills (e.g. database-schema-design).               | ✅ Created (6)      |
+| `data-bi/`                                              | Data-BI skills (e.g. data-cleaning).                         | ✅ Created (6)      |
+| `ai-agents/`                                            | AI-Agents skills (e.g. prompt-architecture).                 | ✅ Created (6)      |
+| `automation/`                                           | Automation skills (e.g. python-script-automation).           | ✅ Created (6)      |
+| `qa/`                                                   | QA skills (e.g. test-plan-create).                           | ✅ Created (6)      |
+| `security/`                                             | Security skills (e.g. secrets-detection).                    | ✅ Created (6)      |
+| `devops/`                                               | DevOps skills (e.g. dockerfile-create).                      | ✅ Created (6)      |
+| `github/`                                               | GitHub skills (e.g. conventional-commits).                   | ✅ Created (5)      |
+| `documentation/`                                        | Documentation skills (e.g. readme-create).                   | ✅ Created (6)      |
+| `marketing/`                                            | Marketing skills (e.g. landing-page-copy).                   | ✅ Created (6)      |
+| `maintenance/`                                          | Maintenance skills (e.g. technical-debt-detection).          | ✅ Created (6)      |
+
 ## Rules and Templates
 
 | Directory / File                                        | Purpose                                                      | Status              |
@@ -189,5 +214,5 @@
 
 ## Current Phase
 
-> **Phase 4 (v0.4.0):** Core orchestration and specialist agents have been implemented.
+> **Phase 5 (v0.5.0):** Core orchestration agents, specialist agents, and core skills library have been implemented.
 

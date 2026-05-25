@@ -302,9 +302,13 @@ Agents are grouped into 11 functional categories:
 - Specialists follow file ownership rules.
 - Specialists must validate their work before declaring completion.
 
-### Future: Skills Integration
+### Skills Layer
 
-In future phases, agents will load reusable skills (`.agent/skills/`) that provide step-by-step procedures for common tasks. Agents currently reference planned skill names but skill files are not yet implemented.
+Agents utilize **Skills** (`.agent/skills/`) to define step-by-step procedures for common tasks.
+- Skills use YAML frontmatter to define purpose, owner agents, expected outputs, and validation levels.
+- **Progressive Loading:** Instead of being loaded with all skills at once, agents are given specific skills by the Orchestrator/Task Router at execution time.
+- **Validation Support:** Each skill defines specific validation criteria, ensuring agents can self-correct and QA agents know exactly what to check.
+- **Adapter & Pack Readiness:** The separation of Skills from Agents makes the system easily extensible via Adapters (different IDEs) and Packs (different domains).
 
 ### Specialist Participation in Validation
 
@@ -314,5 +318,5 @@ QA and Security agents act as cross-cutting validators. After any specialist com
 
 ## Current Status
 
-> **Phase 4 (v0.4.0):** Core orchestration and specialist agents have been implemented. Skills and workflows will follow in subsequent phases.
+> **Phase 5 (v0.5.0):** Core orchestration agents, specialist agents, and the core skills library have been implemented. Workflows and adapters will follow in subsequent phases.
 
