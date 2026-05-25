@@ -1,0 +1,73 @@
+{
+  "pack_name": "automation-pack",
+  "pack_version": "0.1.0",
+  "description": "For Python scripts, browser automation, scheduled jobs, file processors, API polling and operational automation.",
+  "recommended_for": [
+    "Python automation",
+    "File processing",
+    "Browser automation",
+    "API integrations",
+    "Scheduled jobs",
+    "Reporting scripts",
+    "Local automations"
+  ],
+  "not_recommended_for": [
+    "Pure static documentation",
+    "UI-only landing pages",
+    "Enterprise architecture planning without implementation"
+  ],
+  "primary_agents": [
+    "universal-orchestrator",
+    "project-context-reader",
+    "task-router",
+    "scope-guardian",
+    "conflict-controller",
+    "final-reviewer",
+    "python-automation-specialist",
+    "integration-specialist",
+    "qa-tester",
+    "security-reviewer",
+    "documentation-writer"
+  ],
+  "optional_agents": [
+    "n8n-automation-specialist",
+    "webhook-specialist",
+    "devops-specialist",
+    "dependency-security-auditor"
+  ],
+  "core_skills": [
+    "python-script-automation",
+    "browser-automation-playwright",
+    "browser-automation-selenium",
+    "error-retry-strategy",
+    "reporting-automation",
+    "secure-logging-review",
+    "environment-variable-management",
+    "test-plan-create",
+    "regression-test-checklist",
+    "troubleshooting-guide"
+  ],
+  "optional_skills": [],
+  "primary_workflows": [
+    "plan.workflow.md",
+    "automation.workflow.md",
+    "debug.workflow.md",
+    "test.workflow.md",
+    "verify.workflow.md",
+    "document.workflow.md"
+  ],
+  "optional_workflows": [],
+  "validation_policy": "Dry-runs, secure logging, and environment variable audits required.",
+  "safety_policy": "Strict prohibition against hardcoding credentials in automation scripts.",
+  "related_rules": [
+    "security-rules.md"
+  ],
+  "related_packs": [
+    "data-bi-pack"
+  ],
+  "notes": "Focused on script resilience, error handling, and security.",
+  "global_rules_required": true,
+  "validation_required": true,
+  "does_not_override_global_rules": true,
+  "language": "English"
+}

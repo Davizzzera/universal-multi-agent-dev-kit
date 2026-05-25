@@ -98,6 +98,26 @@ Detailed setup instructions can also be found in [docs/antigravity-setup.md](doc
 
 ---
 
+## Project Packs
+
+Project Packs are **advisory presets** that help the Universal Orchestrator quickly select the right combination of agents, skills, and workflows for a given project domain. They do **not** override global rules.
+
+See [packs/README.md](packs/README.md) for full documentation.
+
+| Pack | Purpose |
+|------|---------|
+| `web-app-pack` | Full-stack web applications and SaaS interfaces. |
+| `landing-page-pack` | Marketing, product, and lead capture pages. |
+| `api-pack` | Backend APIs, REST endpoints, and service layers. |
+| `data-bi-pack` | Data processing, CSV/Excel ingest, BI reporting. |
+| `automation-pack` | Python scripts, browser automation, scheduled jobs. |
+| `ai-agent-pack` | AI features, RAG pipelines, prompt systems. |
+| `n8n-pack` | n8n automations, webhook flows, integrations. |
+| `ecommerce-pack` | Product catalogs, inventory, checkout flows. |
+| `enterprise-pack` | Large, multi-domain, high-risk projects. |
+
+---
+
 ## Validation
 
 The repository is self-checking and validation-first. You can run the validation scripts using `npm` shortcuts:

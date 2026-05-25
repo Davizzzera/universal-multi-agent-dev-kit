@@ -1,0 +1,92 @@
+{
+  "pack_name": "enterprise-pack",
+  "pack_version": "0.1.0",
+  "description": "For larger, multi-domain, higher-risk projects requiring stronger governance, architecture, documentation, security and validation.",
+  "recommended_for": [
+    "Enterprise systems",
+    "Multi-module applications",
+    "Internal business platforms",
+    "Systems with sensitive data",
+    "Projects with multiple agents and workflows",
+    "Production-readiness reviews",
+    "High-risk refactors"
+  ],
+  "not_recommended_for": [
+    "Small one-page edits",
+    "Simple copy updates",
+    "Very small tasks that do not need multi-agent coordination"
+  ],
+  "primary_agents": [
+    "universal-orchestrator",
+    "project-context-reader",
+    "task-router",
+    "scope-guardian",
+    "conflict-controller",
+    "final-reviewer",
+    "software-architect",
+    "technical-lead",
+    "product-manager",
+    "business-analyst",
+    "requirements-engineer",
+    "risk-analyst",
+    "security-reviewer",
+    "privacy-compliance-reviewer",
+    "devops-specialist",
+    "qa-tester",
+    "documentation-writer",
+    "release-manager"
+  ],
+  "optional_agents": [
+    "all specialist agents depending on task classification"
+  ],
+  "core_skills": [
+    "coordinator-mode",
+    "agent-routing",
+    "parallel-work-planning",
+    "file-ownership-locking",
+    "handoff-protocol",
+    "project-intake",
+    "codebase-map",
+    "dependency-scan",
+    "implementation-plan",
+    "acceptance-criteria-writing",
+    "definition-of-done",
+    "rollback-plan",
+    "technical-decision-record",
+    "security-release-checklist",
+    "production-readiness-check",
+    "architecture-docs-create",
+    "validation-report creation",
+    "semantic-versioning"
+  ],
+  "optional_skills": [],
+  "primary_workflows": [
+    "plan.workflow.md",
+    "coordinate.workflow.md",
+    "create-feature.workflow.md",
+    "security-review.workflow.md",
+    "database-change.workflow.md",
+    "deploy.workflow.md",
+    "release.workflow.md",
+    "verify.workflow.md",
+    "emergency-fix.workflow.md"
+  ],
+  "optional_workflows": [],
+  "validation_policy": "Full regression, security, and production-readiness checks required before delivery.",
+  "safety_policy": "Strict governance: rollback plans, technical decision records, and multi-reviewer sign-off required.",
+  "related_rules": [
+    "file-ownership.md",
+    "security-rules.md",
+    "handoff-contract.md",
+    "output-contract.md"
+  ],
+  "related_packs": [
+    "web-app-pack",
+    "api-pack"
+  ],
+  "notes": "The highest governance tier. Use this pack when the cost of failure is high.",
+  "global_rules_required": true,
+  "validation_required": true,
+  "does_not_override_global_rules": true,
+  "language": "English"
+}

@@ -1,0 +1,74 @@
+{
+  "pack_name": "n8n-pack",
+  "pack_version": "0.1.0",
+  "description": "For n8n automations, webhook flows, integrations, trigger-based workflows and operational process automation.",
+  "recommended_for": [
+    "n8n workflows",
+    "Webhook flows",
+    "Google Sheets integrations",
+    "CRM automations",
+    "Notification flows",
+    "API-based automations",
+    "Low-code process automation"
+  ],
+  "not_recommended_for": [
+    "Full custom frontend-only apps",
+    "Database schema-heavy backend projects without automation",
+    "Static marketing pages"
+  ],
+  "primary_agents": [
+    "universal-orchestrator",
+    "project-context-reader",
+    "task-router",
+    "scope-guardian",
+    "final-reviewer",
+    "n8n-automation-specialist",
+    "webhook-specialist",
+    "integration-specialist",
+    "business-analyst",
+    "qa-tester",
+    "security-reviewer",
+    "documentation-writer"
+  ],
+  "optional_agents": [
+    "python-automation-specialist",
+    "backend-specialist",
+    "data-quality-specialist",
+    "devops-specialist"
+  ],
+  "core_skills": [
+    "n8n-workflow-design",
+    "n8n-webhook-flow",
+    "webhook-receiver",
+    "error-retry-strategy",
+    "api-contract-design",
+    "secure-logging-review",
+    "environment-variable-management",
+    "reporting-automation",
+    "test-plan-create",
+    "troubleshooting-guide"
+  ],
+  "optional_skills": [],
+  "primary_workflows": [
+    "plan.workflow.md",
+    "automation.workflow.md",
+    "api-development.workflow.md",
+    "debug.workflow.md",
+    "verify.workflow.md",
+    "document.workflow.md"
+  ],
+  "optional_workflows": [],
+  "validation_policy": "Node execution validation and secure credential checks required.",
+  "safety_policy": "Strict prohibition against committing exported n8n workflows that contain active credentials.",
+  "related_rules": [
+    "security-rules.md"
+  ],
+  "related_packs": [
+    "automation-pack"
+  ],
+  "notes": "Optimized for low-code automation tools.",
+  "global_rules_required": true,
+  "validation_required": true,
+  "does_not_override_global_rules": true,
+  "language": "English"
+}

@@ -1,0 +1,92 @@
+{
+  "pack_name": "web-app-pack",
+  "pack_version": "0.1.0",
+  "description": "For full-stack web applications, admin panels, SaaS dashboards, internal systems and product interfaces.",
+  "recommended_for": [
+    "React/Vite/Next-style apps",
+    "Frontend + backend features",
+    "Admin panels",
+    "SaaS modules",
+    "CRUD systems",
+    "Authenticated dashboards"
+  ],
+  "not_recommended_for": [
+    "Static landing pages only",
+    "Data-only reporting projects",
+    "n8n-only automations"
+  ],
+  "primary_agents": [
+    "universal-orchestrator",
+    "project-context-reader",
+    "task-router",
+    "scope-guardian",
+    "conflict-controller",
+    "final-reviewer",
+    "product-manager",
+    "requirements-engineer",
+    "software-architect",
+    "technical-lead",
+    "frontend-specialist",
+    "react-specialist",
+    "ui-ux-designer",
+    "backend-specialist",
+    "api-designer",
+    "database-specialist",
+    "qa-tester",
+    "security-reviewer",
+    "documentation-writer"
+  ],
+  "optional_agents": [
+    "auth-specialist",
+    "devops-specialist",
+    "performance-engineer",
+    "accessibility-specialist",
+    "visual-regression-specialist",
+    "release-manager"
+  ],
+  "core_skills": [
+    "project-intake",
+    "codebase-map",
+    "existing-patterns-detection",
+    "task-breakdown",
+    "implementation-plan",
+    "acceptance-criteria-writing",
+    "definition-of-done",
+    "react-component-create",
+    "frontend-api-integration",
+    "api-contract-design",
+    "rest-api-implementation",
+    "request-validation",
+    "database-schema-design",
+    "build-validation",
+    "regression-test-checklist",
+    "security-release-checklist",
+    "readme-create"
+  ],
+  "optional_skills": [],
+  "primary_workflows": [
+    "plan.workflow.md",
+    "coordinate.workflow.md",
+    "create-feature.workflow.md",
+    "frontend-ui.workflow.md",
+    "api-development.workflow.md",
+    "database-change.workflow.md",
+    "test.workflow.md",
+    "verify.workflow.md"
+  ],
+  "optional_workflows": [],
+  "validation_policy": "Strict frontend and backend unit tests must pass before delivery.",
+  "safety_policy": "Strict defensive checks on authentication layers and database schema changes.",
+  "related_rules": [
+    "file-ownership.md",
+    "security-rules.md"
+  ],
+  "related_packs": [
+    "api-pack"
+  ],
+  "notes": "Ensures full-stack coherence across frontend interfaces and backend APIs.",
+  "global_rules_required": true,
+  "validation_required": true,
+  "does_not_override_global_rules": true,
+  "language": "English"
+}

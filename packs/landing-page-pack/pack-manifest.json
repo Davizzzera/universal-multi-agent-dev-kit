@@ -1,0 +1,74 @@
+{
+  "pack_name": "landing-page-pack",
+  "pack_version": "0.1.0",
+  "description": "For marketing pages, conversion pages, product pages, lead capture pages and campaign pages.",
+  "recommended_for": [
+    "Landing pages",
+    "Product presentation pages",
+    "Lead generation",
+    "Conversion optimization",
+    "Campaign pages",
+    "Public website sections"
+  ],
+  "not_recommended_for": [
+    "Complex backend systems",
+    "Database-heavy applications",
+    "Internal automation-only projects"
+  ],
+  "primary_agents": [
+    "universal-orchestrator",
+    "project-context-reader",
+    "task-router",
+    "scope-guardian",
+    "final-reviewer",
+    "landing-page-strategist",
+    "copywriter",
+    "seo-specialist",
+    "growth-specialist",
+    "ui-ux-designer",
+    "frontend-specialist",
+    "responsive-layout-specialist",
+    "accessibility-specialist",
+    "visual-regression-specialist",
+    "qa-tester"
+  ],
+  "optional_agents": [
+    "react-specialist",
+    "design-system-specialist",
+    "documentation-writer"
+  ],
+  "core_skills": [
+    "landing-page-structure",
+    "landing-page-copy",
+    "hero-copywriting",
+    "cta-copywriting",
+    "seo-title-description",
+    "conversion-audit",
+    "tone-of-voice-definition",
+    "ux-flow-audit",
+    "visual-consistency-review",
+    "responsive-layout-audit",
+    "accessibility-contrast-check",
+    "build-validation"
+  ],
+  "optional_skills": [],
+  "primary_workflows": [
+    "plan.workflow.md",
+    "frontend-ui.workflow.md",
+    "enhance-feature.workflow.md",
+    "verify.workflow.md",
+    "document.workflow.md"
+  ],
+  "optional_workflows": [],
+  "validation_policy": "Visual, responsiveness, and accessibility tests required.",
+  "safety_policy": "No backend changes permitted.",
+  "related_rules": [
+    "file-ownership.md"
+  ],
+  "related_packs": [],
+  "notes": "Optimized for conversion and marketing performance.",
+  "global_rules_required": true,
+  "validation_required": true,
+  "does_not_override_global_rules": true,
+  "language": "English"
+}

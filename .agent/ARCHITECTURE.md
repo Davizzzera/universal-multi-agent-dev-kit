@@ -332,6 +332,15 @@ Adapters (`adapters/`) provide tool-specific integration guidelines while preser
 - **Agnostic Core:** Adapters do NOT change the core architecture. They only describe *how* a specific tool should read and interact with the `.agent/` folder.
 - **Safety Overrides:** Adapter-specific instructions must NEVER override global safety rules or file ownership scopes.
 
+### Project Packs Layer
+
+Project Packs (`packs/`) are advisory presets that bundle agent, skill, and workflow recommendations for specific project domains.
+- **Advisory Nature:** Packs are NOT executable components. They are curated documentation that the Task Router and Universal Orchestrator read to accelerate agent selection.
+- **No Duplication:** Packs reference existing agents, skills, and workflows. They do not create new ones.
+- **No Override:** Packs MUST NOT override global rules or safety policies. Global rules always take precedence.
+- **Combination:** Multiple packs can be safely combined by unioning their recommended resources. When combined, the highest risk level dictates the validation requirements.
+- **Future CLI/Adapter Support:** Packs are designed to be machine-readable (via `pack-manifest.json`) so that future CLI installers and adapters can auto-configure a project based on the selected pack.
+
 ### Specialist Participation in Validation
 
 QA and Security agents act as cross-cutting validators. After any specialist completes work, the Orchestrator dispatches QA and/or Security agents to independently review the output before the Final Reviewer synthesizes the delivery.
@@ -340,5 +349,5 @@ QA and Security agents act as cross-cutting validators. After any specialist com
 
 ## Current Status
 
-> **Phase 8 (v0.8.0):** Core orchestration agents, specialist agents, core skills library, operational workflows, validation scripts/indexes, and the Antigravity adapter have been implemented.
+> **v0.1.0 (Unreleased):** Core orchestration agents, specialist agents, core skills library, operational workflows, validation scripts/indexes, the Antigravity adapter, and 9 reusable project packs have been implemented.
 

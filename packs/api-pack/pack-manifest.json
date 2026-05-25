@@ -1,0 +1,86 @@
+{
+  "pack_name": "api-pack",
+  "pack_version": "0.1.0",
+  "description": "For backend APIs, REST endpoints, service layers, integrations, auth flows and webhook-based systems.",
+  "recommended_for": [
+    "REST APIs",
+    "Backend services",
+    "Webhooks",
+    "Auth systems",
+    "External API integrations",
+    "Backend refactors"
+  ],
+  "not_recommended_for": [
+    "Pure UI work",
+    "Landing pages with no backend",
+    "BI-only projects"
+  ],
+  "primary_agents": [
+    "universal-orchestrator",
+    "project-context-reader",
+    "task-router",
+    "scope-guardian",
+    "conflict-controller",
+    "final-reviewer",
+    "backend-specialist",
+    "api-designer",
+    "auth-specialist",
+    "integration-specialist",
+    "webhook-specialist",
+    "database-specialist",
+    "migration-specialist",
+    "qa-tester",
+    "security-reviewer",
+    "auth-security-reviewer",
+    "documentation-writer"
+  ],
+  "optional_agents": [
+    "devops-specialist",
+    "dependency-security-auditor",
+    "performance-engineer",
+    "release-manager"
+  ],
+  "core_skills": [
+    "api-contract-design",
+    "rest-api-implementation",
+    "request-validation",
+    "error-handling-standard",
+    "webhook-receiver",
+    "pagination-filtering-sorting",
+    "auth-flow-design",
+    "role-based-access-control",
+    "auth-security-audit",
+    "database-schema-design",
+    "migration-create",
+    "input-sanitization",
+    "authz-review",
+    "build-validation",
+    "integration-test-create"
+  ],
+  "optional_skills": [],
+  "primary_workflows": [
+    "plan.workflow.md",
+    "api-development.workflow.md",
+    "database-change.workflow.md",
+    "security-review.workflow.md",
+    "test.workflow.md",
+    "verify.workflow.md",
+    "deploy.workflow.md"
+  ],
+  "optional_workflows": [],
+  "validation_policy": "Strict integration tests and security reviews required.",
+  "safety_policy": "Strict defensive checks on auth, inputs, and database schemas. No frontend changes.",
+  "related_rules": [
+    "file-ownership.md",
+    "security-rules.md"
+  ],
+  "related_packs": [
+    "web-app-pack",
+    "ecommerce-pack"
+  ],
+  "notes": "Focused on backend robustness and security.",
+  "global_rules_required": true,
+  "validation_required": true,
+  "does_not_override_global_rules": true,
+  "language": "English"
+}

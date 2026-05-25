@@ -1,0 +1,81 @@
+{
+  "pack_name": "ai-agent-pack",
+  "pack_version": "0.1.0",
+  "description": "For AI features, prompt systems, agent architectures, RAG pipelines, LLM evaluation and multi-agent workflows.",
+  "recommended_for": [
+    "AI assistants",
+    "Prompt engineering",
+    "Multi-agent systems",
+    "RAG systems",
+    "LLM output evaluation",
+    "AI workflow design",
+    "Agent-based automation"
+  ],
+  "not_recommended_for": [
+    "Simple static pages",
+    "Traditional CRUD with no AI",
+    "Pure BI dashboard requirements"
+  ],
+  "primary_agents": [
+    "universal-orchestrator",
+    "project-context-reader",
+    "task-router",
+    "scope-guardian",
+    "conflict-controller",
+    "final-reviewer",
+    "ai-engineer",
+    "prompt-engineer",
+    "agent-engineer",
+    "rag-specialist",
+    "qa-tester",
+    "security-reviewer",
+    "privacy-compliance-reviewer",
+    "documentation-writer"
+  ],
+  "optional_agents": [
+    "backend-specialist",
+    "api-designer",
+    "data-quality-specialist",
+    "technical-writer"
+  ],
+  "core_skills": [
+    "prompt-architecture",
+    "agent-definition",
+    "subagent-definition",
+    "multi-agent-orchestration",
+    "rag-pipeline-design",
+    "llm-output-evaluation",
+    "project-intake",
+    "task-breakdown",
+    "acceptance-criteria-writing",
+    "privacy review guidance",
+    "security-release-checklist",
+    "documentation-review"
+  ],
+  "optional_skills": [],
+  "primary_workflows": [
+    "plan.workflow.md",
+    "coordinate.workflow.md",
+    "ai-feature.workflow.md",
+    "security-review.workflow.md",
+    "test.workflow.md",
+    "verify.workflow.md",
+    "document.workflow.md"
+  ],
+  "optional_workflows": [],
+  "validation_policy": "Strict privacy reviews and LLM output evaluations required.",
+  "safety_policy": "Strict prohibition against sending PII to external LLM APIs without explicit consent checks.",
+  "related_rules": [
+    "security-rules.md",
+    "file-ownership.md"
+  ],
+  "related_packs": [
+    "api-pack",
+    "web-app-pack"
+  ],
+  "notes": "Focused on safe and effective AI integration.",
+  "global_rules_required": true,
+  "validation_required": true,
+  "does_not_override_global_rules": true,
+  "language": "English"
+}

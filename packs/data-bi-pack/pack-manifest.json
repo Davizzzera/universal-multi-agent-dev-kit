@@ -1,0 +1,75 @@
+{
+  "pack_name": "data-bi-pack",
+  "pack_version": "0.1.0",
+  "description": "For data processing, CSV/Excel ingestion, data cleaning, BI requirements, dashboards, KPI definitions and reporting automation.",
+  "recommended_for": [
+    "Data cleaning",
+    "CSV/Excel processing",
+    "KPI definitions",
+    "BI documentation",
+    "Dashboard requirements",
+    "Reporting automation",
+    "Data quality analysis"
+  ],
+  "not_recommended_for": [
+    "UI-only projects",
+    "Complex authentication systems",
+    "Pure marketing landing pages"
+  ],
+  "primary_agents": [
+    "universal-orchestrator",
+    "project-context-reader",
+    "task-router",
+    "scope-guardian",
+    "final-reviewer",
+    "business-analyst",
+    "data-quality-specialist",
+    "python-automation-specialist",
+    "documentation-writer",
+    "technical-writer",
+    "qa-tester"
+  ],
+  "optional_agents": [
+    "database-specialist",
+    "sql-specialist",
+    "performance-engineer",
+    "devops-specialist",
+    "security-reviewer"
+  ],
+  "core_skills": [
+    "project-intake",
+    "business-context-extraction",
+    "csv-excel-ingestion",
+    "data-cleaning",
+    "deduplication-rules",
+    "kpi-definition",
+    "dashboard-requirements",
+    "reporting-automation",
+    "data-integrity-check",
+    "test-plan-create",
+    "validation-report creation",
+    "troubleshooting-guide"
+  ],
+  "optional_skills": [],
+  "primary_workflows": [
+    "plan.workflow.md",
+    "automation.workflow.md",
+    "database-change.workflow.md",
+    "document.workflow.md",
+    "verify.workflow.md"
+  ],
+  "optional_workflows": [],
+  "validation_policy": "Data integrity checks and validation reports are required.",
+  "safety_policy": "No destructive operations on production data without explicit plan approval.",
+  "related_rules": [
+    "file-ownership.md"
+  ],
+  "related_packs": [
+    "automation-pack"
+  ],
+  "notes": "Optimized for data processing and business intelligence.",
+  "global_rules_required": true,
+  "validation_required": true,
+  "does_not_override_global_rules": true,
+  "language": "English"
+}

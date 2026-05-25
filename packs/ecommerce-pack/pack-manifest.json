@@ -1,0 +1,92 @@
+{
+  "pack_name": "ecommerce-pack",
+  "pack_version": "0.1.0",
+  "description": "For product catalogs, checkout-related flows, inventory/admin interfaces, product pages and commerce-oriented systems.",
+  "recommended_for": [
+    "Product catalogs",
+    "Admin product panels",
+    "Product detail pages",
+    "Inventory workflows",
+    "Commerce landing pages",
+    "Lead-based sales catalogs",
+    "Checkout-adjacent flows"
+  ],
+  "not_recommended_for": [
+    "Payment implementation without strict security review",
+    "Highly regulated financial systems without additional compliance review",
+    "BI-only projects"
+  ],
+  "primary_agents": [
+    "universal-orchestrator",
+    "project-context-reader",
+    "task-router",
+    "scope-guardian",
+    "conflict-controller",
+    "final-reviewer",
+    "product-manager",
+    "business-analyst",
+    "frontend-specialist",
+    "react-specialist",
+    "ui-ux-designer",
+    "backend-specialist",
+    "api-designer",
+    "database-specialist",
+    "data-quality-specialist",
+    "qa-tester",
+    "security-reviewer",
+    "copywriter",
+    "landing-page-strategist"
+  ],
+  "optional_agents": [
+    "auth-specialist",
+    "integration-specialist",
+    "devops-specialist",
+    "seo-specialist",
+    "growth-specialist",
+    "visual-regression-specialist"
+  ],
+  "core_skills": [
+    "project-intake",
+    "business-context-extraction",
+    "database-schema-design",
+    "api-contract-design",
+    "rest-api-implementation",
+    "react-component-create",
+    "frontend-api-integration",
+    "loading-empty-error-states",
+    "data-cleaning",
+    "deduplication-rules",
+    "product copy guidance",
+    "cta-copywriting",
+    "conversion-audit",
+    "build-validation",
+    "security-release-checklist"
+  ],
+  "optional_skills": [],
+  "primary_workflows": [
+    "plan.workflow.md",
+    "coordinate.workflow.md",
+    "create-feature.workflow.md",
+    "frontend-ui.workflow.md",
+    "api-development.workflow.md",
+    "database-change.workflow.md",
+    "security-review.workflow.md",
+    "verify.workflow.md"
+  ],
+  "optional_workflows": [],
+  "validation_policy": "Strict integration testing and conversion audits required.",
+  "safety_policy": "Strict security review required for any payment or checkout-adjacent code.",
+  "related_rules": [
+    "security-rules.md",
+    "file-ownership.md"
+  ],
+  "related_packs": [
+    "web-app-pack",
+    "landing-page-pack"
+  ],
+  "notes": "Balances conversion optimization with backend data integrity.",
+  "global_rules_required": true,
+  "validation_required": true,
+  "does_not_override_global_rules": true,
+  "language": "English"
+}

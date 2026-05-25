@@ -234,7 +234,19 @@ Adapters (`adapters/`) provide tool-specific instructions on how to load and int
 
 ---
 
+## Project Packs
+
+Project Packs (`packs/`) are **advisory presets** that help the Universal Orchestrator and Task Router select agents, skills, and workflows faster for specific project domains. They are NOT replacements for orchestration — the Orchestrator still governs execution.
+
+**Key rules:**
+- Packs are recommendations, not mandates.
+- Global rules ALWAYS take precedence over any pack recommendation.
+- Packs reference existing agents, skills, and workflows — they do not create new ones.
+- Multiple packs can be combined safely by unioning their recommended resources.
+
+---
+
 ## Current Status
 
-> **Phase 8 (v0.8.0):** Core orchestration agents, specialist agents, core skills library, operational workflows, validation scripts/indexes, and the Antigravity adapter have been implemented.
+> **v0.1.0 (Unreleased):** Core orchestration agents, specialist agents, core skills library, operational workflows, validation scripts/indexes, the Antigravity adapter, and 9 reusable project packs have been implemented.
 

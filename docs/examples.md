@@ -148,6 +148,104 @@ A developer asks: _"Validate the repository structure and check for any issues."
 
 ---
 
+## Example 4: Choosing a Project Pack
+
+### Scenario
+
+A developer asks: _"I'm starting a new e-commerce project. Which pack should I use?"_
+
+### How the Kit Handles This
+
+```
+1. USER REQUEST
+   "I'm starting a new e-commerce project."
+
+2. UNIVERSAL ORCHESTRATOR
+   Parses intent: New project configuration.
+   Identifies domain: Ecommerce.
+
+3. TASK ROUTER
+   Recommends pack: ecommerce-pack.
+   Loads pack-manifest.json from packs/ecommerce-pack/.
+
+4. AGENT SELECTION (From Pack)
+   Primary: product-manager, frontend-specialist, backend-specialist,
+            database-specialist, security-reviewer, qa-tester.
+
+5. WORKFLOW SELECTION (From Pack)
+   Recommended: plan → coordinate → create-feature → verify.
+
+6. DELIVERY
+   Orchestrator confirms the pack selection and asks the user
+   for the first goal to execute.
+```
+
+---
+
+## Example 5: Using web-app-pack
+
+### Prompt
+
+```text
+Goal: Create a new user settings page with a profile picture upload.
+Pack: web-app-pack
+Workflow: coordinate
+
+Scope: src/components/ and src/api/
+Validation: Run npm test.
+Language Rule: Answer me in Brazilian Portuguese, but write repository files in English.
+```
+
+---
+
+## Example 6: Using landing-page-pack
+
+### Prompt
+
+```text
+Goal: Create a new landing page for our upcoming Black Friday sale.
+Pack: landing-page-pack
+Workflow: plan
+
+Scope: Only the public frontend directory.
+Validation: None required yet. Output the copy and structure for review.
+Language Rule: Answer me in Brazilian Portuguese, but write repository files in English.
+```
+
+---
+
+## Example 7: Using automation-pack
+
+### Prompt
+
+```text
+Goal: Create a Python script that polls an API every 5 minutes and saves new records to a CSV.
+Pack: automation-pack
+Workflow: automation
+
+Scope: scripts/
+Validation: Provide the code for my review, do not run it directly.
+Language Rule: Answer me in Brazilian Portuguese, but write repository files in English.
+```
+
+---
+
+## Example 8: Using enterprise-pack
+
+### Prompt
+
+```text
+Goal: Refactor the authentication module to support SSO across all microservices.
+Pack: enterprise-pack
+Workflow: plan
+
+Scope: services/auth/, services/gateway/, shared/auth-sdk/.
+Validation: Output an implementation plan, rollback plan, and TDR. Do NOT modify source code.
+Language Rule: Answer me in Brazilian Portuguese, but write repository files in English.
+```
+
+---
+
 ## Key Takeaways
 
 1. **The orchestrator never does the work itself.** It always delegates to specialist agents.
@@ -155,9 +253,10 @@ A developer asks: _"Validate the repository structure and check for any issues."
 3. **Writing is sequential.** This prevents file conflicts.
 4. **Validation is always the last step.** Nothing is delivered without validation.
 5. **The workflow determines the execution plan.** Different task types use different workflows.
+6. **Project Packs accelerate agent selection.** They provide domain-specific presets for common project types.
 
 ---
 
 ## Current Status
 
-> **Foundation Phase (v0.1.0):** These are conceptual examples. When agents, skills, and workflows are implemented in later phases, these examples will become executable scenarios.
+> **v0.1.0 (Unreleased):** Agents, skills, workflows, adapters, and project packs are implemented. These examples are now executable scenarios.
