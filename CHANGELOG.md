@@ -25,3 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added reusable templates (`.agent/templates/`).
 - Added file ownership model.
 - Added handoff and output contract standards.
+- Added core orchestration agents.
+- Added orchestration agent documentation.
+- Added orchestration lifecycle documentation.
+- Added agent coordination model.

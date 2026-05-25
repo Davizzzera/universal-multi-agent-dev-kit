@@ -9,7 +9,7 @@
 | Directory             | Purpose                                                        | Status              |
 |-----------------------|----------------------------------------------------------------|---------------------|
 | `.agent/`             | Core agent system root.                                        | ✅ Created          |
-| `.agent/agents/`      | Agent definitions and configurations.                          | 📦 Empty (v0.2.0)  |
+| `.agent/agents/`      | Agent definitions and configurations.                          | ✅ Populated        |
 | `.agent/skills/`      | Reusable skill definitions.                                    | 📦 Empty (v0.3.0)  |
 | `.agent/workflows/`   | Workflow definitions and execution orders.                     | 📦 Empty (v0.4.0)  |
 | `.agent/rules/`       | Global rules and constraints.                                  | ✅ Populated        |
@@ -17,6 +17,21 @@
 | `.agent/templates/`   | Reusable templates for common patterns.                        | ✅ Populated        |
 | `.agent/scripts/`     | Validation and automation scripts.                             | 📦 Empty (v0.4.0)  |
 | `.agent/indexes/`     | Generated indexes for agent/skill/workflow discovery.          | 📦 Empty (v0.4.0)  |
+
+## Agents
+
+| Directory / File                                        | Purpose                                                      | Status              |
+|---------------------------------------------------------|--------------------------------------------------------------|---------------------|
+| **Agents Root** (`.agent/agents/`)                      |                                                              |                     |
+| `README.md`                                             | Agents directory overview.                                   | ✅ Created          |
+| **Orchestration** (`.agent/agents/orchestration/`)      |                                                              |                     |
+| `README.md`                                             | Orchestration agents overview.                               | ✅ Created          |
+| `universal-orchestrator.agent.md`                       | Primary coordinator of the system.                           | ✅ Created          |
+| `project-context-reader.agent.md`                       | Analyzes the repository before execution.                    | ✅ Created          |
+| `task-router.agent.md`                                  | Classifies requests and determines workflow.                 | ✅ Created          |
+| `scope-guardian.agent.md`                               | Protects boundaries and prevents scope creep.                | ✅ Created          |
+| `conflict-controller.agent.md`                          | Manages file locks and parallel execution.                   | ✅ Created          |
+| `final-reviewer.agent.md`                               | Validates and synthesizes final delivery.                    | ✅ Created          |
 
 ## Rules and Templates
 
@@ -98,4 +113,4 @@
 
 ## Current Phase
 
-> **Foundation Phase (v0.1.0):** The repository structure is established. Directories marked as "Empty" contain only `.gitkeep` files and will be populated in subsequent phases.
+> **Phase 3 (v0.3.0):** Core orchestration agents have been implemented.

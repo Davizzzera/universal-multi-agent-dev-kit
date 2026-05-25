@@ -27,6 +27,24 @@ The orchestrator does **not** do the work itself. It delegates to specialist age
 
 ---
 
+## Core Orchestration Agents
+
+The multi-agent system is managed by six core orchestration agents that ensure rules and templates are enforced:
+
+1. **[Universal Orchestrator](agents/orchestration/universal-orchestrator.agent.md):** The primary coordinator.
+2. **[Project Context Reader](agents/orchestration/project-context-reader.agent.md):** Scans the repository for context.
+3. **[Task Router](agents/orchestration/task-router.agent.md):** Classifies the task and selects agents.
+4. **[Scope Guardian](agents/orchestration/scope-guardian.agent.md):** Protects boundaries and prevents scope creep.
+5. **[Conflict Controller](agents/orchestration/conflict-controller.agent.md):** Manages file ownership and parallel execution locks.
+6. **[Final Reviewer](agents/orchestration/final-reviewer.agent.md):** Validates and synthesizes the final delivery.
+
+The typical orchestration sequence is:
+`Universal Orchestrator` → `Context Reader` → `Task Router` → `Scope Guardian` → `Conflict Controller` → *(Specialist Agents)* → *(Validators)* → `Final Reviewer`
+
+*(Note: Specialist and Validation agents will be added in later phases.)*
+
+---
+
 ## Multi-Agent Execution Model
 
 The execution model follows a structured lifecycle:
@@ -136,4 +154,4 @@ All agents must:
 
 ## Current Status
 
-> **Foundation Phase (v0.1.0):** The agent system structure is established. Individual agents, skills, and workflows will be implemented in subsequent phases.
+> **Phase 3 (v0.3.0):** Core orchestration agents have been implemented to control the system lifecycle. Specialist agents, skills, and workflows will follow.
