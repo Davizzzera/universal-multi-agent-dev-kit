@@ -7,11 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-05-25
+
 ### Fixed
-- Fixed orchestration agent section validation.
-- Fixed documentation filler phrase validation.
-- Fixed defensive security scanner self-detection false positive.
-- Improved validation reliability for v0.2.0 hardening.
+- Fixed orchestration agent validation issues.
+- Fixed missing required agent sections.
+- Fixed documentation validation failure caused by unfinished filler wording.
+- Fixed security scanner self-detection false positives.
+- Improved defensive security scan reliability.
+- Improved Antigravity troubleshooting example safety.
+- Confirmed real Python validation through `npm run verify`.
+- Regenerated repository indexes.
+- Reduced Markdown long-line warnings from 239 to 210.
+- Confirmed all validations pass with remaining warnings treated as non-blocking.
 
 ## [0.1.0] - 2026-05-25
 

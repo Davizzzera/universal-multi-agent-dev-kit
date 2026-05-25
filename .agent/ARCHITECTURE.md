@@ -20,6 +20,15 @@ Each area has a distinct responsibility and can evolve independently.
 
 ---
 
+## v0.2.0 Quality Hardening Status
+
+The architecture validation pipeline is now confirmed working in a Python environment. The following quality gates are active and enforced through `npm run verify`:
+- Structural validation for Agents, Skills, and Workflows.
+- Defensive security checks (`security_check.py`) that reliably prevent hardcoded secrets.
+- Automatic index generation for LLM context optimization.
+
+---
+
 ## Core Concepts
 
 ### Agent

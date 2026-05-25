@@ -339,6 +339,7 @@
 |--------------------|------------------------------------------------------|---------------------|
 | `README.md`        | Project overview and documentation entry point.      | ✅ Created          |
 | `RELEASE_NOTES.md` | Release notes for the current version.               | ✅ Created          |
+| `RELEASE_NOTES_v0.2.0.md` | Release notes for v0.2.0 Quality Hardening.        | ✅ Created          |
 | `LICENSE`          | MIT License.                                         | ✅ Created          |
 | `CHANGELOG.md`     | Version history and changes.                         | ✅ Created          |
 | `CONTRIBUTING.md`  | Contribution guidelines.                             | ✅ Created          |
@@ -349,5 +350,5 @@
 
 ## Current Status
 
-> **v0.1.0 Foundation Release:** Core orchestration agents, specialist agents, core skills library, operational workflows, validation scripts/indexes, the Antigravity adapter, and 9 reusable project packs have been implemented.
+> **v0.2.0 Quality Hardening Release:** Core architecture is fully implemented and validation scripts are confirmed reliable. The remaining Markdown warnings are non-blocking.
 

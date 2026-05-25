@@ -3,8 +3,8 @@
 > A professional, reusable and production-ready multi-agent development kit for AI-assisted software engineering.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.1.0-brightgreen.svg)](CHANGELOG.md)
-[![Status](https://img.shields.io/badge/status-foundation_release-orange.svg)](#repository-status)
+[![Version](https://img.shields.io/badge/version-0.2.0-brightgreen.svg)](CHANGELOG.md)
+[![Status](https://img.shields.io/badge/status-quality_hardening-orange.svg)](#repository-status)
 
 ---
 
@@ -43,9 +43,10 @@ This kit solves those problems by enforcing strict file ownership, validation-fi
 
 ## Repository Status
 
-> **v0.1.0 Foundation Release**
+> **v0.2.0 Quality Hardening Release**
 >
-> This repository provides the complete structural foundation. It is a strong foundation release, not a fully automated CLI product yet.
+> This repository provides the complete structural foundation (v0.1.0) and has been hardened for validation reliability (v0.2.0). 
+> The Python validation pipeline is confirmed working. Remaining Markdown long-line warnings are non-blocking. It is not a fully automated CLI product yet.
 
 ### What is Included
 
@@ -116,7 +117,7 @@ Project Packs are advisory presets that help the Orchestrator select the right a
 
 ## Roadmap Summary
 
-- **v0.2.0:** Quality hardening and Python validation improvements *(In Progress)*.
+- **v0.2.0:** Quality hardening and Python validation improvements *(Completed)*.
 - **v0.3.0:** Additional adapters (Claude Code, Cursor, Codex, Generic).
 - **v0.4.0:** Optional CLI installer.
 - **v0.5.0:** Pack expansion and examples.
@@ -133,6 +134,7 @@ See [docs/roadmap.md](docs/roadmap.md) for full details.
 - [Antigravity Adapter](adapters/antigravity/README.md)
 - [Project Packs](packs/README.md)
 - [Release Notes](RELEASE_NOTES.md)
+- [v0.2.0 Notes](RELEASE_NOTES_v0.2.0.md)
 - [Getting Started Guide](docs/getting-started.md)
 - [Full Roadmap](docs/roadmap.md)
 

@@ -1,5 +1,7 @@
 # Universal Multi-Agent Dev Kit v0.1.0
 
+> **Note:** For the latest v0.2.0 Quality Hardening Release notes, see [RELEASE_NOTES_v0.2.0.md](RELEASE_NOTES_v0.2.0.md).
+
 **Release type:** Foundation Release
 
 ## Release Summary
