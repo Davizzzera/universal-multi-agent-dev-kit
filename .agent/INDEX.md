@@ -216,7 +216,26 @@
 
 | Directory               | Purpose                                                      | Status              |
 |--------------------------|--------------------------------------------------------------|---------------------|
-| `adapters/antigravity/`  | Adapter for the Antigravity AI coding tool.                  | 📦 Empty (v0.5.0)  |
+| `adapters/antigravity/`  | Adapter for the Antigravity AI coding tool.                  | ✅ Populated        |
+| `README.md`              | Antigravity adapter documentation.                           | ✅ Created          |
+| `AGENTS.md`              | Antigravity entrypoint file.                                 | ✅ Created          |
+| `adapter-manifest.json`  | Adapter manifest configuration.                              | ✅ Created          |
+| `install.md`             | Installation and setup guide.                                | ✅ Created          |
+| `usage.md`               | Usage guide and instructions.                                | ✅ Created          |
+| `quick-start.md`         | Quick start and prompt patterns.                             | ✅ Created          |
+| `project-setup.md`       | Project structure customization guide.                       | ✅ Created          |
+| `integration-rules.md`   | Antigravity-specific integration rules.                      | ✅ Created          |
+| `prompt-library.md`      | Reusable prompt patterns.                                    | ✅ Created          |
+| `troubleshooting.md`     | Common issues and safe fixes.                                | ✅ Created          |
+| `examples/initialize-kit.prompt.md`     | Prompt to initialize the kit.                 | ✅ Created          |
+| `examples/plan-workflow.prompt.md`      | Prompt to use the plan workflow.              | ✅ Created          |
+| `examples/coordinate-workflow.prompt.md`| Prompt for complex multi-agent coordination.  | ✅ Created          |
+| `examples/create-feature.prompt.md`     | Prompt to create a new feature.               | ✅ Created          |
+| `examples/frontend-ui.prompt.md`        | Prompt for frontend UI changes.               | ✅ Created          |
+| `examples/api-development.prompt.md`    | Prompt for backend API development.           | ✅ Created          |
+| `examples/debug.prompt.md`              | Prompt for bug fixing and debugging.          | ✅ Created          |
+| `examples/verify.prompt.md`             | Prompt for verification and testing.          | ✅ Created          |
+| `examples/release.prompt.md`            | Prompt for release preparation.               | ✅ Created          |
 | `adapters/claude-code/`  | Adapter for Claude Code.                                     | 📦 Empty (Future)   |
 | `adapters/cursor/`       | Adapter for Cursor.                                          | 📦 Empty (Future)   |
 | `adapters/codex/`        | Adapter for OpenAI Codex.                                    | 📦 Empty (Future)   |
@@ -265,5 +284,5 @@
 
 ## Current Phase
 
-> **Phase 7 (v0.7.0):** Core orchestration agents, specialist agents, core skills library, operational workflows, and validation scripts/indexes have been implemented.
+> **Phase 8 (v0.8.0):** Core orchestration agents, specialist agents, core skills library, operational workflows, validation scripts/indexes, and the Antigravity adapter have been implemented.
 

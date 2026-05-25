@@ -6,46 +6,25 @@
 
 ## Status
 
-> **TODO — Phase v0.5.0**
+> **Implemented — Phase v0.7.0+**
 >
-> The Antigravity adapter is planned for Phase v0.5.0 of the project roadmap. This document will be updated with full setup instructions when the adapter is implemented.
+> The Antigravity adapter is fully implemented.
 
 ---
 
-## What Will the Antigravity Adapter Provide?
+## Adapter Documentation
 
-When implemented, the Antigravity adapter will:
+The complete documentation for setting up and using Antigravity with this kit is located in the `adapters/antigravity/` directory.
 
-1. **Entry Point Configuration:** Define how Antigravity discovers and reads the agent system.
-2. **Tool Mapping:** Map kit concepts (agents, skills, workflows) to Antigravity's capabilities.
-3. **Rule Enforcement:** Translate kit rules into Antigravity-compatible constraints.
-4. **Workflow Integration:** Enable Antigravity to follow kit workflows during task execution.
-5. **Validation Hooks:** Connect kit validation to Antigravity's review process.
+Please refer to the following guides:
 
----
-
-## Planned Adapter Location
-
-```
-adapters/
-└── antigravity/
-    ├── README.md          → Adapter documentation
-    ├── config.md          → Configuration file
-    ├── entry-point.md     → Entry point for Antigravity
-    └── mapping.md         → Concept mapping reference
-```
-
----
-
-## Interim Usage
-
-While the adapter is not yet implemented, you can use Antigravity with this kit by:
-
-1. Cloning this repository into your project workspace.
-2. Instructing Antigravity to read `.agent/AGENTS.md` as its starting point.
-3. Referencing specific agents, skills, or workflows in your prompts.
-
-This manual approach works but lacks the automated integration the adapter will provide.
+1. **[Adapter Overview](../adapters/antigravity/README.md):** What it is and how it works.
+2. **[Installation](../adapters/antigravity/install.md):** How to clone and install the kit for Antigravity.
+3. **[Usage Guide](../adapters/antigravity/usage.md):** How to prompt Antigravity to use workflows, agents, and skills.
+4. **[Quick Start](../adapters/antigravity/quick-start.md):** Fast, copy-paste instructions to get started.
+5. **[Integration Rules](../adapters/antigravity/integration-rules.md):** Safety rules and prompt constraints for Antigravity.
+6. **[Prompt Library](../adapters/antigravity/prompt-library.md):** Reusable prompt patterns.
+7. **[Troubleshooting](../adapters/antigravity/troubleshooting.md):** Common issues and safe fixes.
 
 ---
 

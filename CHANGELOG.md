@@ -50,3 +50,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added Markdown validation.
 - Added basic defensive security checks.
 - Added package scripts for validation.
+- Added Antigravity adapter.
+- Added Antigravity AGENTS.md entrypoint.
+- Added Antigravity installation and usage documentation.
+- Added Antigravity prompt examples.
+- Added Antigravity troubleshooting guide.
+- Added adapter manifest.

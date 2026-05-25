@@ -226,7 +226,15 @@ Agents should use validation before claiming completion of their tasks, followin
 
 ---
 
+## Adapter Usage
+
+Adapters (`adapters/`) provide tool-specific instructions on how to load and interact with this kit, without changing the core agnostic architecture. 
+
+**Antigravity** is the first implemented adapter. You can find its specific entrypoint and integration rules in `adapters/antigravity/`.
+
+---
+
 ## Current Status
 
-> **Phase 7 (v0.7.0):** Core orchestration agents, specialist agents, core skills library, operational workflows, and validation scripts/indexes have been implemented. Adapters will follow in subsequent phases.
+> **Phase 8 (v0.8.0):** Core orchestration agents, specialist agents, core skills library, operational workflows, validation scripts/indexes, and the Antigravity adapter have been implemented.
 

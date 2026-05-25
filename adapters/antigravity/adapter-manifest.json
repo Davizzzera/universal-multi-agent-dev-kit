@@ -1,0 +1,32 @@
+{
+  "adapter_name": "antigravity",
+  "adapter_version": "0.1.0",
+  "target_tool": "Antigravity AI",
+  "repository": "https://github.com/Davizzzera/universal-multi-agent-dev-kit",
+  "supported_features": [
+    "multi-agent orchestration",
+    "progressive skill loading",
+    "workflow-based execution",
+    "validation-first delivery",
+    "file ownership enforcement",
+    "defensive security review",
+    "repository self-validation"
+  ],
+  "required_core_paths": [
+    ".agent/AGENTS.md",
+    ".agent/agents/",
+    ".agent/skills/",
+    ".agent/workflows/",
+    ".agent/rules/",
+    ".agent/templates/",
+    ".agent/scripts/",
+    ".agent/indexes/"
+  ],
+  "recommended_entrypoint": "adapters/antigravity/AGENTS.md",
+  "language_policy": "Repository files in English. Chat responses in user's preferred language.",
+  "execution_policy": "Parallelize discovery. Serialize conflicting edits. Parallelize verification.",
+  "validation_policy": "Validation evidence is required before claiming completion.",
+  "safety_policy": "Defensive security only. No secrets allowed. Explicit file ownership scopes.",
+  "workflows_supported": "all",
+  "notes": "This adapter provides guidelines and entry points for using the kit with Antigravity AI."
+}

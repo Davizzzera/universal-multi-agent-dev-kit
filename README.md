@@ -87,7 +87,14 @@ This kit is designed to be read and followed by AI coding assistants. When using
 3. Agents, skills, and workflows guide the AI's behavior.
 4. Adapters provide tool-specific configuration and integration.
 
-Detailed setup instructions for Antigravity will be provided in a future phase. See [docs/antigravity-setup.md](docs/antigravity-setup.md) for current status.
+## Antigravity Adapter
+
+This kit includes an official adapter for Antigravity AI. 
+See [adapters/antigravity/README.md](adapters/antigravity/README.md) for full documentation.
+
+Antigravity is the first supported adapter. Other adapters (Claude Code, Cursor, Codex) will be added in later phases.
+
+Detailed setup instructions can also be found in [docs/antigravity-setup.md](docs/antigravity-setup.md).
 
 ---
 

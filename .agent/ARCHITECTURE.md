@@ -323,8 +323,14 @@ Workflows (`.agent/workflows/`) define the operational execution sequences of th
 Validation scripts (`.agent/scripts/`) ensure the integrity of the kit.
 - **Self-Checking:** Scripts validate repository structure, agent files, skill files, and workflows to ensure they follow their respective templates and rules.
 - **Indexes:** The validation pipeline generates JSON indexes (`.agent/indexes/`) which map the entire repository for fast discovery by adapters and other tooling.
-- **Defensive Checking:** Basic defensive scans ensure no obvious secrets are committed and no unexpected modifications break the system architecture.
 - **Validation Pipeline:** Scripts are executed via `python .agent/scripts/verify_all.py` or npm shortcuts to enforce strict compliance before delivery.
+
+### Adapter Layer
+
+Adapters (`adapters/`) provide tool-specific integration guidelines while preserving the agnostic nature of the core repository.
+- **Antigravity Adapter:** The primary adapter mapping the kit concepts to Antigravity AI workflows. It provides the `AGENTS.md` entrypoint, integration rules, and prompt patterns.
+- **Agnostic Core:** Adapters do NOT change the core architecture. They only describe *how* a specific tool should read and interact with the `.agent/` folder.
+- **Safety Overrides:** Adapter-specific instructions must NEVER override global safety rules or file ownership scopes.
 
 ### Specialist Participation in Validation
 
@@ -334,5 +340,5 @@ QA and Security agents act as cross-cutting validators. After any specialist com
 
 ## Current Status
 
-> **Phase 7 (v0.7.0):** Core orchestration agents, specialist agents, core skills library, operational workflows, and validation scripts/indexes have been implemented. Adapters will follow in subsequent phases.
+> **Phase 8 (v0.8.0):** Core orchestration agents, specialist agents, core skills library, operational workflows, validation scripts/indexes, and the Antigravity adapter have been implemented.
 
