@@ -117,6 +117,19 @@ Packs are modular and optional. A project can use zero, one, or multiple packs.
 
 **Location:** `packs/`
 
+### Template Layer
+
+**Templates** enforce consistency across all components and agent outputs. They provide a standardized structure for defining agents, skills, workflows, task briefs, handoff requests, and validation reports.
+
+**Location:** `.agent/templates/`
+
+### Global Rules Layer
+
+The **Global Rules Layer** defines the non-negotiable principles governing the entire repository. This includes security policies, parallel execution boundaries, validation mandates, and file ownership matrices. These rules override any agent's default behavior.
+
+**Location:** `.agent/rules/`
+
+
 ---
 
 ## Orchestration Lifecycle
@@ -177,19 +190,25 @@ Validation agents run their checks in **parallel**:
 - Style agent checks formatting and conventions
 - Test agent runs automated tests
 
-### 8. Final Review
+### 8. Final Review & Output Contract
 
 The Final Reviewer agent consolidates all results:
 - Confirms all validations passed
 - Verifies completeness
 - Ensures consistency
-- Prepares the delivery summary
+- Prepares the delivery summary adhering to the Output Contract
+
+### Handoff Protocol
+
+During any phase, if an agent reaches its boundary or encounters a blocker requiring different skills, it initiates a **Handoff Request**. The orchestrator intercepts this request, provisions the target agent, and passes the context seamlessly.
 
 ---
 
 ## File Ownership
 
-Every file in the repository has a clear owner:
+Every file in the repository has a clear owner defined in the file ownership matrix (`.agent/rules/file-ownership.md`). File ownership prevents conflicts by ensuring:
+- Only the **Primary Owner** can write to a file during implementation.
+- The **Secondary Reviewer** can validate or suggest changes.
 
 | Path               | Owner                    |
 |--------------------|--------------------------|
@@ -204,6 +223,14 @@ Every file in the repository has a clear owner:
 | Root files         | Project maintainers      |
 
 File ownership prevents conflicts and ensures accountability.
+
+---
+
+## Parallel Execution
+
+Execution follows the core rule: **"Parallelize discovery. Serialize conflicting edits. Parallelize verification."**
+- **Safe:** Reading files, code analysis, dependency mapping, independent validation.
+- **Unsafe:** Concurrent writes to the same or closely coupled files.
 
 ---
 
@@ -240,4 +267,4 @@ The repository itself is validated:
 
 ## Current Status
 
-> **Foundation Phase (v0.1.0):** The architecture is documented and the directory structure is established. Implementation of individual components will begin in Phase 2 (v0.2.0).
+> **Phase 2 (v0.2.0):** The architecture, global rules, and templates are established. Implementation of core agents, skills, and workflows will follow in subsequent phases.

@@ -21,3 +21,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `package.json` with project metadata and validation scripts.
 - `.gitignore` with professional exclusion rules.
 - `.gitkeep` files in empty directories to preserve structure.
+- Added global rules (`.agent/rules/`).
+- Added reusable templates (`.agent/templates/`).
+- Added file ownership model.
+- Added handoff and output contract standards.
