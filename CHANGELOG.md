@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+- Added execution trace rules.
+- Added execution trace templates.
+- Added orchestration plan template.
+- Added agent activity report template.
+- Added Antigravity execution trace requirements.
+- Added execution trace documentation.
+
 ## [0.2.1] - 2026-05-25
 
 ### Added

@@ -174,6 +174,7 @@
 | `memory-rules.md`                                       | Memory rules.                                                | ✅ Created          |
 | `handoff-rules.md`                                      | Handoff rules document.                                      | ✅ Created          |
 | `output-contract-rules.md`                              | Output contract rules.                                       | ✅ Created          |
+| `execution-trace-rules.md`                              | Execution trace rules.                                       | ✅ Created          |
 | **Templates** (`.agent/templates/`)                     |                                                              |                     |
 | `agent-template.md`                                     | Template for agents.                                         | ✅ Created          |
 | `skill-template.md`                                     | Template for skills.                                         | ✅ Created          |
@@ -185,6 +186,9 @@
 | `release-template.md`                                   | Release notes template.                                      | ✅ Created          |
 | `handoff-template.md`                                   | Handoff template.                                            | ✅ Created          |
 | `agent-output-contract-template.md`                     | Agent output contract template.                              | ✅ Created          |
+| `execution-trace-template.md`                           | Execution trace template.                                    | ✅ Created          |
+| `orchestration-plan-template.md`                        | Orchestration plan template.                                 | ✅ Created          |
+| `agent-activity-report-template.md`                     | Agent activity report template.                              | ✅ Created          |
 
 ## Scripts
 
@@ -330,6 +334,7 @@
 | `docs/workflow-design.md`       | How to design workflows.                               | ✅ Created          |
 | `docs/orchestration-model.md`   | How the orchestration model works.                     | ✅ Created          |
 | `docs/validation-model.md`      | How the validation system works.                       | ✅ Created          |
+| `docs/execution-trace.md`       | How execution tracing works.                           | ✅ Created          |
 | `docs/antigravity-setup.md`     | How to set up the Antigravity adapter.                 | ✅ Created          |
 | `docs/examples.md`              | Usage examples.                                        | ✅ Created          |
 | `docs/roadmap.md`               | Project roadmap.                                       | ✅ Created          |

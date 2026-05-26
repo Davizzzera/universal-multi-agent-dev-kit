@@ -83,6 +83,20 @@ This kit enforces a **"Validation-First"** approach:
 
 ---
 
+## Execution Trace and Agent Visibility
+
+You do not need to memorize or manually call agents. The Universal Orchestrator and Task Router will automatically select the right agents and skills for your request.
+
+At the end of a task, the AI will provide an **Execution Trace** detailing exactly:
+- Which workflow and pack were used.
+- Which agents and skills were actually utilized.
+- What files were modified.
+- What validation was executed.
+
+For more details on how to read the trace and understand execution modes, see [docs/execution-trace.md](docs/execution-trace.md).
+
+---
+
 ## Validation
 
 The repository is self-checking. You can run the validation scripts using `npm` shortcuts:

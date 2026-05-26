@@ -42,16 +42,27 @@ Antigravity MUST NOT silently rename folders, move core components, or add new d
 ## 12. No Secrets Rule
 Antigravity MUST NEVER commit hardcoded secrets, tokens, credentials, or private keys.
 
+## 13. Execution Trace Rule
+Antigravity MUST include an Execution Trace for every implementation, debugging, refactor, release or validation task. 
+It must explicitly identify selected agents, actually used agents, skills, workflow and pack.
+It MUST NOT make vague agent claims like "I used multiple agents" without listing them.
+It MUST NOT say "agents worked in parallel" without evidence of tool-visible subagents.
+It MUST state the execution mode (tool-visible subagents or orchestrated roles).
+
+## 14. Orchestration Plan Rule
+Antigravity should produce an Orchestration Plan before implementing complex tasks.
+
 ---
 
 ## Required Final Response Format
 When requested to answer in Portuguese, Antigravity MUST conclude its execution with the following format:
 
-1. **Resumo do que foi implementado:** (Summary of implementation)
-2. **Árvore de pastas relevante:** (Relevant folder tree)
-3. **Arquivos criados ou alterados:** (Files created or changed)
-4. **Validação realizada:** (Validation performed)
-5. **Mensagem de commit:** (Commit message)
-6. **Hash do commit:** (Commit hash)
-7. **Status do push:** (Push status)
-8. **Problemas encontrados:** (Issues found)
+1. **Execution Trace:** (Must include workflow, pack, agents, skills, execution mode, files)
+2. **Resumo do que foi implementado:** (Summary of implementation)
+3. **Árvore de pastas relevante:** (Relevant folder tree)
+4. **Arquivos criados ou alterados:** (Files created or changed)
+5. **Validação realizada:** (Validation performed)
+6. **Mensagem de commit:** (Commit message)
+7. **Hash do commit:** (Commit hash)
+8. **Status do push:** (Push status)
+9. **Problemas encontrados:** (Issues found)

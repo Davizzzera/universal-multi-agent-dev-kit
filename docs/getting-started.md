@@ -55,7 +55,20 @@ When prompting your AI tool, specify a **Pack** and a **Workflow** to accelerate
 
 The AI will look up the recommended agents and skills for that pack and execute the requested workflow.
 
-### 6. Run Validation Scripts
+### 6. Ask Naturally and Read the Trace
+
+You don't need to manually orchestrate agents. You can ask naturally and require the AI to route automatically. At the end, the AI must provide an Execution Trace.
+
+**Example Prompt:**
+> "Fix the null reference bug in the auth service. I will not name agents manually. Automatically choose the appropriate agents, skills, and workflows. Provide a detailed Execution Trace after completion, including validation evidence."
+
+How to read the trace:
+- **Workflow / Pack:** Confirms the context used.
+- **Agents/Skills Used:** Shows exactly which specialists touched the code.
+- **Execution Mode:** Indicates if the tool actually spawned subagents (parallelism) or just assumed roles.
+- **Validation Evidence:** Ensures quality checks were run before completion.
+
+### 7. Run Validation Scripts
 
 The kit includes Python scripts to validate its internal structure. You can run:
 

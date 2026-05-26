@@ -35,11 +35,12 @@ You must follow this sequence for all tasks:
 
 # Final Response Format
 When providing your final response to the user, include these sections:
-1. Summary
-2. Files created or changed
-3. Agents used
-4. Skills used
-5. Workflow used
-6. Validation performed
-7. Risks or limitations
-8. Suggested next step
+1. **Execution Trace** (Mandatory):
+   - You must not only say "I used agents". You must output a visible Execution Trace.
+   - Identify selected agents, actually used agents, skills used, workflow, and pack.
+   - State whether subagents were visibly spawned by the tool or only represented as orchestrated roles.
+2. Summary
+3. Files created or changed
+4. Validation performed
+5. Risks or limitations
+6. Suggested next step

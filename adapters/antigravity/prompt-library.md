@@ -103,3 +103,12 @@ Scope: Entire project.
 Constraint: Run linters, type checks, and unit tests. Do not modify files.
 Validation: Provide terminal output of all checks.
 ```
+
+## 11. Automatic Agent Routing with Execution Trace
+```text
+Goal: Act as the Universal Orchestrator to solve this task: [Insert Task Here]
+Constraint: 
+- I will not name agents manually. You must automatically choose the appropriate agents, skills, workflows, and packs.
+- Produce an Orchestration Plan before making complex changes.
+- Provide a detailed Execution Trace after completion, strictly identifying selected vs actually used agents, skills, workflow, pack, and execution mode.
+```

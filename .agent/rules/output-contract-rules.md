@@ -20,9 +20,18 @@ Unstructured agent responses are difficult for the Universal Orchestrator and ot
 
 ## Standard Agent Output Structure
 
-Every agent completing a task MUST return a final response adhering to this structure:
+Every agent completing a task MUST return a final response adhering to this structure.
+**Crucially, every implementation, debugging, refactoring, release, or validation task MUST include an Execution Trace in the final response.**
+Complex tasks should include an Orchestration Plan before implementation.
 
-### 1. Summary
+### 1. Execution Trace (Mandatory for implementation tasks)
+- **Workflow used** and **Pack used**.
+- **Execution Mode**: Explicitly state if subagents were tool-visible or orchestrated roles.
+- **Agents**: Distinguish between selected, actually used, and recommended agents.
+- **Skills**: Distinguish between selected and actually used skills.
+- **Files**: List files analyzed, created, and modified.
+
+### 2. Summary
 A concise description of the task performed.
 
 ### 2. Files Changed

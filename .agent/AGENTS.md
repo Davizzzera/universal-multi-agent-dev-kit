@@ -135,6 +135,24 @@ All agents must:
 7. **Write all repository content in English.**
 8. **Use defensive security practices only.**
 
+## Execution Trace and Agent Visibility
+
+The user does not need to manually call agents. The Universal Orchestrator and Task Router select agents automatically based on the context and request.
+To maintain transparency, the final response must identify exactly what was used during the execution.
+
+- The model must not claim independent subagent execution unless the tool provides concrete evidence (e.g., separate task processes).
+- The final response block MUST be structured as an Execution Trace containing:
+  - Workflow used
+  - Pack used
+  - Agents selected
+  - Agents actually used
+  - Skills selected
+  - Skills actually used
+  - Files analyzed/created/modified
+  - Validation executed
+  - Execution mode (tool-visible subagents or orchestrated roles)
+  - Risks/limitations
+
 ---
 
 ## Directory Structure

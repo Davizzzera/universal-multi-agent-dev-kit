@@ -359,6 +359,13 @@ Project Packs (`packs/`) are advisory presets that bundle agent, skill, and work
 - **Combination:** Multiple packs can be safely combined by unioning their recommended resources. When combined, the highest risk level dictates the validation requirements.
 - **Future CLI/Adapter Support:** Packs are designed to be machine-readable (via `pack-manifest.json`) so that future CLI installers and adapters can auto-configure a project based on the selected pack.
 
+### Execution Trace Layer
+
+Traceability sits above agents, skills, and workflows.
+- **Visibility:** It provides visibility to the user by explicitly listing which workflow, pack, agents, and skills were used in a task.
+- **No Parallelism Guarantee:** The kit requires honest reporting of the execution mode (tool-visible subagents vs orchestrated roles) but does not guarantee tool-level parallelism, as this depends entirely on the AI client's capabilities.
+- **Enforcement:** Traceability forces the AI to provide a clear accounting of its actions and validation evidence before claiming completion.
+
 ### Specialist Participation in Validation
 
 QA and Security agents act as cross-cutting validators. After any specialist completes work, the Orchestrator dispatches QA and/or Security agents to independently review the output before the Final Reviewer synthesizes the delivery.
