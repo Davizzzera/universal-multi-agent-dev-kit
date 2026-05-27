@@ -46,6 +46,14 @@ It requires AI agents to explicitly distinguish between orchestrated roles (acti
 
 ---
 
+## v0.2.3 Auto-Orchestration & Registry Evidence Status
+
+The v0.2.3 release finalizes the paradigm shift to a zero-configuration operational model.
+Installed projects can use the kit as the default operating mode (Auto-Orchestration Runtime Mode) without manual agent selection.
+Automatic routing does not guarantee tool-visible subagents, but it enforces the use of inline registry evidence to provide verifiable proof of what workflows, packs, agents, and skills were used.
+
+---
+
 ## Core Concepts
 
 ### Agent

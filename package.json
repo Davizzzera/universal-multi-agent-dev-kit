@@ -1,7 +1,7 @@
 {
   "name": "universal-multi-agent-dev-kit",
-  "version": "0.2.2",
-  "description": "A structured, reusable development kit for multi-agent AI coding tools.",
+  "version": "0.2.3",
+  "description": "A professional, reusable and production-ready multi-agent development kit for AI-assisted software engineering.",
   "type": "module",
   "repository": {
     "type": "git",

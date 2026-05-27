@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.3] - 2026-05-25
+
 ### Added
 - Added auto-orchestration rules.
 - Added default project AGENTS.md template.
@@ -20,6 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Required exact registry paths for workflows, packs, agents and skills.
 - Required inline final response trace.
 - Improved Antigravity adapter trace enforcement.
+- Confirmed validation through `npm run verify`.
 
 ## [0.2.2] - 2026-05-25
 

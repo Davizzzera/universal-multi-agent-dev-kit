@@ -121,6 +121,6 @@ If Python is not configured, the validation scripts will fail to run, but the Ma
 
 ## Current Status
 
-> **v0.2.2 Execution Trace Release:** The complete foundational structure, orchestration model, 54 agents, 104 skills, 
-> 18 workflows, 9 project packs, CI validation, and transparent Execution Trace are implemented and ready to use. 
+> **v0.2.3 Auto-Orchestration & Registry Evidence Release:** The complete foundational structure, orchestration model, 54 agents, 104 skills, 
+> 18 workflows, 9 project packs, CI validation, Execution Trace, and Auto-Orchestration Runtime Mode are implemented and ready to use. 
 > Future releases will add a CLI and additional adapters.

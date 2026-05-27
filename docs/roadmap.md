@@ -56,6 +56,18 @@
 
 ---
 
+## v0.2.3 — Auto-Orchestration & Registry Evidence
+
+**Status:** ✅ Completed
+
+- [x] Implement Auto-Orchestration Runtime Mode.
+- [x] Create default project AGENTS.md template.
+- [x] Enforce Inline Registry Evidence for agents, skills, workflows, and packs.
+- [x] Clarify automatic routing vs. tool-visible subagents.
+- [x] Release v0.2.3 tag.
+
+---
+
 ## v0.3.0 — Additional Adapters
 
 **Status:** ⬜ Planned

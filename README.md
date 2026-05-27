@@ -3,8 +3,8 @@
 > A professional, reusable and production-ready multi-agent development kit for AI-assisted software engineering.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.2.1-brightgreen.svg)](CHANGELOG.md)
-[![Status](https://img.shields.io/badge/status-ci_validation-orange.svg)](#repository-status)
+[![Version](https://img.shields.io/badge/version-0.2.3-brightgreen.svg)](CHANGELOG.md)
+[![Status](https://img.shields.io/badge/status-auto_orchestration-orange.svg)](#repository-status)
 
 ---
 
@@ -43,10 +43,10 @@ This kit solves those problems by enforcing strict file ownership, validation-fi
 
 ## Repository Status
 
-> **v0.2.2 Execution Trace Release**
+> **v0.2.3 Auto-Orchestration & Registry Evidence Release**
 >
-> This repository provides the complete structural foundation (v0.1.0), hardened validation (v0.2.0), 
-> automated CI validation via GitHub Actions (v0.2.1), and transparent Execution Trace visibility (v0.2.2). Remaining Markdown long-line warnings are non-blocking. 
+> This repository provides the complete structural foundation, hardened validation, CI validation, Execution Trace visibility, and full Auto-Orchestration capabilities.
+> It requires Inline Registry Evidence to prove the usage of resources. Remaining Markdown long-line warnings are non-blocking. 
 > It is not a fully automated CLI product yet.
 
 ### What is Included
@@ -169,6 +169,7 @@ Project Packs are advisory presets that help the Orchestrator select the right a
 - **v0.2.0:** Quality hardening and Python validation improvements *(Completed)*.
 - **v0.2.1:** CI validation via GitHub Actions *(Completed)*.
 - **v0.2.2:** Execution Trace and Agent Visibility *(Completed)*.
+- **v0.2.3:** Auto-Orchestration & Registry Evidence *(Completed)*.
 - **v0.3.0:** Additional adapters (Claude Code, Cursor, Codex, Generic).
 - **v0.4.0:** Optional CLI installer.
 - **v0.5.0:** Pack expansion and examples.
@@ -188,6 +189,7 @@ See [docs/roadmap.md](docs/roadmap.md) for full details.
 - [v0.2.0 Notes](RELEASE_NOTES_v0.2.0.md)
 - [v0.2.1 Notes](RELEASE_NOTES_v0.2.1.md)
 - [v0.2.2 Notes](RELEASE_NOTES_v0.2.2.md)
+- [v0.2.3 Notes](RELEASE_NOTES_v0.2.3.md)
 - [Getting Started Guide](docs/getting-started.md)
 - [CI Validation Guide](docs/ci-validation.md)
 - [Full Roadmap](docs/roadmap.md)
