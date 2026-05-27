@@ -2,6 +2,24 @@
 
 This guide explains how to integrate the Universal Multi-Agent Development Kit into a target project.
 
+## Recommended Installation Pattern
+
+To make the kit the default operating mode in a new project, follow this pattern:
+
+1. Copy the `.agent/` folder into the root of the project.
+2. Copy the `packs/` folder into the root of the project (optional but recommended).
+3. Copy `adapters/antigravity/AGENTS.md` (or `.agent/templates/default-project-agents-template.md`) into the root of the project as `AGENTS.md`.
+
+By doing this, you establish the **Auto-Orchestration Runtime Mode**. The user can then make normal, natural language requests without ever needing to manually name agents, skills, or workflows. The system will automatically route the request.
+
+### Verifying the Installation
+
+You can verify the kit is correctly installed and operating by making a request and checking the final response. A working installation will produce:
+- An **Inline Execution Trace** in the final response.
+- **Exact registry paths** for any cited workflow, pack, agent, or skill.
+- **Validation evidence** (e.g., test results or script outputs).
+- An **Honest execution mode** statement (e.g., "orchestrated roles" if true parallel subagents were not spawned).
+
 ## Recommended Target Structure
 
 When injecting the kit into an existing project, it should live at the root alongside your source code.

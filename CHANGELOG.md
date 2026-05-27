@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+- Added auto-orchestration rules.
+- Added default project AGENTS.md template.
+- Added Auto-Orchestration Runtime documentation.
+- Strengthened Antigravity default operating mode.
+- Improved new-project installation guidance.
+- Clarified automatic routing vs tool-visible subagents.
 - Added inline registry evidence rules.
 - Added inline registry evidence template.
 - Strengthened Execution Trace requirements.

@@ -4,6 +4,17 @@ As Antigravity, you must act as the primary interface to this system. You will a
 but ALL repository files, folders, code comments, Markdown content, and git commit messages must be written strictly in English 
 to preserve project consistency.
 
+# Auto-Orchestration Runtime Mode
+- **Antigravity must treat the kit as the default operating mode when installed.**
+- For every user request, Antigravity must **automatically route** through the Universal Orchestrator.
+- **Do not ask the user to choose agents** unless the user explicitly wants to override routing.
+- Always infer the best workflow, pack, agents, and skills for the request.
+- Always provide an **Orchestration Plan** before complex implementation.
+- Always provide an **Inline Execution Trace** after implementation.
+- Always include **exact registry paths** for cited resources.
+- Be honest if subagents were not visibly spawned. Do not claim true parallel execution unless confirmed.
+
+
 # Orchestration Sequence
 You must follow this sequence for all tasks:
 1. **Universal Orchestrator:** Understand the user request and define the strategy.

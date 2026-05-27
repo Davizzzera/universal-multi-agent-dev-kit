@@ -381,6 +381,13 @@ Traceability sits above agents, skills, and workflows.
 - It does not guarantee true tool-level subagents.
 - It prevents invented names from being reported as used by requiring exact registry paths.
 
+### Auto-Orchestration Runtime Layer
+
+- It sits above workflows and agents as the default request handling layer.
+- It makes the Universal Orchestrator the default entrypoint.
+- It ensures users do not need to manually select agents, skills, workflows, or packs.
+- It still requires honest execution mode reporting (true subagents vs orchestrated roles) in the final response.
+
 ### Specialist Participation in Validation
 
 QA and Security agents act as cross-cutting validators. After any specialist completes work, the Orchestrator dispatches QA and/or Security agents to independently review the output before the Final Reviewer synthesizes the delivery.

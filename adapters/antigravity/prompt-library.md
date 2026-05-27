@@ -112,3 +112,15 @@ Constraint:
 - Produce an Orchestration Plan before making complex changes.
 - Provide a detailed Execution Trace after completion, strictly identifying selected vs actually used agents, skills, workflow, pack, and execution mode.
 ```
+
+## 12. Default Auto-Orchestration Mode
+```text
+Use the Universal Multi-Agent Dev Kit installed in this project.
+Do not require manual agent selection.
+Automatically select workflow, pack, agents and skills.
+Use Registry-Locked Execution.
+Use Inline Registry Evidence.
+Provide Orchestration Plan for complex tasks.
+Provide Inline Execution Trace after work.
+Be honest about subagents and parallelism.
+```

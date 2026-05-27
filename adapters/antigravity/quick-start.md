@@ -13,9 +13,26 @@ Copy the `.agent` folder into the root of your target project.
 ## 3. Add Antigravity Entrypoint
 Ensure the contents of `adapters/antigravity/AGENTS.md` are provided to Antigravity as its primary context/instruction set for the project.
 
-## 4. Send Your First Prompt
+## 4. First Test After Installation
 
-Copy and paste one of these prompts into Antigravity to get started safely.
+Once the kit is installed as the default operating mode (with the root `AGENTS.md`), you can send a natural request without naming any agents.
+
+Copy and paste this exact prompt into Antigravity to verify the Auto-Orchestration is working:
+
+```text
+Review the existing header component and improve only spacing and visual consistency if needed.
+```
+
+**What to expect in the response:**
+- **Automatic Routing**: The Task Router should select the correct workflow and agents (e.g., UI/UX Designer, Frontend Specialist).
+- **Orchestration Plan**: An explanation of what will be done before making changes.
+- **Inline Execution Trace**: A block at the end detailing exactly what happened.
+- **Registry Paths**: The trace must include exact paths to the agents and skills used.
+- **Validation Evidence**: Proof that the UI wasn't broken by the changes.
+
+## 5. Send Specific Prompts
+
+If you want to be more explicit, you can use these prompts to get started safely.
 
 ### Option A: Safe Planning (Read-Only)
 ```text

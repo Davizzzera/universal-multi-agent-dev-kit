@@ -83,6 +83,16 @@ This kit enforces a **"Validation-First"** approach:
 
 ---
 
+## Using the Kit Without Manually Calling Agents
+
+Once the kit is installed as the default operating mode in your project:
+- You can make normal, natural language requests to the AI without needing to name agents, skills, or workflows.
+- The kit routes your request automatically via the **Task Router** and **Universal Orchestrator**.
+- At the end of the work, the final response must prove exactly what happened by providing an **Inline Execution Trace**.
+- **Note on Subagents:** The kit does not guarantee true, parallel tool-visible subagents unless supported by the specific AI tool. However, it fully supports and orchestrates **registry-backed orchestrated agent roles**, meaning the AI systematically adopts the necessary agent personas to complete the work safely.
+
+---
+
 ## Execution Trace and Agent Visibility
 
 You do not need to memorize or manually call agents. The Universal Orchestrator and Task Router will automatically select the right agents and skills for your request.

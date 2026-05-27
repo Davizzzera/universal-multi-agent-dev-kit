@@ -43,6 +43,19 @@ The typical orchestration sequence is:
 
 *(Note: Specialist and Validation agents will be added in later phases.)*
 
+## Auto-Orchestration Runtime Mode
+
+When installed in a project, the kit operates in **Auto-Orchestration Runtime Mode** by default. Users should not need to choose agents manually. 
+
+1. The **Universal Orchestrator** is the default entrypoint for every request.
+2. The **Task Router** automatically selects the required workflow, pack, agents, and skills.
+3. The **Scope Guardian** and **Conflict Controller** must protect the work and prevent scope creep or file conflicts.
+4. The **Final Reviewer** must consolidate the output and ensure all validations passed.
+5. **Tool-visible subagents are not guaranteed.** Depending on the AI tool used, true parallel subagents might not be supported.
+6. **Orchestrated roles are valid.** If execution happens within a single model run, agents act as orchestrated roles. This is valid but must be labeled honestly in the Execution Trace.
+
+For full rules, see [auto-orchestration-rules.md](file:///c:/Users/User/OneDrive/Desktop/KIT%20MULTI%20AGENTE/universal-multi-agent-dev-kit/.agent/rules/auto-orchestration-rules.md).
+
 ---
 
 ## Multi-Agent Execution Model

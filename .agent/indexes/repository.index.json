@@ -1,13 +1,13 @@
 {
   "project_name": "universal-multi-agent-dev-kit",
-  "generated_at": "2026-05-27T16:40:54.525247+00:00",
+  "generated_at": "2026-05-27T18:07:33.452305+00:00",
   "counts": {
     "agents": 60,
     "skills": 104,
     "workflows": 18,
-    "rules": 12,
-    "templates": 14,
-    "docs": 11
+    "rules": 13,
+    "templates": 15,
+    "docs": 12
   },
   "categories": {
     "agent_categories": [

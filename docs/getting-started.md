@@ -43,7 +43,13 @@ You will find specific prompt examples in `adapters/antigravity/examples/` that 
 
 ### 4. Apply to a Target Project
 
-To use this kit on an existing project, simply copy the `.agent/`, `packs/`, and `adapters/` directories into the root of your target project repository. 
+To start using this kit in an existing or new project, establish the **Auto-Orchestration Runtime Mode**:
+
+1. Copy the `.agent/` folder into your target project.
+2. Copy the `packs/` folder into your target project.
+3. **Crucial Step**: Create a root `AGENTS.md` file by copying either `.agent/templates/default-project-agents-template.md` or `adapters/antigravity/AGENTS.md` to the root of your project.
+
+This root file tells your AI tool to use the kit by default.
 
 *Note: A CLI tool to automate this setup is planned for a future release.*
 
