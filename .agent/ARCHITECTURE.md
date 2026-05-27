@@ -38,6 +38,14 @@ This layer was confirmed working and is officially part of the v0.2.1 CI Validat
 
 ---
 
+## v0.2.2 Execution Trace Status
+
+The v0.2.2 release adds mandatory visibility tracking. 
+Execution Trace sits above agents, skills, workflows, and packs, enforcing transparency by documenting exactly what the AI tool did. 
+It requires AI agents to explicitly distinguish between orchestrated roles (acting out a persona sequentially) and true tool-visible subagents (spawning physical parallel processes), though it does not guarantee tool-level parallelism itself.
+
+---
+
 ## Core Concepts
 
 ### Agent

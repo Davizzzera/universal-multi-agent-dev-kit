@@ -7,13 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.2] - 2026-05-25
+
 ### Added
-- Added execution trace rules.
-- Added execution trace templates.
-- Added orchestration plan template.
-- Added agent activity report template.
-- Added Antigravity execution trace requirements.
-- Added execution trace documentation.
+- Added Execution Trace rules.
+- Added Execution Trace template.
+- Added Orchestration Plan template.
+- Added Agent Activity Report template.
+- Added documentation for agent visibility.
+- Updated Antigravity adapter to require visible Execution Trace.
+- Added distinction between selected agents, actually used agents and recommended agents.
+- Added distinction between tool-visible subagents and orchestrated agent roles.
+- Confirmed validation through `npm run verify`.
 
 ## [0.2.1] - 2026-05-25
 

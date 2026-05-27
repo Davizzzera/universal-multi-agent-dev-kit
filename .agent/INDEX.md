@@ -347,6 +347,7 @@
 | `RELEASE_NOTES.md` | Release notes for the current version.               | ✅ Created          |
 | `RELEASE_NOTES_v0.2.0.md` | Release notes for v0.2.0 Quality Hardening.        | ✅ Created          |
 | `RELEASE_NOTES_v0.2.1.md` | Release notes for v0.2.1 CI Validation.            | ✅ Created          |
+| `RELEASE_NOTES_v0.2.2.md` | Release notes for v0.2.2 Execution Trace.          | ✅ Created          |
 | `LICENSE`          | MIT License.                                         | ✅ Created          |
 | `CHANGELOG.md`     | Version history and changes.                         | ✅ Created          |
 | `CONTRIBUTING.md`  | Contribution guidelines.                             | ✅ Created          |
@@ -358,5 +359,5 @@
 
 ## Current Status
 
-> **v0.2.1 CI Validation Release:** Core architecture is fully implemented, validation scripts are confirmed reliable, and GitHub Actions CI validation is active. The remaining Markdown warnings are non-blocking.
+> **v0.2.2 Execution Trace Release:** Core architecture is fully implemented, validation scripts are confirmed reliable, GitHub Actions CI validation is active, and Execution Trace visibility is enforced. The remaining Markdown warnings are non-blocking.
 

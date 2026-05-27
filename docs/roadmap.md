@@ -44,6 +44,18 @@
 
 ---
 
+## v0.2.2 — Execution Trace
+
+**Status:** ✅ Completed
+
+- [x] Add execution trace visibility requirements.
+- [x] Enforce execution mode documentation.
+- [x] Provide trace templates and rules.
+- [x] Add Orchestration Plan requirement.
+- [x] Release v0.2.2 tag.
+
+---
+
 ## v0.3.0 — Additional Adapters
 
 **Status:** ⬜ Planned
