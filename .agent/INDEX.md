@@ -175,6 +175,7 @@
 | `handoff-rules.md`                                      | Handoff rules document.                                      | ✅ Created          |
 | `output-contract-rules.md`                              | Output contract rules.                                       | ✅ Created          |
 | `execution-trace-rules.md`                              | Execution trace rules.                                       | ✅ Created          |
+| `inline-registry-evidence-rules.md`                     | Inline registry evidence rules.                              | ✅ Created          |
 | **Templates** (`.agent/templates/`)                     |                                                              |                     |
 | `agent-template.md`                                     | Template for agents.                                         | ✅ Created          |
 | `skill-template.md`                                     | Template for skills.                                         | ✅ Created          |
@@ -187,6 +188,7 @@
 | `handoff-template.md`                                   | Handoff template.                                            | ✅ Created          |
 | `agent-output-contract-template.md`                     | Agent output contract template.                              | ✅ Created          |
 | `execution-trace-template.md`                           | Execution trace template.                                    | ✅ Created          |
+| `inline-registry-evidence-template.md`                  | Inline registry evidence template.                           | ✅ Created          |
 | `orchestration-plan-template.md`                        | Orchestration plan template.                                 | ✅ Created          |
 | `agent-activity-report-template.md`                     | Agent activity report template.                              | ✅ Created          |
 

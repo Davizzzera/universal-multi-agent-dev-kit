@@ -153,6 +153,16 @@ To maintain transparency, the final response must identify exactly what was used
   - Execution mode (tool-visible subagents or orchestrated roles)
   - Risks/limitations
 
+## Inline Registry Evidence
+
+While the user does not need to manually name agents and the system must route automatically, the final response must **prove what was used**.
+
+- **All cited workflows, packs, agents, and skills** must include exact paths to their registry files.
+- Skills must point to `SKILL.md`.
+- Packs must point to `pack-manifest.json`.
+- If a resource cannot be verified, mark it as not registry-backed.
+- **Never redirect only to `walkthrough.md`.** The inline trace in the final response is mandatory.
+
 ---
 
 ## Directory Structure

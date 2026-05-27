@@ -15,7 +15,15 @@ The Execution Trace exists to provide absolute transparency to the user. Since t
 ## Execution Trace Requirements
 - The agent must not claim true parallel subagent execution unless the tool provides evidence (e.g., separate task IDs, separate agent instances spawned).
 - When the UI only shows "working", the final report must still provide an orchestration trace, clarifying that roles were orchestrated within a single run.
-- **Every implementation task** (including debugging, refactoring, validation, or release) must include an Execution Trace in the final response.
+- **Every implementation task** (including debugging, refactoring, validation, or release) must include an **inline Execution Trace** directly in the final chat response.
+- Creating an artifact (e.g., `walkthrough.md`) for trace details is permitted, but an **artifact-only trace is incomplete** and invalid.
+- **Exact registry paths are mandatory.** Every usage claim must include the exact registry path.
+  - Workflows must point to `.workflow.md`.
+  - Packs must point to `pack-manifest.json`.
+  - Agents must point to `.agent.md`.
+  - Skills must point to `SKILL.md`.
+- **Orchestration agents** must be included or explicitly classified as conceptually applied / not tool-visible.
+- **Validation evidence** must include the exact command executed, the exit code (if available), and an output summary.
 - **Every complex task** must include an Orchestration Plan before implementation when possible.
 
 ## What Must Be Identified

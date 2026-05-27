@@ -32,6 +32,22 @@ Execution Trace answers these questions explicitly, preventing vague claims like
 The trace contains sections for Request Classification, Execution Mode, Agents, Skills, Files, and Validation Evidence. 
 Always look for the **Execution Mode** to see if true parallelism was achieved, and check **Validation Evidence** to ensure quality.
 
+## Inline Registry Evidence
+
+The trace must appear directly in the chat response. Artifacts alone (like `walkthrough.md`) are not enough because the user needs immediate proof of what the agent executed.
+
+**Correct path examples:**
+- `.agent/workflows/frontend-ui.workflow.md`
+- `packs/web-app-pack/pack-manifest.json`
+- `.agent/agents/frontend/react-specialist.agent.md`
+- `.agent/skills/frontend/react-component-create/SKILL.md`
+
+**Example of an incorrect trace:**
+"I used the React agent and the Web pack. Validation passed."
+
+**Example of a correct trace:**
+See the examples below.
+
 ## Examples
 
 ### Frontend Task Example

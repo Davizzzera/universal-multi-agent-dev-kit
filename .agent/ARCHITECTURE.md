@@ -374,6 +374,13 @@ Traceability sits above agents, skills, and workflows.
 - **No Parallelism Guarantee:** The kit requires honest reporting of the execution mode (tool-visible subagents vs orchestrated roles) but does not guarantee tool-level parallelism, as this depends entirely on the AI client's capabilities.
 - **Enforcement:** Traceability forces the AI to provide a clear accounting of its actions and validation evidence before claiming completion.
 
+### Inline Registry Evidence Layer
+
+- It sits above Execution Trace.
+- It converts agent claims into verifiable file-path evidence.
+- It does not guarantee true tool-level subagents.
+- It prevents invented names from being reported as used by requiring exact registry paths.
+
 ### Specialist Participation in Validation
 
 QA and Security agents act as cross-cutting validators. After any specialist completes work, the Orchestrator dispatches QA and/or Security agents to independently review the output before the Final Reviewer synthesizes the delivery.

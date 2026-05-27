@@ -36,9 +36,13 @@ You must follow this sequence for all tasks:
 # Final Response Format
 When providing your final response to the user, include these sections:
 1. **Execution Trace** (Mandatory):
-   - You must not only say "I used agents". You must output a visible Execution Trace.
-   - Identify selected agents, actually used agents, skills used, workflow, and pack.
-   - State whether subagents were visibly spawned by the tool or only represented as orchestrated roles.
+   - You must not only say "I used agents". You must output a visible Execution Trace directly in the final chat response.
+   - Do not say "see artifact" instead of showing the Execution Trace.
+   - Every registry-backed resource must include its exact path.
+   - Do not cite conceptual resources as used. If a resource is conceptual, mark it as "conceptual role, not registry-backed".
+   - If a resource is recommended but does not exist, mark it as "recommended for future kit expansion".
+   - Identify selected agents, actually used agents, skills used, workflow, and pack with exact paths.
+   - State whether subagents were visibly spawned by the tool or only represented as orchestrated roles. Do not claim true parallel subagent execution unless Antigravity visibly spawned separate subagents or provides evidence.
 2. Summary
 3. Files created or changed
 4. Validation performed

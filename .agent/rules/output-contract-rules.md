@@ -21,7 +21,11 @@ Unstructured agent responses are difficult for the Universal Orchestrator and ot
 ## Standard Agent Output Structure
 
 Every agent completing a task MUST return a final response adhering to this structure.
-**Crucially, every implementation, debugging, refactoring, release, or validation task MUST include an Execution Trace in the final response.**
+**Crucially, every implementation, debugging, refactoring, release, validation, or multi-agent task MUST include an INLINE Execution Trace in the final response.**
+- The final response is incomplete without this inline Execution Trace.
+- Any artifact or walkthrough may supplement the final response, but cannot replace it.
+- Usage claims require registry evidence (exact file paths).
+- Completion claims require validation evidence (command, exit code, summary).
 Complex tasks should include an Orchestration Plan before implementation.
 
 ### 1. Execution Trace (Mandatory for implementation tasks)

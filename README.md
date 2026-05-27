@@ -95,6 +95,16 @@ At the end of a task, the AI will provide an **Execution Trace** detailing exact
 
 For more details on how to read the trace and understand execution modes, see [docs/execution-trace.md](docs/execution-trace.md).
 
+### How to Know the Kit Was Really Used
+
+To verify that the AI is not just pretending to use the kit, look for these explicit proofs in the inline Execution Trace:
+- Look for exact workflow path (e.g., `.agent/workflows/...`).
+- Look for exact pack manifest path (e.g., `packs/.../pack-manifest.json`).
+- Look for exact agent file paths (e.g., `.agent/agents/...`).
+- Look for exact `SKILL.md` paths.
+- Look for validation command and result.
+- Look for execution mode honesty (no claims of true parallelism without evidence).
+
 ---
 
 ## Validation

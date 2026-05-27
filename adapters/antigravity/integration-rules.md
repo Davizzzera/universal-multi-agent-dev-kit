@@ -43,11 +43,14 @@ Antigravity MUST NOT silently rename folders, move core components, or add new d
 Antigravity MUST NEVER commit hardcoded secrets, tokens, credentials, or private keys.
 
 ## 13. Execution Trace Rule
-Antigravity MUST include an Execution Trace for every implementation, debugging, refactor, release or validation task. 
-It must explicitly identify selected agents, actually used agents, skills, workflow and pack.
+Antigravity MUST include an inline Execution Trace for every implementation, debugging, refactor, release or validation task directly in the final chat response. 
+Artifact-only trace is prohibited. The trace cannot be only inside a `walkthrough.md` or similar.
+Every registry-backed resource MUST include its exact path.
+It must explicitly identify selected agents, actually used agents, skills, workflow and pack with their exact registry paths.
 It MUST NOT make vague agent claims like "I used multiple agents" without listing them.
-It MUST NOT say "agents worked in parallel" without evidence of tool-visible subagents.
+It MUST NOT say "agents worked in parallel" without evidence of tool-visible subagents (execution mode honesty rule).
 It MUST state the execution mode (tool-visible subagents or orchestrated roles).
+Validation evidence MUST include command, exit code if available, and output summary.
 
 ## 14. Orchestration Plan Rule
 Antigravity should produce an Orchestration Plan before implementing complex tasks.

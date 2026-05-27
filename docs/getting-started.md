@@ -62,9 +62,14 @@ You don't need to manually orchestrate agents. You can ask naturally and require
 **Example Prompt:**
 > "Fix the null reference bug in the auth service. I will not name agents manually. Automatically choose the appropriate agents, skills, and workflows. Provide a detailed Execution Trace after completion, including validation evidence."
 
+**How to verify that the kit is actually being used:**
+The user should look for registry-backed paths in the final response. 
+- If the response only says "used agents" without paths, it is incomplete. 
+- If the trace is only in an artifact, ask for inline registry evidence.
+
 How to read the trace:
-- **Workflow / Pack:** Confirms the context used.
-- **Agents/Skills Used:** Shows exactly which specialists touched the code.
+- **Workflow / Pack:** Confirms the context used with exact paths.
+- **Agents/Skills Used:** Shows exactly which specialists touched the code with exact paths.
 - **Execution Mode:** Indicates if the tool actually spawned subagents (parallelism) or just assumed roles.
 - **Validation Evidence:** Ensures quality checks were run before completion.
 
